@@ -38,8 +38,9 @@ digraph finite_state_machine {
     CreazioneAutomaticaIncarico  -> CompletamentoManualeIncarico [label = "DatiNonCompleti"];
     CreazioneAutomaticaIncarico  -> VenditaRiparazione           [label = "VenditaRiparazione"];
     CreazioneAutomaticaIncarico  -> EsecuzioneTriage             [label = "RiparazioneNonPrevista"];
+    VenditaRiparazione           -> AvvioRiparazione             [label = "RiparazioneVenduta"];
     VenditaRiparazione           -> SceltaManualeServizio        [label = "RiparazioneNonVenduta"];
-    EsecuzioneTriage             -> InvioLinkSelfCare            [label = "InvioLinkSelfCare"];
+    VenditaRiparazione           -> VenditaRiparazione           [label = "CampiObbligMancanti"];
     VenditaRiparazionePA1        -> SceltaAutomaticaServizio     [label = "NonInteressatoRiparazione"] ;
     VenditaRiparazionePA1        -> VenditaRiparazione           [label = "InteressatoRiparazione"] ;
     VenditaRiparazionePA1        -> SceltaAutomaticaServizio     [label = "TimerScaduto"] ;
@@ -50,29 +51,28 @@ digraph finite_state_machine {
     InvioLinkSelfCare            -> SceltaAutomaticaServizio     [label = "SelfCareEseguito"];
     InvioLinkSelfCare            -> SceltaAutomaticaServizio     [label = "SelfCareNonEseguito"];
     InvioLinkSelfCare            -> SceltaAutomaticaServizio     [label = "TimerScaduto"];
-    VenditaRiparazione           -> AvvioRiparazione             [label = "RiparazioneVenduta"];
+    EsecuzioneTriage             -> InvioLinkSelfCare            [label = "InvioLinkSelfCare"];
     EsecuzioneTriage             -> AvvioSopralluogoPCE          [label = "SopralluogoPCE"];
     EsecuzioneTriage             -> VenditaRiparazionePA1        [label = "VenditaRiparazionePA1"];
     EsecuzioneTriage             -> AvvioVisio                   [label = "Visio"];
     EsecuzioneTriage             -> AvvioDesk                    [label = "Desk"];   
     EsecuzioneTriage             -> AvvioSopralluogo             [label = "Sopralluogo"]; 
     EsecuzioneTriage             -> SceltaManualeServizio        [label = "NessunServizio"]  
+    EsecuzioneTriage             -> SceltaManualeServizio        [label = "CampiObbligMancanti"] 
     SceltaAutomaticaServizio     -> AvvioSopralluogoPCE          [label = "SopralluogoPCE"];
     SceltaAutomaticaServizio     -> AvvioVisio                   [label = "Visio"];
     SceltaAutomaticaServizio     -> AvvioDesk                    [label = "Desk"];   
     SceltaAutomaticaServizio     -> AvvioSopralluogo             [label = "Sopralluogo"];   
     SceltaAutomaticaServizio     -> AvvioAccertSelfCare          [label = "SelfCare"];   
     SceltaAutomaticaServizio     -> SceltaManualeServizio        [label = "NessunServizio"];   
+    SceltaAutomaticaServizio     -> SceltaManualeServizio        [label = "CampiObbligMancanti"];
     SceltaManualeServizio        -> AvvioSopralluogoPCE          [label = "SopralluogoPCE"];
     SceltaManualeServizio        -> AvvioManualeVisio            [label = "Visio"];
     SceltaManualeServizio        -> AvvioManualeDesk             [label = "Desk"];   
     SceltaManualeServizio        -> AvvioSopralluogo             [label = "Sopralluogo"];   
     SceltaManualeServizio        -> InvioLinkSelfCare            [label = "InvioLinkSelfCare"];
     SceltaManualeServizio        -> VenditaRiparazione           [label = "VenditaRiparazione"];
-    SceltaManualeServizio        -> SceltaManualeServizio        [label = "DatiNonCompleti"];
-    SceltaAutomaticaServizio     -> SceltaManualeServizio        [label = "DatiNonCompleti"];
-    EsecuzioneTriage             -> SceltaManualeServizio        [label = "DatiNonCompleti"] 
-    VenditaRiparazione           -> SceltaAutomaticaServizio     [label = "DatiNonCompleti"];
+    SceltaManualeServizio        -> SceltaManualeServizio        [label = "CampiObbligMancanti"];
       
   
 }
