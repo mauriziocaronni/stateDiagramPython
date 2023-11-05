@@ -1,0 +1,92 @@
+digraph finite_state_machine {
+    rankdir=LR;
+    size="8,5"
+    label="Expertise"
+    node [shape = doublecircle]; AvvioPerizia;
+    node [shape = circle];
+
+    subgraph Assessment {
+        node [style =  filled shape = box]
+	    label = "Assessment";
+		color=green
+        Assessment    
+    }
+
+
+    subgraph Collaboration {
+        cluster=true;
+	    label = "Collaboration";
+        RichiestaCollabRicevuta
+        CollabInCorso
+        CollabRifiutata
+        CollabCompletata
+   }
+
+
+    subgraph Revision {
+        cluster=true;
+	    label = "Revision";
+	    RichiestaRevisioneRicevuta
+        RevisioneInCorso          
+        RevisioneRifiutata        
+        RevisioneCompletata       
+
+	    
+	    
+	    
+
+   }
+
+        Assessment                 -> AvvioPerizia
+        AvvioPerizia               -> EsecuzionePerizia           [ label = "PeriziaAvviata"]             ;
+        EsecuzionePerizia          -> CollaborazioneDaCompletare  [ label = "CollaborazioneAvviata"]   ;
+        EsecuzionePerizia          -> RichiestaCollabRicevuta     [  style ="dotted"]    ;
+
+        RichiestaCollabRicevuta    -> CollabInCorso    [ label = "RichiestaAccettata"] ;
+        RichiestaCollabRicevuta    -> CollabRifiutata  [ label = "RichiestaRifiutata"]  ;
+        CollabInCorso              -> CollabCompletata [ label = "CollabCompletata"] ;
+        CollabCompletata           -> CollaborazioneDaCompletare [style = "dotted"] ;
+
+
+        CollaborazioneDaCompletare -> VerificaFineCollaborazione  [ label = "CollaborazioneCompletata"]   ;
+        VerificaFineCollaborazione -> CollaborazioneDaCompletare  [ label = "MancaCollabCompletato"]  ;
+        VerificaFineCollaborazione -> EsecuzionePerizia           [ label = "TuttiCollabCompletato"]  ;
+
+        EsecuzionePerizia          -> RevisionePerizia            [ label = "RevisioneAvviata" ]   ;
+        RevisionePerizia           -> VerificaFineRevisione       [ label = "RevisioneCompletata"] ;
+        VerificaFineRevisione      -> RevisionePerizia            [ label = "MancaRevisCompletato"] ;
+        VerificaFineRevisione      -> EsecuzionePerizia           [ label = "TuttiRevisCompletato"] ;
+
+        EsecuzionePerizia             -> RichiestaRevisioneRicevuta     [  style ="dotted"]    ;
+        RichiestaRevisioneRicevuta    -> RevisioneInCorso    [ label = "RichiestaAccettata"] ;
+        RichiestaRevisioneRicevuta    -> RevisioneRifiutata  [ label = "RichiestaRifiutata"]  ;
+        RevisioneInCorso              -> RevisioneCompletata [ label = "RevisioneCompletata"] ;
+        RevisioneCompletata           -> RevisionePerizia               [style = "dotted"] ;
+
+
+
+        EsecuzionePerizia          -> ChiusuraDaVerificare        [ label = "VerificaChiusura"] ;
+        ChiusuraDaVerificare       -> VerificaAuthority           [ label = "AuthorityNecessaria"] ;
+        ChiusuraDaVerificare       -> ComunicazioneEsito          [ label = "AuthorityNonNecessaria"] ;
+
+        VerificaAuthority          -> ComunicazioneEsito          [ label = "PeriziaApprovata"];
+        VerificaAuthority          -> EsecuzionePerizia           [ label = "PeriziaNonApprovata"] ;
+
+       ComunicazioneEsito          -> GestioneContestazione       [ label = "AccordoNonRaggiunto"] ;
+       GestioneContestazione       -> EsecuzionePerizia                [ label = "NonConfermaAccordo"] ;
+
+        subgraph Closing {
+            node [style =  filled shape = box]
+	        label = "Closing";
+		    color=green
+            AvvioChiusura    
+        }
+
+       ComunicazioneEsito          -> AvvioChiusura               [ label = "AccordoRaggiunto-o-NonRichiesto"] ;
+       GestioneContestazione       -> AvvioChiusura               [ label = "ConfermaAccordo"] ;
+    
+             
+
+
+
+}

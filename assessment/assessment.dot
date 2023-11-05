@@ -1,0 +1,80 @@
+digraph finite_state_machine {
+    rankdir=LR;
+    size="8,5"
+    label="Assessment"
+    node [shape = doublecircle]; AvvioVisio AvvioAccertSelfCare AvvioDesk AvvioManualeDesk AvvioManualeVisio AvvioSopralluogo AvvioSopralluogoPCE;
+    node [shape = circle];
+    subgraph Opening {
+        node [style =  filled shape = box]
+	    label = "Expertise";
+		color=green
+        Apertura    
+    }
+
+    subgraph Expertise {
+        node [style =  filled]
+	    label = "Expertise";
+		color=green
+        AvvioPerizia
+    }
+
+        Apertura -> AvvioVisio
+        Apertura -> AvvioDesk
+        Apertura -> AvvioManualeVisio
+        Apertura -> AvvioManualeDesk
+        Apertura -> AvvioSopralluogo
+        Apertura -> AvvioSopralluogoPCE
+        Apertura -> AvvioAccertSelfCare
+
+        AvvioVisio	              ->	EsecuzioneVisio	    [ label = "VisioAvviata"];
+        EsecuzioneVisio	          ->	EsecuzioneVisio	    [ label = "AppuntamentoModificato"];
+        EsecuzioneVisio	          ->	AvvioManualeVisio	[ label = "AppuntamentoAnnullato"];
+        EsecuzioneVisio	          ->	RiassegnazioneVisio	[ label = "VisioRifiutata"];
+        EsecuzioneVisio	          ->	AvvioManualeVisio	[ label = "VisioCompletataNuovaVisio"];
+        AvvioManualeVisio	      ->	EsecuzioneVisio	    [ label = "VisioPianificata"];
+        RiassegnazioneVisio	      ->	AvvioManualeVisio	[ label = "VisioAssegnata"];
+
+        AvvioDesk	              ->	EsecuzioneDesk	    [ label = "DeskAvviata"];
+        EsecuzioneDesk	          ->	EsecuzioneDesk	    [ label = "AppuntamentoModificato"];
+        EsecuzioneDesk	          ->	AvvioManualeDesk	[ label = "AppuntamentoAnnullato"];
+        EsecuzioneDesk	          ->	RiassegnazioneDesk	[ label = "DeskRifiutata"];
+        EsecuzioneDesk	          ->	AvvioManualeDesk	[ label = "DeskCompletataNuovaDesk"];
+        AvvioManualeDesk	      ->	EsecuzioneDesk	    [ label = "DeskPianificata"];
+        RiassegnazioneDesk	      ->	AvvioManualeDesk	[ label = "DeskAssegnata"];
+
+        AvvioSopralluogo               -> AssegnazioneSopralluogo        [ label = "SopralluogoAvviato"];
+        AssegnazioneSopralluogo        -> PianificazioneSopralluogo      [ label = "SopralluogoAssegnato"];
+        PianificazioneSopralluogo      -> EsecuzioneSopralluogo          [ label = "SopralluogoPianificato"];
+        PianificazioneSopralluogo      -> VerificaSopralluogoDopoRifiuto [ label = "SopralluogoRifiutato"];
+        VerificaSopralluogoDopoRifiuto -> PianificazioneSopralluogo      [ label = "SopralluogoAssegnato"];
+        EsecuzioneSopralluogo          -> EsecuzioneSopralluogo          [ label = "AppuntamentoModificato"];
+        EsecuzioneSopralluogo          -> PianificazioneSopralluogo      [ label = "AppuntamentoAnnullato"];
+        EsecuzioneSopralluogo          -> ApprovazioneSopralluogo        [ label = "SopralluogoCompletatoNuovo"];
+        ApprovazioneSopralluogo        -> AvvioSopralluogo               [ label = "Approvato"];
+        EsecuzioneSopralluogo          -> PianificazioneSopralluogo      [ label = "ChiusuraAttivita"];
+       
+        AvvioSopralluogoPCE               -> AssegnazioneSopralluogoPCE        [ label = "SopralluogoPCEAvviato"];
+        AssegnazioneSopralluogoPCE        -> PianificazioneSopralluogoPCE      [ label = "SopralluogoPCEAssegnato"];
+        PianificazioneSopralluogoPCE      -> EsecuzioneSopralluogoPCE          [ label = "SopralluogoPCEPianificato"];
+        PianificazioneSopralluogoPCE      -> VerificaSopralluogoPCEDopoRifiuto [ label = "SopralluogoPCERifiutato"];
+        VerificaSopralluogoPCEDopoRifiuto -> PianificazioneSopralluogoPCE      [ label = "SopralluogoPCEAssegnato"];
+        EsecuzioneSopralluogoPCE          -> EsecuzioneSopralluogoPCE          [ label = "AppuntamentoModificato"];
+        EsecuzioneSopralluogoPCE          -> PianificazioneSopralluogoPCE      [ label = "AppuntamentoAnnullato"];
+        EsecuzioneSopralluogoPCE          -> ApprovazioneSopralluogoPCE        [ label = "SopralluogoPCECompletatoNuovo"];
+        ApprovazioneSopralluogoPCE        -> AvvioSopralluogoPCE               [ label = "Approvato"];
+        EsecuzioneSopralluogoPCE          -> PianificazioneSopralluogoPCE      [ label = "ChiusuraAttivita"];       
+    
+
+        AvvioAccertSelfCare                  -> AvvioPerizia	    [ label = "SelfCareCompletato"];
+        EsecuzioneVisio	                     ->	AvvioPerizia	    [ label = "VisioCompletata"];
+        EsecuzioneDesk	                     ->	AvvioPerizia	    [ label = "DEskCompletata"];
+        EsecuzioneSopralluogo                -> AvvioPerizia        [ label = "SoprallugoCompletato"];
+        ApprovazioneSopralluogo              -> AvvioPerizia        [ label = "NonApprovato"];
+        EsecuzioneSopralluogoPCE             -> AvvioPerizia        [ label = "SoprallugoCompletato"];
+        ApprovazioneSopralluogoPCE           -> AvvioPerizia        [ label = "NonApprovato"];
+      
+   }
+
+
+  
+}

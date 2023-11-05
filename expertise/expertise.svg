@@ -1,0 +1,336 @@
+<svg width="1176" height="1116" viewBox="0 0 882 837" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="graph0" class="graph" transform="translate(1.4522164642152209,656.0590230053299) scale(0.3630541160538052)">
+<title>finite_state_machine</title>
+<polygon fill="white" stroke="transparent" points="-4,4 -4,-1312.67 2425.39,-1312.67 2425.39,4 -4,4"/>
+<text text-anchor="middle" x="1210.7" y="-8.2" font-family="Times,serif" font-size="14.00">Expertise</text>
+<g id="clust2" class="cluster">
+<title>Collaboration</title>
+<polygon fill="none" stroke="black" points="671.19,-930.87 671.19,-1265.87 1573.48,-1265.87 1573.48,-930.87 671.19,-930.87"/>
+<text text-anchor="middle" x="1122.34" y="-1249.27" font-family="Times,serif" font-size="14.00">Collaboration</text>
+</g>
+<!-- AvvioPerizia --><g id="clust3" class="cluster">
+<title>Revision</title>
+<polygon fill="none" stroke="black" points="658.32,-452.87 658.32,-839.87 1586.35,-839.87 1586.35,-452.87 658.32,-452.87"/>
+<text text-anchor="middle" x="1122.34" y="-823.27" font-family="Times,serif" font-size="14.00">Revision</text>
+</g>
+<g id="node1" class="node">
+<title>AvvioPerizia</title>
+<ellipse fill="none" stroke="black" cx="185.1" cy="-620.87" rx="61.98" ry="61.98"/>
+<ellipse fill="none" stroke="black" cx="185.1" cy="-620.87" rx="65.98" ry="65.98"/>
+<text text-anchor="middle" x="185.1" y="-616.67" font-family="Times,serif" font-size="14.00">AvvioPerizia</text>
+</g>
+<!-- EsecuzionePerizia -->
+<g id="node11" class="node">
+<title>EsecuzionePerizia</title>
+<ellipse fill="none" stroke="black" cx="452.1" cy="-620.87" rx="81.64" ry="81.64"/>
+<text text-anchor="middle" x="452.1" y="-616.67" font-family="Times,serif" font-size="14.00">EsecuzionePerizia</text>
+</g>
+<!-- AvvioPerizia&#45;&gt;EsecuzionePerizia -->
+<g id="edge2" class="edge">
+<title>AvvioPerizia-&gt;EsecuzionePerizia</title>
+<path fill="none" stroke="black" d="M251.26,-620.87C283.9,-620.87 323.96,-620.87 359.63,-620.87"/>
+<polygon fill="black" stroke="black" points="360.05,-624.37 370.05,-620.87 360.05,-617.37 360.05,-624.37"/>
+<text text-anchor="middle" x="310.68" y="-625.07" font-family="Times,serif" font-size="14.00">PeriziaAvviata</text>
+</g>
+<!-- Assessment -->
+<g id="node2" class="node">
+<title>Assessment</title>
+<polygon fill="lightgrey" stroke="black" points="82.17,-638.87 -0.06,-638.87 -0.06,-602.87 82.17,-602.87 82.17,-638.87"/>
+<text text-anchor="middle" x="41.06" y="-616.67" font-family="Times,serif" font-size="14.00">Assessment</text>
+</g>
+<!-- Assessment&#45;&gt;AvvioPerizia -->
+<g id="edge1" class="edge">
+<title>Assessment-&gt;AvvioPerizia</title>
+<path fill="none" stroke="black" d="M82.38,-620.87C90.66,-620.87 99.64,-620.87 108.71,-620.87"/>
+<polygon fill="black" stroke="black" points="108.95,-624.37 118.95,-620.87 108.95,-617.37 108.95,-624.37"/>
+</g>
+<!-- RichiestaCollabRicevuta -->
+<g id="node3" class="node">
+<title>RichiestaCollabRicevuta</title>
+<ellipse fill="none" stroke="black" cx="786.24" cy="-1045.87" rx="107.09" ry="107.09"/>
+<text text-anchor="middle" x="786.24" y="-1041.67" font-family="Times,serif" font-size="14.00">RichiestaCollabRicevuta</text>
+</g>
+<!-- CollabInCorso -->
+<g id="node4" class="node">
+<title>CollabInCorso</title>
+<ellipse fill="none" stroke="black" cx="1140.67" cy="-1006.87" rx="67.81" ry="67.81"/>
+<text text-anchor="middle" x="1140.67" y="-1002.67" font-family="Times,serif" font-size="14.00">CollabInCorso</text>
+</g>
+<!-- RichiestaCollabRicevuta&#45;&gt;CollabInCorso -->
+<g id="edge5" class="edge">
+<title>RichiestaCollabRicevuta-&gt;CollabInCorso</title>
+<path fill="none" stroke="black" d="M892.98,-1034.17C947.71,-1028.11 1013.29,-1020.86 1063.07,-1015.35"/>
+<polygon fill="black" stroke="black" points="1063.58,-1018.81 1073.13,-1014.23 1062.81,-1011.86 1063.58,-1018.81"/>
+<text text-anchor="middle" x="981.69" y="-1033.07" font-family="Times,serif" font-size="14.00">RichiestaAccettata</text>
+</g>
+<!-- CollabRifiutata -->
+<g id="node5" class="node">
+<title>CollabRifiutata</title>
+<ellipse fill="none" stroke="black" cx="1140.67" cy="-1162.87" rx="70.65" ry="70.65"/>
+<text text-anchor="middle" x="1140.67" y="-1158.67" font-family="Times,serif" font-size="14.00">CollabRifiutata</text>
+</g>
+<!-- RichiestaCollabRicevuta&#45;&gt;CollabRifiutata -->
+<g id="edge6" class="edge">
+<title>RichiestaCollabRicevuta-&gt;CollabRifiutata</title>
+<path fill="none" stroke="black" d="M888.23,-1079.4C944.13,-1097.95 1012.45,-1120.64 1063.76,-1137.67"/>
+<polygon fill="black" stroke="black" points="1062.87,-1141.06 1073.46,-1140.89 1065.08,-1134.42 1062.87,-1141.06"/>
+<text text-anchor="middle" x="981.69" y="-1132.07" font-family="Times,serif" font-size="14.00">RichiestaRifiutata</text>
+</g>
+<!-- CollabCompletata -->
+<g id="node6" class="node">
+<title>CollabCompletata</title>
+<ellipse fill="none" stroke="black" cx="1484.18" cy="-1039.87" rx="81.11" ry="81.11"/>
+<text text-anchor="middle" x="1484.18" y="-1035.67" font-family="Times,serif" font-size="14.00">CollabCompletata</text>
+</g>
+<!-- CollabInCorso&#45;&gt;CollabCompletata -->
+<g id="edge7" class="edge">
+<title>CollabInCorso-&gt;CollabCompletata</title>
+<path fill="none" stroke="black" d="M1208.33,-1013.31C1260.98,-1018.4 1334.97,-1025.55 1392.92,-1031.15"/>
+<polygon fill="black" stroke="black" points="1392.89,-1034.66 1403.18,-1032.14 1393.56,-1027.69 1392.89,-1034.66"/>
+<text text-anchor="middle" x="1307.06" y="-1032.07" font-family="Times,serif" font-size="14.00">CollabCompletata</text>
+</g>
+<!-- EsecuzionePerizia&#45;&gt;RichiestaCollabRicevuta -->
+<g id="edge4" class="edge">
+<title>EsecuzionePerizia-&gt;RichiestaCollabRicevuta</title>
+<path fill="none" stroke="black" stroke-dasharray="1,5" d="M463.21,-702.17C474.95,-767.3 499.86,-857.75 551.91,-919.87 584.35,-958.58 631.83,-987.25 675.5,-1007.38"/>
+<polygon fill="black" stroke="black" points="674.2,-1010.63 684.76,-1011.54 677.08,-1004.25 674.2,-1010.63"/>
+</g>
+<!-- CollaborazioneDaCompletare -->
+<g id="node12" class="node">
+<title>CollaborazioneDaCompletare</title>
+<ellipse fill="none" stroke="black" cx="1871.33" cy="-1059.87" rx="126.18" ry="126.18"/>
+<text text-anchor="middle" x="1871.33" y="-1055.67" font-family="Times,serif" font-size="14.00">CollaborazioneDaCompletare</text>
+</g><g id="edge8" class="edge">
+<title>CollabCompletata-&gt;CollaborazioneDaCompletare</title>
+<path fill="none" stroke="black" d="M1565.45,-1044.04C1614.43,-1046.58 1678.31,-1049.9 1734.93,-1052.84" stroke-dasharray="1,5"/>
+<polygon fill="black" stroke="black" points="1734.88,-1056.34 1745.05,-1053.37 1735.24,-1049.35 1734.88,-1056.34"/>
+</g>
+<!-- EsecuzionePerizia&#45;&gt;CollaborazioneDaCompletare -->
+<g id="edge3" class="edge">
+<title>EsecuzionePerizia-&gt;CollaborazioneDaCompletare</title>
+<path fill="none" stroke="black" d="M452.87,-702.76C457.31,-842.63 488.17,-1126.33 658.32,-1269.87 702.08,-1306.79 727.99,-1291.87 785.24,-1291.87 785.24,-1291.87 785.24,-1291.87 1485.18,-1291.87 1595.89,-1291.87 1702.15,-1220.66 1774.91,-1157.14"/>
+<polygon fill="black" stroke="black" points="1777.55,-1159.48 1782.73,-1150.23 1772.92,-1154.23 1777.55,-1159.48"/>
+<text text-anchor="middle" x="1140.67" y="-1296.07" font-family="Times,serif" font-size="14.00">CollaborazioneAvviata</text>
+</g>
+<!-- RevisionePerizia -->
+<g id="node14" class="node">
+<title>RevisionePerizia</title>
+<ellipse fill="none" stroke="black" cx="1871.33" cy="-554.87" rx="76.44" ry="76.44"/>
+<text text-anchor="middle" x="1871.33" y="-550.67" font-family="Times,serif" font-size="14.00">RevisionePerizia</text>
+</g>
+<!-- EsecuzionePerizia&#45;&gt;RevisionePerizia -->
+<g id="edge12" class="edge">
+<title>EsecuzionePerizia-&gt;RevisionePerizia</title>
+<path fill="none" stroke="black" d="M507.94,-561.03C546.33,-522.92 600.87,-475.81 658.32,-448.87 710.23,-424.54 727.91,-425.87 785.24,-425.87 785.24,-425.87 785.24,-425.87 1485.18,-425.87 1597.5,-425.87 1719.14,-475.81 1795.04,-513.54"/>
+<polygon fill="black" stroke="black" points="1793.55,-516.71 1804.06,-518.08 1796.7,-510.46 1793.55,-516.71"/>
+<text text-anchor="middle" x="1140.67" y="-430.07" font-family="Times,serif" font-size="14.00">RevisioneAvviata</text>
+</g>
+<!-- ChiusuraDaVerificare -->
+<g id="node16" class="node">
+<title>ChiusuraDaVerificare</title>
+<ellipse fill="none" stroke="black" cx="786.24" cy="-248.87" rx="96.1" ry="96.1"/>
+<text text-anchor="middle" x="786.24" y="-244.67" font-family="Times,serif" font-size="14.00">ChiusuraDaVerificare</text>
+</g>
+<!-- EsecuzionePerizia&#45;&gt;ChiusuraDaVerificare -->
+<g id="edge21" class="edge">
+<title>EsecuzionePerizia-&gt;ChiusuraDaVerificare</title>
+<path fill="none" stroke="black" d="M465.1,-539.92C477.66,-480.82 502.75,-402.25 551.91,-350.07 586.76,-313.1 637.42,-288.91 682.63,-273.5"/>
+<polygon fill="black" stroke="black" points="683.8,-276.8 692.19,-270.34 681.6,-270.15 683.8,-276.8"/>
+<text text-anchor="middle" x="600.12" y="-355.07" font-family="Times,serif" font-size="14.00">VerificaChiusura</text>
+</g><g id="node7" class="node">
+<title>RichiestaRevisioneRicevuta</title>
+<ellipse fill="none" stroke="black" cx="786.24" cy="-620.87" rx="119.84" ry="119.84"/>
+<text text-anchor="middle" x="786.24" y="-616.67" font-family="Times,serif" font-size="14.00">RichiestaRevisioneRicevuta</text>
+</g>
+<!-- VerificaFineCollaborazione -->
+<g id="node13" class="node">
+<title>VerificaFineCollaborazione</title>
+<ellipse fill="none" stroke="black" cx="2302.57" cy="-1019.87" rx="118.66" ry="118.66"/>
+<text text-anchor="middle" x="2302.57" y="-1015.67" font-family="Times,serif" font-size="14.00">VerificaFineCollaborazione</text>
+</g><g id="edge16" class="edge">
+<title>EsecuzionePerizia-&gt;RichiestaRevisioneRicevuta</title>
+<path fill="none" stroke="black" d="M533.92,-620.87C570.64,-620.87 614.99,-620.87 656.15,-620.87" stroke-dasharray="1,5"/>
+<polygon fill="black" stroke="black" points="656.26,-624.37 666.26,-620.87 656.26,-617.37 656.26,-624.37"/>
+</g>
+<!-- CollaborazioneDaCompletare&#45;&gt;VerificaFineCollaborazione -->
+<g id="edge9" class="edge">
+<title>CollaborazioneDaCompletare-&gt;VerificaFineCollaborazione</title>
+<path fill="none" stroke="black" d="M1993.1,-1024.81C2000.7,-1023.34 2008.27,-1022.07 2015.67,-1021.07 2067.1,-1014.12 2124.2,-1012.65 2173.77,-1013.34"/>
+<polygon fill="black" stroke="black" points="2173.84,-1016.84 2183.9,-1013.51 2173.96,-1009.84 2173.84,-1016.84"/>
+<text text-anchor="middle" x="2090.71" y="-1025.07" font-family="Times,serif" font-size="14.00">CollaborazioneCompletata</text>
+</g>
+<!-- VerificaFineCollaborazione&#45;&gt;EsecuzionePerizia -->
+<g id="edge11" class="edge">
+<title>VerificaFineCollaborazione-&gt;EsecuzionePerizia</title>
+<path fill="none" stroke="black" d="M2192.51,-974.16C2106.99,-942.44 1984.13,-905.87 1872.33,-905.87 785.24,-905.87 785.24,-905.87 785.24,-905.87 673.44,-905.87 630.4,-891.49 551.91,-811.87 522.92,-782.46 500.53,-742.81 484.46,-707.25"/>
+<polygon fill="black" stroke="black" points="487.54,-705.56 480.3,-697.83 481.13,-708.39 487.54,-705.56"/>
+<text text-anchor="middle" x="1307.06" y="-910.07" font-family="Times,serif" font-size="14.00">TuttiCollabCompletato</text>
+</g>
+<!-- VerificaFineCollaborazione&#45;&gt;CollaborazioneDaCompletare -->
+<g id="edge10" class="edge">
+<title>VerificaFineCollaborazione-&gt;CollaborazioneDaCompletare</title>
+<path fill="none" stroke="black" d="M2184.55,-1035.81C2178.19,-1036.54 2171.89,-1037.23 2165.74,-1037.87 2114.28,-1043.21 2057.62,-1047.76 2007.93,-1051.32"/>
+<polygon fill="black" stroke="black" points="2007.48,-1047.84 1997.76,-1052.04 2007.98,-1054.83 2007.48,-1047.84"/>
+<text text-anchor="middle" x="2090.71" y="-1054.07" font-family="Times,serif" font-size="14.00">MancaCollabCompletato</text>
+</g>
+<!-- VerificaFineRevisione --><g id="edge20" class="edge">
+<title>RevisioneCompletata-&gt;RevisionePerizia</title>
+<path fill="none" stroke="black" d="M1578.41,-554.87C1641.26,-554.87 1723.54,-554.87 1784.73,-554.87" stroke-dasharray="1,5"/>
+<polygon fill="black" stroke="black" points="1784.74,-558.37 1794.74,-554.87 1784.74,-551.37 1784.74,-558.37"/>
+</g>
+<g id="node15" class="node">
+<title>VerificaFineRevisione</title>
+<ellipse fill="none" stroke="black" cx="2302.57" cy="-594.87" rx="98.42" ry="98.42"/>
+<text text-anchor="middle" x="2302.57" y="-590.67" font-family="Times,serif" font-size="14.00">VerificaFineRevisione</text>
+</g>
+<!-- RevisionePerizia&#45;&gt;VerificaFineRevisione -->
+<g id="edge13" class="edge">
+<title>RevisionePerizia-&gt;VerificaFineRevisione</title>
+<path fill="none" stroke="black" d="M1947.39,-564.99C1969.37,-567.76 1993.47,-570.62 2015.67,-572.87 2074.53,-578.83 2140.36,-584 2193.99,-587.82"/>
+<polygon fill="black" stroke="black" points="2193.98,-591.33 2204.2,-588.55 2194.48,-584.35 2193.98,-591.33"/>
+<text text-anchor="middle" x="2090.71" y="-589.07" font-family="Times,serif" font-size="14.00">RevisioneCompletata</text>
+</g>
+<!-- VerificaFineRevisione&#45;&gt;EsecuzionePerizia -->
+<g id="edge15" class="edge">
+<title>VerificaFineRevisione-&gt;EsecuzionePerizia</title>
+<path fill="none" stroke="black" d="M2237.11,-668.56C2159.39,-748.81 2020.61,-865.87 1872.33,-865.87 785.24,-865.87 785.24,-865.87 785.24,-865.87 727.99,-865.87 708.58,-871.28 658.32,-843.87 594.65,-809.15 540.06,-747.18 503.21,-697.36"/>
+<polygon fill="black" stroke="black" points="505.95,-695.17 497.23,-689.16 500.3,-699.3 505.95,-695.17"/>
+<text text-anchor="middle" x="1307.06" y="-870.07" font-family="Times,serif" font-size="14.00">TuttiRevisCompletato</text>
+</g>
+<!-- VerificaFineRevisione&#45;&gt;RevisionePerizia -->
+<g id="edge14" class="edge">
+<title>VerificaFineRevisione-&gt;RevisionePerizia</title>
+<path fill="none" stroke="black" d="M2209.67,-561.78C2195.14,-557.76 2180.15,-554.29 2165.74,-552.07 2096.25,-541.38 2016.41,-543.03 1957.57,-546.82"/>
+<polygon fill="black" stroke="black" points="1957.32,-543.33 1947.58,-547.5 1957.79,-550.32 1957.32,-543.33"/>
+<text text-anchor="middle" x="2090.71" y="-556.07" font-family="Times,serif" font-size="14.00">MancaRevisCompletato</text>
+</g>
+<!-- VerificaAuthority -->
+<g id="node17" class="node">
+<title>VerificaAuthority</title>
+<ellipse fill="none" stroke="black" cx="1140.67" cy="-309.87" rx="80.44" ry="80.44"/>
+<text text-anchor="middle" x="1140.67" y="-305.67" font-family="Times,serif" font-size="14.00">VerificaAuthority</text>
+</g>
+<!-- ChiusuraDaVerificare&#45;&gt;VerificaAuthority -->
+<g id="edge22" class="edge">
+<title>ChiusuraDaVerificare-&gt;VerificaAuthority</title>
+<path fill="none" stroke="black" d="M881.22,-265.14C933.98,-274.27 999.43,-285.6 1051.26,-294.57"/>
+<polygon fill="black" stroke="black" points="1050.98,-298.07 1061.43,-296.33 1052.18,-291.17 1050.98,-298.07"/>
+<text text-anchor="middle" x="981.69" y="-296.07" font-family="Times,serif" font-size="14.00">AuthorityNecessaria</text>
+</g>
+<!-- ComunicazioneEsito -->
+<!-- ComunicazioneEsito -->
+<g id="node18" class="node">
+<title>ComunicazioneEsito</title>
+<ellipse fill="none" stroke="black" cx="1484.18" cy="-252.87" rx="91.49" ry="91.49"/>
+<text text-anchor="middle" x="1484.18" y="-248.67" font-family="Times,serif" font-size="14.00">ComunicazioneEsito</text>
+</g>
+<!-- ChiusuraDaVerificare&#45;&gt;ComunicazioneEsito -->
+
+<!-- ChiusuraDaVerificare&#45;&gt;ComunicazioneEsito -->
+<g id="edge23" class="edge">
+<title>ChiusuraDaVerificare-&gt;ComunicazioneEsito</title>
+<path fill="none" stroke="black" d="M880.79,-229.46C932.54,-219.7 998.15,-208.94 1057.22,-204.07 1131.15,-197.98 1150.27,-197.18 1224.12,-204.07 1277.84,-209.09 1337.01,-219.83 1385.23,-229.96"/>
+<polygon fill="black" stroke="black" points="1384.52,-233.39 1395.03,-232.05 1385.98,-226.54 1384.52,-233.39"/>
+<text text-anchor="middle" x="1140.67" y="-209.07" font-family="Times,serif" font-size="14.00">AuthorityNonNecessaria</text>
+</g><g id="node8" class="node">
+<title>RevisioneInCorso</title>
+<ellipse fill="none" stroke="black" cx="1140.67" cy="-541.87" rx="80.55" ry="80.55"/>
+<text text-anchor="middle" x="1140.67" y="-537.67" font-family="Times,serif" font-size="14.00">RevisioneInCorso</text>
+</g>
+<!-- VerificaAuthority&#45;&gt;EsecuzionePerizia -->
+
+<!-- VerificaAuthority&#45;&gt;EsecuzionePerizia -->
+<g id="edge25" class="edge">
+<title>VerificaAuthority-&gt;EsecuzionePerizia</title>
+<path fill="none" stroke="black" d="M1061.65,-325.06C1016.31,-333.76 958.06,-344.73 906.16,-353.87 827.59,-367.7 615.62,-363.87 551.91,-411.87 513.32,-440.95 489.17,-488.9 474.42,-531.55"/>
+<polygon fill="black" stroke="black" points="471.07,-530.53 471.23,-541.12 477.71,-532.74 471.07,-530.53"/>
+<text text-anchor="middle" x="786.24" y="-383.07" font-family="Times,serif" font-size="14.00">PeriziaNonApprovata</text>
+</g><g id="edge17" class="edge">
+<title>RichiestaRevisioneRicevuta-&gt;RevisioneInCorso</title>
+<path fill="none" stroke="black" d="M903.62,-594.78C951.89,-583.96 1006.97,-571.62 1051.78,-561.57"/>
+<polygon fill="black" stroke="black" points="1052.77,-564.94 1061.76,-559.34 1051.24,-558.11 1052.77,-564.94"/>
+<text text-anchor="middle" x="981.69" y="-592.07" font-family="Times,serif" font-size="14.00">RichiestaAccettata</text>
+</g>
+<!-- VerificaAuthority&#45;&gt;ComunicazioneEsito -->
+
+<!-- VerificaAuthority&#45;&gt;ComunicazioneEsito -->
+<g id="edge24" class="edge">
+<title>VerificaAuthority-&gt;ComunicazioneEsito</title>
+<path fill="none" stroke="black" d="M1220.02,-296.79C1268.68,-288.67 1331.65,-278.16 1383.8,-269.46"/>
+<polygon fill="black" stroke="black" points="1384.45,-272.9 1393.74,-267.8 1383.3,-265.99 1384.45,-272.9"/>
+<text text-anchor="middle" x="1307.06" y="-298.07" font-family="Times,serif" font-size="14.00">PeriziaApprovata</text>
+</g><g id="node9" class="node">
+<title>RevisioneRifiutata</title>
+<ellipse fill="none" stroke="black" cx="1140.67" cy="-723.87" rx="83.4" ry="83.4"/>
+<text text-anchor="middle" x="1140.67" y="-719.67" font-family="Times,serif" font-size="14.00">RevisioneRifiutata</text>
+</g>
+<!-- GestioneContestazione -->
+
+<!-- GestioneContestazione -->
+<g id="node19" class="node">
+<title>GestioneContestazione</title>
+<ellipse fill="none" stroke="black" cx="1871.33" cy="-124.87" rx="100.14" ry="100.14"/>
+<text text-anchor="middle" x="1871.33" y="-120.67" font-family="Times,serif" font-size="14.00">GestioneContestazione</text>
+</g><g id="edge18" class="edge">
+<title>RichiestaRevisioneRicevuta-&gt;RevisioneRifiutata</title>
+<path fill="none" stroke="black" d="M901.66,-654.31C949.98,-668.43 1005.38,-684.62 1050.57,-697.83"/>
+<polygon fill="black" stroke="black" points="1049.77,-701.24 1060.35,-700.69 1051.73,-694.52 1049.77,-701.24"/>
+<text text-anchor="middle" x="981.69" y="-697.07" font-family="Times,serif" font-size="14.00">RichiestaRifiutata</text>
+</g>
+<!-- ComunicazioneEsito&#45;&gt;GestioneContestazione -->
+
+<!-- ComunicazioneEsito&#45;&gt;GestioneContestazione -->
+<g id="edge26" class="edge">
+<title>ComunicazioneEsito-&gt;GestioneContestazione</title>
+<path fill="none" stroke="black" d="M1571.13,-224.3C1628.9,-205.11 1705.36,-179.7 1766.53,-159.37"/>
+<polygon fill="black" stroke="black" points="1767.82,-162.63 1776.21,-156.15 1765.61,-155.98 1767.82,-162.63"/>
+<text text-anchor="middle" x="1661.67" y="-220.07" font-family="Times,serif" font-size="14.00">AccordoNonRaggiunto</text>
+</g><g id="node10" class="node">
+<title>RevisioneCompletata</title>
+<ellipse fill="none" stroke="black" cx="1484.18" cy="-554.87" rx="94.35" ry="94.35"/>
+<text text-anchor="middle" x="1484.18" y="-550.67" font-family="Times,serif" font-size="14.00">RevisioneCompletata</text>
+</g>
+<!-- AvvioChiusura -->
+
+<!-- AvvioChiusura -->
+<g id="node20" class="node">
+<title>AvvioChiusura</title>
+<polygon fill="lightgrey" stroke="black" points="2353.12,-236.87 2252.01,-236.87 2252.01,-200.87 2353.12,-200.87 2353.12,-236.87"/>
+<text text-anchor="middle" x="2302.57" y="-214.67" font-family="Times,serif" font-size="14.00">AvvioChiusura</text>
+</g><g id="edge19" class="edge">
+<title>RevisioneInCorso-&gt;RevisioneCompletata</title>
+<path fill="none" stroke="black" d="M1221.74,-544.92C1268.96,-546.72 1329.22,-549.01 1379.98,-550.94"/>
+<polygon fill="black" stroke="black" points="1379.88,-554.44 1390,-551.32 1380.14,-547.45 1379.88,-554.44"/>
+<text text-anchor="middle" x="1307.06" y="-554.07" font-family="Times,serif" font-size="14.00">RevisioneCompletata</text>
+</g>
+<!-- ComunicazioneEsito&#45;&gt;AvvioChiusura -->
+
+<!-- ComunicazioneEsito&#45;&gt;AvvioChiusura -->
+<g id="edge28" class="edge">
+<title>ComunicazioneEsito-&gt;AvvioChiusura</title>
+<path fill="none" stroke="black" d="M1575.92,-249.84C1678.36,-246.35 1850.01,-240.25 1997.67,-233.87 2082.36,-230.21 2180.28,-225.25 2241.57,-222.05"/>
+<polygon fill="black" stroke="black" points="2242.03,-225.53 2251.83,-221.51 2241.66,-218.54 2242.03,-225.53"/>
+<text text-anchor="middle" x="1871.33" y="-248.07" font-family="Times,serif" font-size="14.00">AccordoRaggiunto-o-NonRichiesto</text>
+</g>
+<!-- GestioneContestazione&#45;&gt;AvvioPerizia -->
+
+<!-- GestioneContestazione&#45;&gt;EsecuzionePerizia -->
+<g id="edge27" class="edge">
+<title>GestioneContestazione-&gt;EsecuzionePerizia</title>
+<path fill="none" stroke="black" d="M1770.98,-124.87C1693.2,-124.87 1582.3,-124.87 1485.18,-124.87 785.24,-124.87 785.24,-124.87 785.24,-124.87 728.2,-124.87 707.29,-114.64 658.32,-143.87 590.6,-184.29 587.27,-215.38 551.91,-285.87 512.59,-364.26 486.16,-461.01 470.6,-530.35"/>
+<polygon fill="black" stroke="black" points="467.12,-529.85 468.38,-540.37 473.96,-531.36 467.12,-529.85"/>
+<text text-anchor="middle" x="1140.67" y="-129.07" font-family="Times,serif" font-size="14.00">NonConfermaAccordo</text>
+</g>
+<!-- GestioneContestazione&#45;&gt;AvvioChiusura -->
+<!-- GestioneContestazione&#45;&gt;AvvioChiusura -->
+
+
+<g id="edge29" class="edge">
+<title>GestioneContestazione-&gt;AvvioChiusura</title>
+<path fill="none" stroke="black" d="M1969.2,-146.08C2052.86,-164.41 2171.1,-190.3 2241.68,-205.76"/>
+<polygon fill="black" stroke="black" points="2241.22,-209.24 2251.74,-207.96 2242.72,-202.4 2241.22,-209.24"/>
+<text text-anchor="middle" x="2090.71" y="-193.07" font-family="Times,serif" font-size="14.00">ConfermaAccordo</text>
+</g>
+
+</g>
+</svg>
