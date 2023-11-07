@@ -1,0 +1,15 @@
+digraph finite_state_machine {
+    rankdir=TB;
+    size="8,5"
+    label="TriggerTask"
+    node [shape = doublecircle]; 
+    node [shape = circle];
+
+
+    CreazioneAutomaticaIncarico  -> CreazioneAutomaticaIncarico  [label = "TimerScaduto"];
+    CompletamentoManualeIncarico -> CompletamentoManualeIncarico [label = "TimerScaduto"];
+    CreazioneManualeIncarico     -> CreazioneManualeIncarico     [label = "TimerScaduto"];
+    VenditaRiparazionePA1        -> SceltaAutomaticaServizio     [label = "TimerScaduto"] ;
+    InvioLinkSelfCare            -> SceltaAutomaticaServizio     [label = "TimerScaduto"];
+  
+}

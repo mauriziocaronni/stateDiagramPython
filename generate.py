@@ -69,7 +69,7 @@ def write_excel (graph, processDir, processName):
     wb.save(processDir + processName+'.xlsx')
 
 def main ():
-    processName = "opening"
+    processName = "assessment"
     processDir  = './' + processName + '/'
 
     print("Generating " + processName + " diagram...")
