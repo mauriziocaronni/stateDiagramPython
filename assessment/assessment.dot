@@ -1,5 +1,5 @@
 digraph finite_state_machine {
-    rankdir=LR;
+    rankdir=TB;
     size="8,5"
     label="Assessment"
     node [shape = doublecircle]; AvvioVisio AvvioAccertSelfCare AvvioDesk AvvioManualeDesk AvvioManualeVisio AvvioSopralluogo AvvioSopralluogoPCE;
@@ -44,15 +44,15 @@ digraph finite_state_machine {
         AvvioManualeVisio	      ->	EsecuzioneVisio	    [ label = "VisioPianificata"];
         RiassegnazioneVisio	      ->	AvvioManualeVisio	[ label = "VisioAssegnata"];
  
-        AvvioDesk	              ->	EsecuzioneDesk	    [ label = "DeskPianificata"];
-        EsecuzioneDesk	          ->	RiassegnazioneDesk	[ label = "DeskRifiutata"];
-        EsecuzioneDesk	          ->	EsecuzioneDesk	    [ label = "AppuntamentoModificato"];
-        EsecuzioneDesk	          ->	EsecuzioneDesk  	[ label = "AppuntamentoAnnullato"];
-        EsecuzioneDesk	          ->	AvvioManualeDesk	[ label = "DeskCompletataNuovaDesk"];
-        EsecuzioneDesk	          ->	AvvioPerizia	    [ label = "DeskCompletata"];
-        EsecuzioneDesk	          ->	EsecuzioneDesk  	[ label = "DatiObbligatoriMancanti"];
-        AvvioManualeDesk	      ->	EsecuzioneDesk	    [ label = "DeskPianificata"];
-        RiassegnazioneDesk	      ->	AvvioManualeDesk	[ label = "DeskAssegnata"];
+        AvvioDesk	              ->	EsecuzioneDesk	            [ label = "DeskPianificata"];
+        EsecuzioneDesk	          ->	RiassegnazioneDesk	        [ label = "DeskRifiutata"];
+        EsecuzioneDesk	          ->	EsecuzioneDesk	            [ label = "AppuntamentoModificato"];
+        EsecuzioneDesk	          ->	EsecuzioneDesk  	        [ label = "AppuntamentoAnnullato"];
+        EsecuzioneDesk	          ->	AvvioManualeDesk	        [ label = "DeskCompletataNuovaDesk"];
+        EsecuzioneDesk	          ->	AvvioPeriziaPostDesk	    [ label = "DeskCompletata"];
+        EsecuzioneDesk	          ->	EsecuzioneDesk  	        [ label = "DatiObbligatoriMancanti"];
+        AvvioManualeDesk	      ->	EsecuzioneDesk	            [ label = "DeskPianificata"];
+        RiassegnazioneDesk	      ->	AvvioManualeDesk	        [ label = "DeskAssegnata"];
  
         AvvioSopralluogo               -> AssegnazioneSopralluogo        [ label = "SopralluogoAvviato"];
         AssegnazioneSopralluogo        -> PianificazioneSopralluogo      [ label = "SopralluogoAssegnato"];
@@ -77,10 +77,10 @@ digraph finite_state_machine {
         EsecuzioneSopralluogoPCE          -> ApprovazioneSopralluogoPCE        [ label = "SopralluogoPCECompletatoNuovo"];
         ApprovazioneSopralluogoPCE        -> AvvioSopralluogoPCE               [ label = "Approvato"];
         EsecuzioneSopralluogoPCE          -> PianificazioneSopralluogoPCE      [ label = "ChiusuraAttivita"];       
-         EsecuzioneSopralluogoPCE	       -> EsecuzioneSopralluogoPCE  	     [ label = "DatiObbligatoriMancanti"];   
+        EsecuzioneSopralluogoPCE	       -> EsecuzioneSopralluogoPCE  	     [ label = "DatiObbligatoriMancanti"];   
 
-        AvvioAccertSelfCare                -> AvvioPerizia	      [ label = "PeriziaDaEseguire"];
-        AvvioAccertSelfCare                -> Chiusura             [ label = "SelfCareCompletato"];
+        AvvioAccertSelfCare                -> AvvioPerizia	      [ label = "SelfCareInPerizia"];
+        AvvioAccertSelfCare                -> Chiusura            [ label = "SelfCareInChiusura"];
         EsecuzioneSopralluogo              -> AvvioPerizia        [ label = "SoprallugoCompletato"];
         ApprovazioneSopralluogo            -> AvvioPerizia        [ label = "NonApprovato"];
         EsecuzioneSopralluogoPCE           -> AvvioPerizia        [ label = "SoprallugoCompletato"];

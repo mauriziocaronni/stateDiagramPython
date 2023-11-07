@@ -40,14 +40,14 @@ def simulate_state_transition(dot_file, start_state):
 
 
 def main ():
-    processName = "assessment"
-    processDir  = './' + processName + '/'
+    processName = "Global"
+    processDir  = './opening/'
 
     print("Testing " + processDir + processName + ".dot"  + "\n")
 
-    for i in range(10):
+    for i in range(1):
         print("\nSimulation " + str(i) + "\n")
-        simulate_state_transition(processDir + processName + ".dot", "Apertura")
+        simulate_state_transition(processDir + processName + ".dot", "InizializzazioneIncarico")
 
     print("Done!")
 

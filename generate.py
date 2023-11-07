@@ -4,6 +4,8 @@ import pandas as pd
 import os
 import openpyxl
 from openpyxl.styles import Border, Side
+from datetime import datetime
+
 
 def create_directory(dir_name):
     # Crea la directory se non esiste già
@@ -69,18 +71,52 @@ def write_excel (graph, processDir, processName):
     wb.save(processDir + processName+'.xlsx')
 
 def main ():
-    processName = "assessment"
-    processDir  = './' + processName + '/'
 
+    print("start", datetime.now())
+
+    processName = "opening"
+    processDir  = './' + processName + '/'
     print("Generating " + processName + " diagram...")
     graph = create_graph(processDir, processName)
-
     create_drawio(graph, processDir, processName)
 
+    processName = "assessment"
+    processDir  = './' + processName + '/'
+    print("Generating " + processName + " diagram...")
+    graph = create_graph(processDir, processName)
+    create_drawio(graph, processDir, processName)
     write_excel(graph, processDir, processName)
 
-    print("Done!")
+    processName = "expertise"
+    processDir  = './' + processName + '/'
+    print("Generating " + processName + " diagram...")
+    graph = create_graph(processDir, processName)
+    create_drawio(graph, processDir, processName)
+    write_excel(graph, processDir, processName)
 
+    processName = "closing"
+    processDir  = './' + processName + '/'
+    print("Generating " + processName + " diagram...")
+    graph = create_graph(processDir, processName)
+    create_drawio(graph, processDir, processName)
+    write_excel(graph, processDir, processName)
+
+#    processName = "repair"
+#    processDir  = './' + processName + '/'
+#    print("Generating " + processName + " diagram...")
+#    graph = create_graph(processDir, processName)
+#    create_drawio(graph, processDir, processName)
+#    write_excel(graph, processDir, processName)
+
+    processName = "Global"
+    processDir  = './opening/' 
+    print("Generating " + processName + " diagram...")
+    graph = create_graph(processDir, processName)
+    write_excel(graph, processDir, processName)   
+
+
+    print("done!", datetime.now())
+    
 
 if __name__ == "__main__":
     main()
