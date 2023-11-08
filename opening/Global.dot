@@ -120,7 +120,9 @@ digraph finite_state_machine {
         RevisioneRifiutata         -> PeriziaInRevisione  [ style = "dotted" ] ;
         RevisioneCompletata        -> PeriziaInRevisione  [ style = "dotted" ] ;
 
-        PeriziaInRevisione         -> EsecuzionePerizia   [label = "RevisioneCompletata"]
+        PeriziaInRevisione         -> EsecuzionePerizia   [label = "RevisioniCompletate"]
+        PeriziaInRevisione         -> PeriziaInRevisione   [label = "RevisioniNonCompletate"]
+        
 
         EsecuzionePerizia          -> EsecuzionePerizia           [ label = "CollaborazioneNonCompletata"]  ;
         EsecuzionePerizia          -> VerificaAuthority           [ label = "AuthorityNecessaria"]  ;
@@ -153,6 +155,10 @@ digraph finite_state_machine {
         EsecuzionePeriziaPostDesk          -> EsecuzionePeriziaPostDesk     [ label = "CollaborazioneNonCompletata"]  ;
         EsecuzionePeriziaPostDesk          -> VerificaAuthorityPostDesk     [ label = "AuthorityNecessaria"]  ;
         EsecuzionePeriziaPostDesk          -> ComunicazioneEsitoPostDesk    [ label = "AuthorityNonNecessaria"]  ;
+
+        PeriziaInRevisionePostDesk         -> EsecuzionePeriziaPostDesk    [label = "RevisioniCompletate"]
+        PeriziaInRevisionePostDesk         -> PeriziaInRevisionePostDesk   [label = "RevisioniNonCompletate"]
+
         VerificaAuthorityPostDesk          -> ComunicazioneEsitoPostDesk    [ label = "PeriziaApprovata"];
         VerificaAuthorityPostDesk          -> EsecuzionePeriziaPostDesk     [ label = "PeriziaNonApprovata"] ;
         ComunicazioneEsitoPostDesk         -> GestioneContestazionePostDesk [ label = "AccordoNonRaggiunto"] ;
