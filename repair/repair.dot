@@ -1,0 +1,41 @@
+digraph finite_state_machine {
+    rankdir=TB;
+    size="8,5"
+    label="Repair"
+    node [shape = doublecircle]; AvvioRiparazione;
+    node [shape = circle];
+
+    subgraph Opening {
+        node [style =  filled shape = box]
+	    label = "Opening";
+		color=green
+        VenditaRiparazione    
+    }
+
+
+        Opening                    -> AvvioRiparazione            [ label = "RiparazioneVenduta" ]  ;
+        AvvioRiparazione           -> ConfigurazioneRiparazione   [ label = "RiparazioneAvviata" ]  ;
+        ConfigurazioneRiparazione  -> DefinizioneTimeline         [ label = "RiparazioneConfigurata" ]  ;
+        DefinizioneTimeline        -> DefinizioneTimeline         [ label = "RiparazioneConfigurata" ]  ;
+        DefinizioneTimeline        -> PianificazioneAppuntamento  [ style = "dotted" ] ;
+        DefinizioneTimeline        -> MonitoraggioAttivita        [ style = "dotted" ];
+
+        comment = "sottoprocesso EsecuzioneAttivita"
+    
+        PianificazioneAppuntamento -> EsecuzioneSopralluogo       [ label = "AppuntamentoPianificato" ];
+        EsecuzioneSopralluogo      -> ApprovazioneBudget          [ style = "dotted" ];
+        EsecuzioneSopralluogo      -> PianificazioneAppuntamento  [ label = "NuovoSopralluogo" ];
+
+        ApprovazioneBudget         -> EsecuzioneAttivita        [ style = "dotted" ]  ;
+        EsecuzioneAttivita         -> ApprovazioneAttivita      [ style = "dotted" ]  ;
+        EsecuzioneAttivita         -> MonitoraggioAttivita      [ style = "dotted" ]  ;
+
+        MonitoraggioAttivita       ->  MonitoraggioAttivita       [ label = "AttivitaNonCompletate" ];
+        MonitoraggioAttivita       ->  VerificaChisuraRiparazione [ label = "AttivitaCompletate" ];
+
+        VerificaChisuraRiparazione  -> ConfigurazioneRiparazione [ label = "RiparazioneNonChiusa" ] ;
+        VerificaChisuraRiparazione  -> SceltaManualeServizio     [ label = "ServizioPostRiparazione" ];
+        VerificaChisuraRiparazione  -> AvvioChiusura             [ label = "ChiusuraPostRiparazione" ];
+        
+    
+}
