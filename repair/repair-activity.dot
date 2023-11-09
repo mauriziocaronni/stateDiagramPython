@@ -1,0 +1,69 @@
+digraph Repair_activity {
+rankdir=TD
+size="4,4"
+edge[fontsize="11" arrowhead=open]
+start[shape=circle, label="AvvioRiparazione", style=filled]
+end[shape=doublecircle, label="FineRiparazione", style=filled]
+
+subgraph cluster_gestore {
+    node [shape=box,style=rounded ];
+    label = "GESTORE";
+    ConfigurazioneRiparazione
+    DefinizioneTimeline 
+    AssegnazioneMonitoraggio
+    EsecuzioneRiparazione
+    VerificaChiusuraRiparazione
+comment = "    node [shape=underline ]     AttesaChiusura"
+}
+
+subgraph cluster_perito {
+        node [shape=box,style=rounded ];
+        label = "PERITO";
+        MonitoraggioAttivita
+        ApprovazioneBudget
+        ApprovazioneAttivita
+}
+
+
+subgraph cluster_cat {
+    node [shape=box,style=rounded ] ;
+    label = "CAT";
+    PianificazioneAppuntamento
+    EsecuzioneSopralluogo
+    BudgetInApprovazione
+    EsecuzioneAttivita 
+    AttivitaInApprovazione
+    AttivitaCompletata
+}
+
+
+comment = "gestore"
+        start                      -> ConfigurazioneRiparazione   
+        ConfigurazioneRiparazione  -> DefinizioneTimeline         
+        DefinizioneTimeline        -> AssegnazioneMonitoraggio    
+        AssegnazioneMonitoraggio   -> EsecuzioneRiparazione 
+        DefinizioneTimeline        -> PianificazioneAppuntamento  [ style = "dotted"]
+        AssegnazioneMonitoraggio   -> MonitoraggioAttivita        [ style = "dotted"]    
+        EsecuzioneRiparazione      -> VerificaChiusuraRiparazione  [ style = "dotted"]    
+        VerificaChiusuraRiparazione  -> end
+
+comment = "CAT"   
+        PianificazioneAppuntamento -> EsecuzioneSopralluogo 
+        EsecuzioneSopralluogo      -> ApprovazioneBudget       [ style = "dotted"] 
+        EsecuzioneSopralluogo      -> BudgetInApprovazione
+        BudgetInApprovazione       -> EsecuzioneAttivita    
+        EsecuzioneAttivita         -> ApprovazioneAttivita     [ style = "dotted"]   
+        EsecuzioneAttivita         -> AttivitaInApprovazione
+        AttivitaInApprovazione     -> AttivitaCompletata
+
+comment = "PERITO"   
+comment = "        MonitoraggioAttivita      ->  ApprovazioneBudget"
+        ApprovazioneBudget        ->  BudgetInApprovazione      [ style = "dotted"]       
+comment = "        ApprovazioneBudget        ->  ApprovazioneAttivita   "    
+        ApprovazioneAttivita      ->  AttivitaInApprovazione      [ style = "dotted"]     
+        MonitoraggioAttivita      ->  VerificaChiusuraRiparazione              [ style = "dotted"]     
+
+         
+
+
+}

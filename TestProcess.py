@@ -27,7 +27,7 @@ def simulate_state_transition(dot_file, start_state):
         transition_label = graph.get_edge(*next_edge).attr['label']
 
         # Stampa la transizione e la label
-        print(f"Current state: {current_state} \t-> Event: {transition_label} \t-> next state: {next_state} ")
+        print(f"Current status: {current_state} \t-> Event: {transition_label} \t-> next: {next_state} ")
 
 
         # Aggiorna lo stato corrente
@@ -47,7 +47,7 @@ def main ():
 
     for i in range(1):
         print("\nSimulation " + str(i) + "\n")
-        simulate_state_transition(processDir + processName + ".dot", "InizializzazioneIncarico")
+        simulate_state_transition(processDir + processName + ".dot", "CreazioneManualeIncarico")
 
     print("Done!")
 

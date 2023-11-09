@@ -2,27 +2,28 @@ digraph finite_state_machine {
     rankdir=TB;
     size="8,5"
     label="Closing"
-    node [shape = doublecircle]; AvvioChiusura;
+    node [shape = doublecircle]; AvvioChiusura Riapertura;
     node [shape = circle];
 
-    subgraph Expertise {
-        node [style =  filled shape = box]
-	    label = "Assessment";
-		color=green
-        Expertise    
-    }
+
 
 
         Expertise                  -> AvvioChiusura
-        AvvioChiusura              -> InvioAtto              [ label = "ChiusuraAvviata"]
-        InvioAtto                  -> AttesaRicezioneAtto    [ label = "AttoInviato"]
-        AttesaRicezioneAtto        -> VerificaChiusura       [ label = "AccordoRaggiunto"]
-        AttesaRicezioneAtto        -> GestioneContestazione  [ label = "AccordoNonRaggiunto"]
-        VerificaChiusura           -> ChiusuraIncarico       [ label = "ChiusuraVerificata"]
+        AvvioChiusura              -> VerificaChiusura       [ label = "ChiusuraAvviata"]
+        VerificaChiusura           -> ChiusuraManuale       [ label = "ChiusuraVerificata"]
+        VerificaChiusura           -> ChiusuraAutomatica    [ label = "ChiusuraVerificata"]
         VerificaChiusura           -> VerificaChiusura       [ label = "DatiObbligatoriMancanti"]
-        GestioneContestazione      -> GestioneRevisione      [ label = "ContestazioneGestita"]
-        GestioneRevisione          -> SceltaServizioManuale  [ label = "NuoviAccertamenti"]
-        GestioneRevisione          -> VerificaChiusura       [ label = "InvioInChiusura"]
-         
+        VerificaChiusura           -> EseguiPeriziaIncompleta       [ label = "PeriziaIncompletaAvviata"]
+        
+        RiaperturaAutomatica       -> SelezioneTipoRiapertura [ label = "RiaperturaAutomatica" ]
+        CreazioneManualeIncarico   -> SelezioneTipoRiapertura [ label = "RiaperturaManaule" ]
+        SelezioneTipoRiapertura    ->  EseguiPerizia          [ label = "IntegrazionePerizia"]
+        SelezioneTipoRiapertura    ->  SceltaManualeServizioEseguiPerizia [ label = "NonRiapertura"]
+        SelezioneTipoRiapertura    ->  GestioneContestazione [ label = "GestioneContestazione"]
+
+        GestioneContestazione       -> EseguiPerizia          [ label = "PeriziaContestazioneAvviata"]
+        GestioneContestazione       -> FinalizzaContestazione [ label = "ContestazioneFinalizzata"]
+        FinalizzaContestazione      -> AvvioChiusura          [ label = "ChiusuraAvviata"]
+
 
 }

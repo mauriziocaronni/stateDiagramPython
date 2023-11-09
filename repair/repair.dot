@@ -26,16 +26,16 @@ digraph finite_state_machine {
         EsecuzioneSopralluogo      -> ApprovazioneBudget          [ style = "dotted" ];
         EsecuzioneSopralluogo      -> PianificazioneAppuntamento  [ label = "NuovoSopralluogo" ];
 
-        ApprovazioneBudget         -> EsecuzioneAttivita        [ style = "dotted" ]  ;
-        EsecuzioneAttivita         -> ApprovazioneAttivita      [ style = "dotted" ]  ;
-        EsecuzioneAttivita         -> MonitoraggioAttivita      [ style = "dotted" ]  ;
+        ApprovazioneBudget         -> EsecuzioneAttivita          [ style = "dotted" ]  ;
+        EsecuzioneAttivita         -> ApprovazioneAttivita        [ style = "dotted" ]  ;
+        EsecuzioneAttivita         -> MonitoraggioAttivita        [ style = "dotted" ]  ;
 
-        MonitoraggioAttivita       ->  MonitoraggioAttivita       [ label = "AttivitaNonCompletate" ];
-        MonitoraggioAttivita       ->  VerificaChisuraRiparazione [ label = "AttivitaCompletate" ];
+        MonitoraggioAttivita       ->  MonitoraggioAttivita        [ label = "AttivitaNonCompletate" ];
+        MonitoraggioAttivita       ->  VerificaChiusuraRiparazione [ label = "AttivitaCompletate" ];
 
-        VerificaChisuraRiparazione  -> ConfigurazioneRiparazione [ label = "RiparazioneNonChiusa" ] ;
-        VerificaChisuraRiparazione  -> SceltaManualeServizio     [ label = "ServizioPostRiparazione" ];
-        VerificaChisuraRiparazione  -> AvvioChiusura             [ label = "ChiusuraPostRiparazione" ];
+        VerificaChiusuraRiparazione  -> ConfigurazioneRiparazione  [ label = "RiparazioneNonChiusa" ] ;
+        VerificaChiusuraRiparazione  -> SceltaManualeServizio      [ label = "ServizioPostRiparazione" ];
+        VerificaChiusuraRiparazione  -> AvvioChiusura              [ label = "ChiusuraPostRiparazione" ];
         
     
 }

@@ -1,42 +1,65 @@
-digraph finite_state_machine {
-    rankdir=TB;
-    size="8,5"
-    label="Expertise"
-    node [shape = doublecircle]; AvvioPerizia AvvioPeriziaPostDesk ;
-    node [shape = circle];
+digraph Expertise_activity {
+rankdir=TD
+size="4,4"
+edge[fontsize="11" arrowhead=open]
+start[shape=box, label="Assessment", style=filled]
+end[shape=box, label="chiusura", style=filled]
 
-    subgraph Assessment {
-        node [style =  filled shape = box]
-	    label = "Assessment";
-		color=green
-        Assessment    
-    }
+subgraph cluster_perito {
+    node [shape=box,style=rounded ];
+    label = "PERITO REFERENTE";             
+    AvvioPerizia
+    AvvioPeriziaPostDesk
+    EsecuzionePerizia  
+    PeriziaInRevisione
+    ComunicazioneEsito
+    InvioEmailEsito       
+    InvioAtto             
+    AttesaRicezioneAtto   
+
+}
+
+subgraph cluster_collaborazione {
+    node [shape=box,style=rounded ];
+    label = "PERITO INGAGGIATO";
+    CollaborazionePerizia    
+    CollaborazioneRifiutata  
+    CollaborazioneCancellata 
+    CollaborazioneCompletata 
+ 
+ 
+}
 
 
-    subgraph Collaboration {
-        cluster=true;
-	    label = "Collaboration";
-        CollaborazionePerizia
-        CollaborazioneRifiutata
-        CollaborazioneCompletata
-        CollaborazioneCancellata
-   }
+subgraph cluster_revisione {
+    node [shape=box,style=rounded ];
+    RevisionePerizia    
+    RevisioneRifiutata  
+    RevisioneCompletata   label = "PERITO REVISORE";
+
+}
+
+subgraph cluster_authority {
+    node [shape=box,style=rounded ];
+    label = "PERITO SUPERVISORE";
+    VerificaAuthority
+}
 
 
-    subgraph Revision {
-        cluster=true;
-	    label = "Revision";
-        RevisionePerizia          
-        RevisioneRifiutata        
-        RevisioneCompletata       
-   }
+subgraph cluster_conciliation {
+    node [shape=box,style=rounded ];
+    label = "PERITO CONCILIATORE";
+    ConciliazionePerizia
+    EsecuzionePeriziaConciliazione
+}
 
-        Assessment                 -> AvvioPerizia
+
+        start                      -> AvvioPerizia
+        start                      -> AvvioPeriziaPostDesk
         AvvioPerizia               -> EsecuzionePerizia           [ label = "PeriziaAvviata"]   ;
-        EsecuzionePerizia          -> EsecuzionePerizia           [ label = "CollabAvviata" ]    ;
-         
+        AvvioPeriziaPostDesk               -> EsecuzionePerizia           [ label = "PeriziaAvviata"]   ;
+ 
         EsecuzionePerizia          -> PeriziaInRevisione          [ label = "RevisioneAvviata" ]    ;
-
         EsecuzionePerizia          -> CollaborazionePerizia       [ label = "CollabAvviata" style ="dotted"]    ;
         CollaborazionePerizia      -> CollaborazioneRifiutata     [ label = "CollabRifiutata"  ] ;
         CollaborazionePerizia      -> CollaborazioneCancellata    [ label = "CollabCancellata" ] ;
@@ -57,46 +80,31 @@ digraph finite_state_machine {
         PeriziaInRevisione         -> PeriziaInRevisione   [label = "RevisioniNonCompletate"]
         
 
-        EsecuzionePerizia          -> EsecuzionePerizia           [ label = "CollaborazioneNonCompletata"]  ;
+comment = "        EsecuzionePerizia          -> EsecuzionePerizia           "
         EsecuzionePerizia          -> VerificaAuthority           [ label = "AuthorityNecessaria"]  ;
         EsecuzionePerizia          -> ComunicazioneEsito          [ label = "AuthorityNonNecessaria"]  ;
 
         VerificaAuthority          -> ComunicazioneEsito          [ label = "PeriziaApprovata"];
-        VerificaAuthority          -> EsecuzionePerizia           [ label = "PeriziaNonApprovata"] ;
-
-       subgraph Closing {
-         node [style =  filled shape = "box"]
-	     label = "Closing";
-         color=green
-         Chiusura
-         node [shape = "circle"]
-	     AvvioChiusura
-         VerificaChiusura
-        }
-
+        VerificaAuthority          -> EsecuzionePerizia           [ xlabel = "PeriziaNonApprovata"] ;
 
         ComunicazioneEsito          -> ConciliazionePerizia       [ label = "AccordoNonRaggiunto"] ;
-        ComunicazioneEsito          -> AvvioChiusura               [ label = "AccordoRaggiunto-o-NonRichiesto"] ;
+        ComunicazioneEsito          -> end               [ label = "AccordoRaggiunto-o-NonRichiesto"] ;
         ComunicazioneEsito          -> InvioEmailEsito             [ label = "EsitoScrittoEmail"] ;
         ComunicazioneEsito          -> InvioAtto                   [ label = "EsitoScrittoAtto"] ;
         InvioEmailEsito             -> AttesaRicezioneAtto         [ label = "EmailEsitoInviata"] ;
         InvioAtto                   -> AttesaRicezioneAtto         [ label = "AttoInviato"] ;
         AttesaRicezioneAtto          -> ConciliazionePerizia      [ label = "ConciliazioneAvviata"] ;
-        AttesaRicezioneAtto          -> AvvioChiusura              [ label = "ForzaturaChiusura"] ;
+        AttesaRicezioneAtto          -> end              [ label = "ForzaturaChiusura"] ;
 
-        ConciliazionePerizia       -> AvvioChiusura                   [ label = "ChiusuraConAccordo"] ;
-        ConciliazionePerizia       -> AvvioChiusura                   [ label = "ChiusuraSenzaAccordo"] ;
-        ConciliazionePerizia       ->  EsecuzionePerizia              [ label = "PeriziaConcilazioneAvviata"]   ;
+        ConciliazionePerizia       -> end                   [ label = "ChiusuraConAccordo"] ;
+        ConciliazionePerizia       -> end                   [ label = "ChiusuraSenzaAccordo"] ;
+        ConciliazionePerizia       ->  EsecuzionePeriziaConciliazione              [ label = "PeriziaConcilazioneAvviata"]   ;
         
-        ConciliazionePerizia       -> ConciliazionePerizia           [ label = "DatiObbligatoriMancanti"] ;
-        ComunicazioneEsito          -> ComunicazioneEsito              [ label = "DatiObbligatoriMancanti"] ;
+
 
 comment = "perizia post desk, e perizia incompleta (vedi chiusura)"
 
-        Assessment                  -> AvvioPeriziaPostDesk ;
-        AvvioPeriziaPostDesk        -> EsecuzionePerizia   [ label = "PeriziaAvviata"]   ;
-        Chiusura                    -> VerificaChiusura
-        VerificaChiusura            -> EsecuzionePerizia   [ label = "PeriziaIncompletaAvviata"]   ;
- 
+       end                    -> EsecuzionePerizia   [ label = "PeriziaIncompletaAvviata"]   ;
+
 
 }
