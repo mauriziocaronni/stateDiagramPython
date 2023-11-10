@@ -41,7 +41,7 @@ def simulate_state_transition(dot_file, start_state):
 
 def main ():
     processName = "Global"
-    processDir  = './opening/'
+    processDir  = './global/'
 
     print("Testing " + processDir + processName + ".dot"  + "\n")
 

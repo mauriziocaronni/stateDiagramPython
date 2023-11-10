@@ -1,0 +1,59 @@
+@startuml
+digraph apertura {
+    rankdir=TD;
+	rank =same
+    size="8,5"
+    fontsize = "24"
+    label="Apertura"
+    node [shape=box ];
+    InizializzazioneIncarico        -> CreazioneAutomaticaIncarico
+	node  [shape = diamond]
+    CreazioneAutomaticaIncarico -> CheckCompletedData_TriageRiparazione 
+	node [shape=box ];
+    CheckCompletedData_TriageRiparazione -> CompletamentoManualeIncarico [label = "DatiNonCompleti"];
+    CheckCompletedData_TriageRiparazione -> VenditaRiparazione           [label = "VenditaRiparazione"];
+    CheckCompletedData_TriageRiparazione -> EsecuzioneTriage             [label = "RiparazioneNonPrevista"];
+	
+	node  [shape = diamond]
+	ChecKVenditaRiparazione           -> ChecKVenditaRiparazione
+	node [shape=box ];    
+	ChecKVenditaRiparazione           -> AvvioRiparazione             [label = "RiparazioneVenduta"];
+    ChecKVenditaRiparazione           -> SceltaManualeServizio        [label = "RiparazioneNonVenduta"];
+    ChecKVenditaRiparazione           -> VenditaRiparazione           [label = "CampiObbligMancanti"];
+	
+    VenditaRiparazionePA1        -> SceltaAutomaticaServizio     [label = "NonInteressatoRiparazione"] ;
+    VenditaRiparazionePA1        -> VenditaRiparazione           [label = "InteressatoRiparazione"] ;
+    VenditaRiparazionePA1        -> SceltaAutomaticaServizio     [label = "TimerScaduto"] ;
+
+    CompletamentoManualeIncarico -> CompletamentoManualeIncarico [label = "DatiNonCompleti"];
+    CompletamentoManualeIncarico -> VenditaRiparazione           [label = "VenditaRiparazione"];
+    CompletamentoManualeIncarico -> EsecuzioneTriage             [label = "RiparazioneNonPrevista"];
+    CreazioneManualeIncarico     -> CompletamentoManualeIncarico [label = "Inizializzazione"];
+    InvioLinkSelfCare            -> SceltaAutomaticaServizio     [label = "SelfCareEseguito"];
+    InvioLinkSelfCare            -> SceltaAutomaticaServizio     [label = "SelfCareNonEseguito"];
+    InvioLinkSelfCare            -> SceltaAutomaticaServizio     [label = "TimerScaduto"];
+    EsecuzioneTriage             -> InvioLinkSelfCare            [label = "InvioLinkSelfCare"];
+    EsecuzioneTriage             -> AvvioSopralluogoPCE          [label = "SopralluogoPCE"];
+    EsecuzioneTriage             -> VenditaRiparazionePA1        [label = "VenditaRiparazionePA1"];
+    EsecuzioneTriage             -> AvvioVisio                   [label = "Visio"];
+    EsecuzioneTriage             -> AvvioDesk                    [label = "Desk"];   
+    EsecuzioneTriage             -> AvvioSopralluogo             [label = "Sopralluogo"]; 
+    EsecuzioneTriage             -> SceltaManualeServizio        [label = "NessunServizio"]  
+    EsecuzioneTriage             -> SceltaManualeServizio        [label = "CampiObbligMancanti"] 
+    SceltaAutomaticaServizio     -> AvvioSopralluogoPCE          [label = "SopralluogoPCE"];
+    SceltaAutomaticaServizio     -> AvvioVisio                   [label = "Visio"];
+    SceltaAutomaticaServizio     -> AvvioDesk                    [label = "Desk"];   
+    SceltaAutomaticaServizio     -> AvvioSopralluogo             [label = "Sopralluogo"];   
+    SceltaAutomaticaServizio     -> AvvioAccertSelfCare          [label = "SelfCare"];   
+    SceltaAutomaticaServizio     -> SceltaManualeServizio        [label = "NessunServizio"];   
+    SceltaAutomaticaServizio     -> SceltaManualeServizio        [label = "CampiObbligMancanti"];
+    SceltaManualeServizio        -> AvvioSopralluogoPCE          [label = "SopralluogoPCE"];
+    SceltaManualeServizio        -> AvvioManualeVisio            [label = "Visio"];
+    SceltaManualeServizio        -> AvvioManualeDesk             [label = "Desk"];   
+    SceltaManualeServizio        -> AvvioSopralluogo             [label = "Sopralluogo"];   
+    SceltaManualeServizio        -> InvioLinkSelfCare            [label = "InvioLinkSelfCare"];
+    SceltaManualeServizio        -> VenditaRiparazione           [label = "VenditaRiparazione"];
+    SceltaManualeServizio        -> SceltaManualeServizio        [label = "CampiObbligMancanti"];
+
+}
+@enduml

@@ -24,6 +24,11 @@ def create_graph (processDir, processName):
     # Salva il grafico come immagine o in un altro formato
     graph.draw( processDir + processName + '.svg', format='svg', prog='dot')
     
+    # Salva il grafico come immagine o in un altro formato
+    graph.draw( processDir + processName + '.json', format='json', prog='dot')
+
+
+
     return graph
 
 
@@ -74,42 +79,42 @@ def main ():
 
     print("start", datetime.now())
 
-    processName = "opening"
-    processDir  = './' + processName + '/'
-    print("Generating " + processName + " diagram...")
-    graph = create_graph(processDir, processName)
-    create_drawio(graph, processDir, processName)
+ #   processName = "opening"
+ #   processDir  = './' + processName + '/'
+ #   print("Generating " + processName + " diagram...")
+ #   graph = create_graph(processDir, processName)
+ #   create_drawio(graph, processDir, processName)
+#
+ #   processName = "assessment"
+ #   processDir  = './' + processName + '/'
+ #   print("Generating " + processName + " diagram...")
+ #   graph = create_graph(processDir, processName)
+ #   create_drawio(graph, processDir, processName)
+ #   write_excel(graph, processDir, processName)
+#
+ #   processName = "expertise"
+ #   processDir  = './' + processName + '/'
+ #   print("Generating " + processName + " diagram...")
+ #   graph = create_graph(processDir, processName)
+ #   create_drawio(graph, processDir, processName)
+ #   write_excel(graph, processDir, processName)
+#
+ #   processName = "closing"
+ #   processDir  = './' + processName + '/'
+ #   print("Generating " + processName + " diagram...")
+ #   graph = create_graph(processDir, processName)
+ #   create_drawio(graph, processDir, processName)
+ #   write_excel(graph, processDir, processName)
+#
+ #   processName = "repair"
+ #   processDir  = './' + processName + '/'
+ #   print("Generating " + processName + " diagram...")
+ #   graph = create_graph(processDir, processName)
+ #   create_drawio(graph, processDir, processName)
+ #   write_excel(graph, processDir, processName)
 
-    processName = "assessment"
-    processDir  = './' + processName + '/'
-    print("Generating " + processName + " diagram...")
-    graph = create_graph(processDir, processName)
-    create_drawio(graph, processDir, processName)
-    write_excel(graph, processDir, processName)
-
-    processName = "expertise"
-    processDir  = './' + processName + '/'
-    print("Generating " + processName + " diagram...")
-    graph = create_graph(processDir, processName)
-    create_drawio(graph, processDir, processName)
-    write_excel(graph, processDir, processName)
-
-    processName = "closing"
-    processDir  = './' + processName + '/'
-    print("Generating " + processName + " diagram...")
-    graph = create_graph(processDir, processName)
-    create_drawio(graph, processDir, processName)
-    write_excel(graph, processDir, processName)
-
-    processName = "repair"
-    processDir  = './' + processName + '/'
-    print("Generating " + processName + " diagram...")
-    graph = create_graph(processDir, processName)
-    create_drawio(graph, processDir, processName)
-    write_excel(graph, processDir, processName)
-
-    processName = "Global"
-    processDir  = './opening/' 
+    processName = "global"
+    processDir  = './global/' 
     print("Generating " + processName + " diagram...")
     graph = create_graph(processDir, processName)
     write_excel(graph, processDir, processName)   
