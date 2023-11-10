@@ -85,12 +85,12 @@ def main ():
  #   graph = create_graph(processDir, processName)
  #   create_drawio(graph, processDir, processName)
 #
- #   processName = "assessment"
- #   processDir  = './' + processName + '/'
- #   print("Generating " + processName + " diagram...")
- #   graph = create_graph(processDir, processName)
- #   create_drawio(graph, processDir, processName)
- #   write_excel(graph, processDir, processName)
+    processName = "assessment"
+    processDir  = './' + processName + '/'
+    print("Generating " + processName + " diagram...")
+    graph = create_graph(processDir, processName)
+#    create_drawio(graph, processDir, processName)
+    write_excel(graph, processDir, processName)
 #
  #   processName = "expertise"
  #   processDir  = './' + processName + '/'
@@ -118,7 +118,6 @@ def main ():
     print("Generating " + processName + " diagram...")
     graph = create_graph(processDir, processName)
     write_excel(graph, processDir, processName)   
-
 
     print("done!", datetime.now())
     

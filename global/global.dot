@@ -39,6 +39,13 @@ subgraph cluster_apertura {
 subgraph cluster_accertamenti {
     node [shape=box,style=rounded ];
     label = "ACCERTAMENTI";
+
+    subgraph cluster_selfcare {
+    node [shape=box,style=rounded ];
+    label = "SELFCARE";
+		AvvioAccertSelfCare
+		GestioneSelfCare
+    }
 	
     subgraph cluster_visio {
         node [shape=box,style=rounded ];
@@ -47,7 +54,9 @@ subgraph cluster_accertamenti {
 		AvvioManualeVisio
 		EsecuzioneVisio
 		RiassegnazioneVisio
-    }
+		RichiestaModificaApptoPaVisio	
+		ConfermaModificaApptoPaVisio	
+	}
 
     subgraph cluster_desk {
     node [shape=box,style=rounded ];
@@ -56,7 +65,9 @@ subgraph cluster_accertamenti {
 		AvvioManualeDesk
 		EsecuzioneDesk
 		RiassegnazioneDesk
-    }
+		RichiestaModificaApptoPaDesk
+        ConfermaModificaApptoPaDesk
+	} 	  
 
     subgraph cluster_sopralluogo {
         node [shape=box,style=rounded ];
@@ -67,6 +78,9 @@ subgraph cluster_accertamenti {
 	    EsecuzioneSopralluogo
         VerificaSopralluogoDopoRifiuto
         ApprovazioneSopralluogo
+		RichiestaModificaApptoPaSopralluogo			
+		ConfermaModificaApptoPaSopralluogo
+		NuovoSopralluogoNonApprovato		
     }
 
     subgraph cluster_sopralluogoPce {
@@ -78,13 +92,11 @@ subgraph cluster_accertamenti {
         EsecuzioneSopralluogoPCE
         VerificaSopralluogoPCEDopoRifiuto
         ApprovazioneSopralluogoPCE
+		RichiestaModificaApptoPaSopralluogoPCE		
+		ConfermaModificaApptoPaSopralluogoPCE
+		NuovoSopralluogoNonApprovatoPCE		
     }
 
-    subgraph cluster_selfcare {
-        node [shape=box,style=rounded ];
-        label = "SELFCARE";
-        AvvioAccertSelfCare
-    }
 }
 
 subgraph cluster_perizia {
@@ -266,11 +278,15 @@ comment = "ACCERTAMENTI"
     EsecuzioneSopralluogo          -> EsecuzioneSopralluogo          [ label = "AppuntamentoModificato"];
     EsecuzioneSopralluogo          -> PianificazioneSopralluogo      [ label = "AppuntamentoAnnullato"];
     EsecuzioneSopralluogo          -> ApprovazioneSopralluogo        [ label = "SopralluogoCompletatoNuovo"];
+    
+	ApprovazioneSopralluogo        -> NuovoSopralluogoNonApprovato   [ label = "NonApprovato"];
     ApprovazioneSopralluogo        -> AvvioSopralluogo               [ label = "Approvato"];
     EsecuzioneSopralluogo          -> PianificazioneSopralluogo      [ label = "ChiusuraAttivita"];
     EsecuzioneSopralluogo	       -> EsecuzioneSopralluogo  	     [ label = "DatiObbligatoriMancanti"];
- 
-    
+    EsecuzioneSopralluogo	       -> PianificazioneSopralluogo  	 [ label = "ChiusuraSoprallVariato"];
+    EsecuzioneSopralluogo          -> AssegnazioneSopralluogo        [ label = "AnnullamentoSopralluogo" ];
+	
+	
     AvvioSopralluogoPCE               -> AssegnazioneSopralluogoPCE        [ label = "SopralluogoPCEAvviato"];
     AssegnazioneSopralluogoPCE        -> PianificazioneSopralluogoPCE      [ label = "SopralluogoPCEAssegnato"];
     PianificazioneSopralluogoPCE      -> EsecuzioneSopralluogoPCE          [ label = "SopralluogoPCEPianificato"];
@@ -283,13 +299,32 @@ comment = "ACCERTAMENTI"
     EsecuzioneSopralluogoPCE          -> PianificazioneSopralluogoPCE      [ label = "ChiusuraAttivita"];       
     EsecuzioneSopralluogoPCE	       -> EsecuzioneSopralluogoPCE  	     [ label = "DatiObbligatoriMancanti"];   
 
-    AvvioAccertSelfCare                -> AvvioPerizia	      [ label = "SelfCareInPerizia"];
-    AvvioAccertSelfCare                -> AvvioChiusura       [ label = "SelfCareInChiusura"];
-    EsecuzioneSopralluogo              -> AvvioPerizia        [ label = "SoprallugoCompletato"];
-    ApprovazioneSopralluogo            -> AvvioPerizia        [ label = "NonApprovato"];
-    EsecuzioneSopralluogoPCE           -> AvvioPerizia        [ label = "SoprallugoCompletato"];
-    ApprovazioneSopralluogoPCE         -> AvvioPerizia        [ label = "NonApprovato"];
+    EsecuzioneSopralluogoPCE             -> AssegnazioneSopralluogoPCE        [ label = "AnnullamentoSopralluogo" ];
 
+    EsecuzioneSopralluogo                   -> AvvioPerizia        [ label = "SoprallugoCompletato"];
+    NuovoSopralluogoNonApprovato            -> AvvioPerizia        [ label = "NonApprovato"];
+    EsecuzioneSopralluogoPCE                -> AvvioPerizia        [ label = "SoprallugoCompletato"];
+    NuovoSopralluogoNonApprovatoPCE         -> AvvioPerizia        [ label = "NonApprovato"];
+    EsecuzioneSopralluogoPCE	       -> PianificazioneSopralluogoPCE  	 [ label = "ChisuraSoprallVariato"];
+
+	RichiestaModificaApptoPaVisio		   -> EsecuzioneVisio  [ label = "RichiestaPaRicevuta"] ;
+	ConfermaModificaApptoPaVisio		   -> EsecuzioneVisio  [ label = "ConfermaPaRicevuta"] ;
+	
+	RichiestaModificaApptoPaDesk		   -> EsecuzioneVisio  [ label = "RichiestaPaRicevuta"] ;
+	ConfermaModificaApptoPaDesk		       -> EsecuzioneVisio  [ label = "ConfermaPaRicevuta"] ;	
+
+	RichiestaModificaApptoPaSopralluogo		   -> EsecuzioneVisio  [ label = "RichiestaPaRicevuta"] ;
+	ConfermaModificaApptoPaSopralluogo		   -> EsecuzioneVisio  [ label = "ConfermaPaRicevuta"] ;
+	
+	RichiestaModificaApptoPaSopralluogoPCE		   -> EsecuzioneVisio  [ label = "RichiestaPaRicevuta"] ;
+	ConfermaModificaApptoPaSopralluogoPCE		   -> EsecuzioneVisio  [ label = "ConfermaPaRicevuta"] ;
+	
+	AvvioAccertSelfCare                 -> GestioneSelfCare [ label = "AccertSelfCareAvviati" ]                           
+	GestioneSelfCare                    -> AvvioPerizia     [ label = "AvvioPeriziaPostSelfCare"]
+	GestioneSelfCare                    -> AvvioChiusura    [ label = "AvvioChiusuraPostSelfCare"]
+	
+	
+	
 comment = "PERIZIA"
    
     AvvioPerizia               -> EsecuzionePerizia           [ label = "PeriziaAvviata"]   ;
