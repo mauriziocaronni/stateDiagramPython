@@ -2,8 +2,7 @@ digraph finite_state_machine {
     rankdir=TB;
     size="8,5"
     label="Repair"
-    node [shape = doublecircle]; AvvioRiparazione;
-    node [shape = circle];
+    node [shape = box style=rounded]; 
 
     subgraph Opening {
         node [style =  filled shape = box]
@@ -13,29 +12,91 @@ digraph finite_state_machine {
     }
 
 
-        Opening                    -> AvvioRiparazione            [ label = "RiparazioneVenduta" ]  ;
-        AvvioRiparazione           -> ConfigurazioneRiparazione   [ label = "RiparazioneAvviata" ]  ;
-        ConfigurazioneRiparazione  -> DefinizioneTimeline         [ label = "RiparazioneConfigurata" ]  ;
-        DefinizioneTimeline        -> DefinizioneTimeline         [ label = "RiparazioneConfigurata" ]  ;
-        DefinizioneTimeline        -> PianificazioneAppuntamento  [ style = "dotted" ] ;
-        DefinizioneTimeline        -> MonitoraggioAttivita        [ style = "dotted" ];
+subgraph cluster_riparazione {
+    node [shape=box,style=rounded ];
+    label = "RIPARAZIONE";
 
-        comment = "sottoprocesso EsecuzioneAttivita"
+    subgraph cluster_gestore {
+        node [shape=box,style=rounded ];
+        label = "GESTORE";
+        AvvioRiparazione
+        ConfigurazioneRiparazione
+        DefinizioneTimeline 
+        AssegnazioneMonitoraggio
+        VerificaChiusuraRiparazione
+    }
+
+    subgraph cluster_perito {
+            node [shape=box,style=rounded ];
+            label = "PERITO";
+            MonitoraggioAttivita
+            ApprovazioneBudget
+            ApprovazioneAttivita
+    }
+
+    subgraph cluster_cat {
+        node [shape=box,style=rounded ] ;
+        label = "RIPARATORE";
+        PianificazioneAppuntamentoR
+        EsecuzioneSopralluogoR
+        BudgetInApprovazione
+        EsecuzioneAttivita 
+        AttivitaInApprovazione
+        AttivitaApprovata
+        AttivitaCancellata
+    }
     
-        PianificazioneAppuntamento -> EsecuzioneSopralluogo       [ label = "AppuntamentoPianificato" ];
-        EsecuzioneSopralluogo      -> ApprovazioneBudget          [ style = "dotted" ];
-        EsecuzioneSopralluogo      -> PianificazioneAppuntamento  [ label = "NuovoSopralluogo" ];
+}
 
-        ApprovazioneBudget         -> EsecuzioneAttivita          [ style = "dotted" ]  ;
-        EsecuzioneAttivita         -> ApprovazioneAttivita        [ style = "dotted" ]  ;
-        EsecuzioneAttivita         -> MonitoraggioAttivita        [ style = "dotted" ]  ;
 
-        MonitoraggioAttivita       ->  MonitoraggioAttivita        [ label = "AttivitaNonCompletate" ];
-        MonitoraggioAttivita       ->  VerificaChiusuraRiparazione [ label = "AttivitaCompletate" ];
 
-        VerificaChiusuraRiparazione  -> ConfigurazioneRiparazione  [ label = "RiparazioneNonChiusa" ] ;
-        VerificaChiusuraRiparazione  -> SceltaManualeServizio      [ label = "ServizioPostRiparazione" ];
-        VerificaChiusuraRiparazione  -> AvvioChiusura              [ label = "ChiusuraPostRiparazione" ];
-        
+	comment = "RIPARAZIONE"
+	 
+    VenditaRiparazione                    -> AvvioRiparazione            [ label = "RiparazioneVenduta" ]  ;
+
+    comment = "sottoprocesso PianificazioneAttivita"
+
+
+    AvvioRiparazione           -> ConfigurazioneRiparazione    [ label = "RiparazioneAvviata" ]  ;
+    ConfigurazioneRiparazione  -> DefinizioneTimeline          [ label = "RiparazioneConfigurata" ]  ;
+    DefinizioneTimeline        -> AssegnazioneMonitoraggio     [ label = "TimelineDefinita" ]  ;
+    AssegnazioneMonitoraggio   -> VerificaChiusuraRiparazione  [ label = "MonitoraggioTerminato" ]  ;
+
+    DefinizioneTimeline        -> PianificazioneAppuntamentoR  [ style = "dotted" ];
+    AssegnazioneMonitoraggio   -> MonitoraggioAttivita         [ style = "dotted" label ="MonitoraggioAssegnato"];
+    MonitoraggioAttivita       -> EsecuzioneSopralluogoR           [ style = "dotted" label = "annulla"];   
+
+    comment = "sottoprocesso EsecuzioneAttivita"
+
+    PianificazioneAppuntamentoR -> EsecuzioneSopralluogoR       [ label = "AppuntamentoPianificato" ];
+    EsecuzioneSopralluogoR      -> AttivitaCancellata           [ label = "AttivitaCancellata" ];
     
+    EsecuzioneSopralluogoR      -> ApprovazioneBudget           [ style = "dotted" ];
+    EsecuzioneSopralluogoR      -> BudgetInApprovazione         [ label = "SoprallugoCompletato"]
+    BudgetInApprovazione        -> EsecuzioneAttivita           [ label = "BudgetApprovato" ] 
+    EsecuzioneAttivita          -> AttivitaInApprovazione       [ label = "AttivitaCompletata" ]
+  
+    AttivitaInApprovazione      -> AttivitaApprovata            [ label = "AttivitaApprovata" ]
+    EsecuzioneAttivita           -> PianificazioneAppuntamentoR  [ label = "NuovoSopralluogo" ];
+    AttivitaApprovata           -> MonitoraggioAttivita         [ style = "dotted" ]  ;
+
+    ApprovazioneBudget          -> BudgetInApprovazione        [ style = "dotted" ]  ;
+ 	EsecuzioneAttivita          -> ApprovazioneAttivita          [ style = "dotted" ]  ;	
+    ApprovazioneAttivita        -> AttivitaInApprovazione      [ style = "dotted" ]  ;
+
+	
+    MonitoraggioAttivita        ->  VerificaChiusuraRiparazione [ style = "dotted" ]  ;
+    
+	comment = "sottoprocesso Chiusura"
+	node [shape=box,style=rounded  style = filled];
+	color = grey
+	
+    VerificaChiusuraRiparazione  -> ConfigurazioneRiparazione    [ label = "RiparazioneNonChiusa" ] ;
+    VerificaChiusuraRiparazione  -> PERIZIA            [ label = "PeriziaPostRiparazione" ];
+    VerificaChiusuraRiparazione  -> CHIUSURA             [ label = "ChiusuraPostRiparazione" ];
+    VerificaChiusuraRiparazione  -> DefinizioneTimeline    [ label = "DatiNonCompletati" ] ;
+    
+
+	
+	
 }

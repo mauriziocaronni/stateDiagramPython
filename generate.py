@@ -99,19 +99,19 @@ def main ():
  #   create_drawio(graph, processDir, processName)
  #   write_excel(graph, processDir, processName)
 #
- #   processName = "closing"
- #   processDir  = './' + processName + '/'
- #   print("Generating " + processName + " diagram...")
- #   graph = create_graph(processDir, processName)
- #   create_drawio(graph, processDir, processName)
- #   write_excel(graph, processDir, processName)
+#    processName = "closing"
+#    processDir  = './' + processName + '/'
+#    print("Generating " + processName + " diagram...")
+#    graph = create_graph(processDir, processName)
+#    create_drawio(graph, processDir, processName)
+#    write_excel(graph, processDir, processName)
 #
- #   processName = "repair"
- #   processDir  = './' + processName + '/'
- #   print("Generating " + processName + " diagram...")
- #   graph = create_graph(processDir, processName)
+    processName = "repair"
+    processDir  = './' + processName + '/'
+    print("Generating " + processName + " diagram...")
+    graph = create_graph(processDir, processName)
  #   create_drawio(graph, processDir, processName)
- #   write_excel(graph, processDir, processName)
+    write_excel(graph, processDir, processName)
 
     processName = "global"
     processDir  = './global/' 

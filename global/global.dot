@@ -199,7 +199,7 @@ subgraph cluster_chiusura {
     label = "CHIUSURA e RIAPERTURA";
     AvvioChiusura
     VerificaChiusura
-    SelezioneTipoRiapertura
+    GestioneRiapertura
     GestioneContestazione
     FinalizzaContestazione
 }
@@ -211,7 +211,7 @@ comment = "apertura"
     CreazioneAutomaticaIncarico  -> CompletamentoManualeIncarico [label = "DatiNonCompleti"];
     CreazioneAutomaticaIncarico  -> VenditaRiparazione           [label = "VenditaRiparazione"];
     CreazioneAutomaticaIncarico  -> EsecuzioneTriage             [label = "RiparazioneNonPrevista"];
-    RiaperturaAutomatica         -> SelezioneTipoRiapertura      [ label = "RiaperturaAutomatica" ]
+    RiaperturaAutomatica         -> GestioneRiapertura      [ label = "RiaperturaAutomatica" ]
     VenditaRiparazione           -> AvvioRiparazione             [label = "RiparazioneVenduta"];
     VenditaRiparazione           -> SceltaManualeServizio        [label = "RiparazioneNonVenduta"];
     VenditaRiparazione           -> VenditaRiparazione           [label = "CampiObbligMancanti"];
@@ -399,10 +399,8 @@ comment = "PERIZIA"
     AttivitaApprovata           -> PianificazioneAppuntamentoR  [ label = "NuovoSopralluogo" ];
     AttivitaApprovata           -> MonitoraggioAttivita         [ style = "dotted" ]  ;
 
-    ApprovazioneBudget          -> BudgetInApprovazione        [ style = "dotted" ]  ;
-    ApprovazioneAttivita        -> AttivitaApprovata           [ style = "dotted" ]  ;
-    EsecuzioneAttivita          -> AttivitaApprovata           [ style = "dotted" ]  ;
-
+    ApprovazioneBudget          -> BudgetInApprovazione         [ style = "dotted" ]  ;
+    ApprovazioneAttivita        -> AttivitaInApprovazione       [ style = "dotted" ]  ;
     MonitoraggioAttivita        ->  VerificaChiusuraRiparazione [ style = "dotted" ]  ;
 
     VerificaChiusuraRiparazione  -> ConfigurazioneRiparazione    [ label = "RiparazioneNonChiusa" ] ;
@@ -420,16 +418,16 @@ comment = "CHIUSURA"
     VerificaChiusura           -> AvvioPeriziaIncompleta  [ label = "PeriziaIncompleta"]
     AvvioPeriziaIncompleta     -> EsecuzionePerizia       [ label = "PeriziaIncompletaAvviata"]
    
-    CreazioneManualeIncarico   ->  SelezioneTipoRiapertura    [ label = "RiaperturaManaule" ]
-    SelezioneTipoRiapertura    ->  AvvioPeriziaIntegrazione   [ label = "PeriziaIntegrazione" ]
+    CreazioneManualeIncarico   ->  GestioneRiapertura    [ label = "RiaperturaManaule" ]
+    GestioneRiapertura          ->  AvvioPeriziaIntegrazione   [ label = "PeriziaIntegrazione" ]
     AvvioPeriziaIntegrazione   ->  EsecuzionePerizia          [ label = "PeriziaIntegrazioneAvviata"]
 
-    SelezioneTipoRiapertura    ->  SceltaManualeServizio [ label = "NonRiapertura"]
-    SelezioneTipoRiapertura    ->  GestioneContestazione [ label = "GestioneContestazione"]
+    GestioneRiapertura    ->  SceltaManualeServizio [ label = "NonRiapertura"]
+    GestioneRiapertura    ->  GestioneContestazione [ label = "GestioneContestazione"]
 
     GestioneContestazione       -> AvvioPeriziaContestazione [ label = "PeriziaContestazione" ]
     AvvioPeriziaContestazione   -> EsecuzionePerizia         [ label = "PeriziaContestazioneAvviata"]
 
-    GestioneContestazione       -> FinalizzaContestazione [ label = "ContestazioneFinalizzata"]
+    GestioneContestazione       -> FinalizzaContestazione [ label = "ContestazioneDaFinalizzare"]
     FinalizzaContestazione      -> AvvioChiusura          [ label = "ChiusuraAvviata"]
 }
