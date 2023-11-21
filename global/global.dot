@@ -402,7 +402,8 @@ comment = "PERIZIA"
     ApprovazioneBudget          -> BudgetInApprovazione         [ style = "dotted" ]  ;
     ApprovazioneAttivita        -> AttivitaInApprovazione       [ style = "dotted" ]  ;
     MonitoraggioAttivita        ->  VerificaChiusuraRiparazione [ style = "dotted" ]  ;
-
+	EsecuzioneAttivita          -> ApprovazioneAttivita          [ style = "dotted" ]  ; 
+	
     VerificaChiusuraRiparazione  -> ConfigurazioneRiparazione    [ label = "RiparazioneNonChiusa" ] ;
     VerificaChiusuraRiparazione  -> AvviaPeriziaPostRiparazione  [ label = "PeriziaPostRiparazione" ];
     AvviaPeriziaPostRiparazione  -> EsecuzionePerizia            [ label = "PeriziaPostRiparazioneAvviata" ];

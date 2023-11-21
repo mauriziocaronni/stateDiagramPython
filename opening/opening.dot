@@ -2,13 +2,13 @@ digraph finite_state_machine {
     rankdir=TB;
     size="8,5"
     label="Opening"
-    node [shape = doublecircle]; 
-    node [shape = circle];
+    node [shape = box style=rounded];
     label = "Opening";
 
    subgraph Init {
         node [style =  filled shape = box ]
-	    label = "Repair";
+	    label = "Init";
+        rank = min
 		color=green
         InizializzazioneIncarico 
         CreazioneManualeIncarico
@@ -23,6 +23,7 @@ digraph finite_state_machine {
 
    subgraph Assessment {
         node [style =  filled]
+        rank = max
 	    label = "Assessment";
 		color=blue
         AvvioSopralluogoPCE
@@ -39,12 +40,11 @@ digraph finite_state_machine {
     CreazioneAutomaticaIncarico  -> VenditaRiparazione           [label = "VenditaRiparazione"];
     CreazioneAutomaticaIncarico  -> EsecuzioneTriage             [label = "RiparazioneNonPrevista"];
     VenditaRiparazione           -> AvvioRiparazione             [label = "RiparazioneVenduta"];
-    VenditaRiparazione           -> SceltaManualeServizio        [label = "RiparazioneNonVenduta"];
+    VenditaRiparazione           -> EsecuzioneTriage        [label = "RiparazioneNonVenduta"];
     VenditaRiparazione           -> VenditaRiparazione           [label = "CampiObbligMancanti"];
     VenditaRiparazionePA1        -> SceltaAutomaticaServizio     [label = "NonInteressatoRiparazione"] ;
     VenditaRiparazionePA1        -> VenditaRiparazione           [label = "InteressatoRiparazione"] ;
     VenditaRiparazionePA1        -> SceltaAutomaticaServizio     [label = "TimerScaduto"] ;
-    CompletamentoManualeIncarico -> CompletamentoManualeIncarico [label = "DatiNonCompleti"];
     CompletamentoManualeIncarico -> VenditaRiparazione           [label = "VenditaRiparazione"];
     CompletamentoManualeIncarico -> EsecuzioneTriage             [label = "RiparazioneNonPrevista"];
     CreazioneManualeIncarico     -> CompletamentoManualeIncarico [label = "Inizializzazione"];
@@ -71,7 +71,7 @@ digraph finite_state_machine {
     SceltaManualeServizio        -> AvvioManualeDesk             [label = "Desk"];   
     SceltaManualeServizio        -> AvvioSopralluogo             [label = "Sopralluogo"];   
     SceltaManualeServizio        -> InvioLinkSelfCare            [label = "InvioLinkSelfCare"];
-    SceltaManualeServizio        -> VenditaRiparazione           [label = "VenditaRiparazione"];
+    SceltaManualeServizio        -> AvvioRiparazione             [label = "AvvioRiparazione"];
     SceltaManualeServizio        -> SceltaManualeServizio        [label = "CampiObbligMancanti"];
       
   

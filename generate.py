@@ -75,50 +75,28 @@ def write_excel (graph, processDir, processName):
     # Salva il workbook
     wb.save(processDir + processName+'.xlsx')
 
+
+def generate_all (process):
+    processDir  = './' + process + '/'
+    print("Generating " + process + " diagram...")
+    graph = create_graph(processDir, process)
+    #create_drawio(graph, processDir, process)
+    write_excel(graph, processDir, process)
+
 def main ():
 
     print("start", datetime.now())
+    
+    generate_all("opening")
+    generate_all("assessment")
+    #generate_all("expertise")
+    #generate_all("closing")
+    #generate_all("repair")
 
- #   processName = "opening"
- #   processDir  = './' + processName + '/'
- #   print("Generating " + processName + " diagram...")
- #   graph = create_graph(processDir, processName)
- #   create_drawio(graph, processDir, processName)
-#
-    processName = "assessment"
-    processDir  = './' + processName + '/'
-    print("Generating " + processName + " diagram...")
-    graph = create_graph(processDir, processName)
-#    create_drawio(graph, processDir, processName)
-    write_excel(graph, processDir, processName)
-#
- #   processName = "expertise"
- #   processDir  = './' + processName + '/'
- #   print("Generating " + processName + " diagram...")
- #   graph = create_graph(processDir, processName)
- #   create_drawio(graph, processDir, processName)
- #   write_excel(graph, processDir, processName)
-#
-#    processName = "closing"
-#    processDir  = './' + processName + '/'
-#    print("Generating " + processName + " diagram...")
-#    graph = create_graph(processDir, processName)
-#    create_drawio(graph, processDir, processName)
-#    write_excel(graph, processDir, processName)
-#
-    processName = "repair"
-    processDir  = './' + processName + '/'
-    print("Generating " + processName + " diagram...")
-    graph = create_graph(processDir, processName)
- #   create_drawio(graph, processDir, processName)
-    write_excel(graph, processDir, processName)
+    #generate_all("global")
 
-    processName = "global"
-    processDir  = './global/' 
-    print("Generating " + processName + " diagram...")
-    graph = create_graph(processDir, processName)
-    write_excel(graph, processDir, processName)   
 
+ 
     print("done!", datetime.now())
     
 

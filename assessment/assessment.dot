@@ -1,72 +1,55 @@
 digraph finite_state_machine {
     rankdir=TB;
+
     size="8,5"
     label="Assessment"
     node [shape = box style = rounded];
     
-    subgraph Opening {
+
+subgraph Opening {
         node [style =  filled shape = box]
-	    label = "Expertise";
+	    label = "Opening";
 		color=green
+        rank= min
         Apertura    
-    }
 
-subgraph cluster_perizia {
-	style =  filled
-	color=gray
-    node [shape=box,style=rounded ];
-    label = "PERIZIA";        
-
-	       
-		AvvioPerizia
-		AvvioPeriziaPostDesk 
-	
-	}
-
-subgraph cluster_chiusura {
-	style =  filled
-	color=gray
-    node [shape=box,style=rounded ];
-    label = "CHIUSURA e RIAPERTURA";
-	rank = sink
-    AvvioChiusura
 }
 
-	
-subgraph cluster_accertamenti {
-    node [shape=box,style=rounded ];
-    label = "ACCERTAMENTI";
 
-    subgraph cluster_selfcare {
+
+
+subgraph cluster_Accertamenti {
+
+subgraph cluster_selfcare {
     node [shape=box,style=rounded ];
     label = "SELFCARE";
 		AvvioAccertSelfCare
 		GestioneSelfCare
-    }
+        AvvioChiusura
+}
 	
-    subgraph cluster_visio {
+subgraph cluster_visio {
         node [shape=box,style=rounded ];
         label = "VISIO";
         AvvioVisio
 		AvvioManualeVisio
 		EsecuzioneVisio
 		RiassegnazioneVisio
-		RichiestaModificaApptoPaVisio	
-		ConfermaModificaApptoPaVisio	
-	}
+        Pa_Visio
 
-    subgraph cluster_desk {
+}
+
+subgraph cluster_desk {
     node [shape=box,style=rounded ];
     label = "DESK";
 		AvvioDesk
 		AvvioManualeDesk
 		EsecuzioneDesk
 		RiassegnazioneDesk
-		RichiestaModificaApptoPaDesk
-        ConfermaModificaApptoPaDesk
-	} 	  
+        Pa_Desk
+} 	  
 
-    subgraph cluster_sopralluogo {
+subgraph cluster_sopralluogo {
         node [shape=box,style=rounded ];
         label = "SOPRALLUOGO";
 	    AvvioSopralluogo
@@ -75,12 +58,11 @@ subgraph cluster_accertamenti {
 	    EsecuzioneSopralluogo
         VerificaSopralluogoDopoRifiuto
         ApprovazioneSopralluogo
-		RichiestaModificaApptoPaSopralluogo			
-		ConfermaModificaApptoPaSopralluogo
-		NuovoSopralluogoNonApprovato		
-    }
+		NuovoSopralluogoNonApprovato	
+        Pa_Sopralluogo
+}
 
-    subgraph cluster_sopralluogoPce {
+subgraph cluster_sopralluogoPce {
         node [shape=box,style=rounded ];
         label = "SOPRALLUOGOPCE";
 		AvvioSopralluogoPCE
@@ -89,14 +71,29 @@ subgraph cluster_accertamenti {
         EsecuzioneSopralluogoPCE
         VerificaSopralluogoPCEDopoRifiuto
         ApprovazioneSopralluogoPCE
-		RichiestaModificaApptoPaSopralluogoPCE		
-		ConfermaModificaApptoPaSopralluogoPCE
 		NuovoSopralluogoNonApprovatoPCE		
-    }
-
+        Pa_SopralluogoPCE
 }
-	
+}
 
+
+	
+       
+
+    subgraph cluster_perizia  {
+        style =  filled
+        rank = sink
+        node [shape=box,style=rounded ];
+
+        label = "PERIZIA";        
+		AvvioPerizia  
+		AvvioPeriziaPostDesk   
+    }
+ 
+
+
+
+	
         Apertura -> AvvioVisio
         Apertura -> AvvioDesk
         Apertura -> AvvioManualeVisio
@@ -104,6 +101,8 @@ subgraph cluster_accertamenti {
         Apertura -> AvvioSopralluogo
         Apertura -> AvvioSopralluogoPCE
         Apertura -> AvvioAccertSelfCare
+
+
 
 comment = "ACCERTAMENTI"
 
@@ -128,61 +127,62 @@ comment = "ACCERTAMENTI"
     RiassegnazioneDesk	      ->	AvvioManualeDesk	        [ label = "DeskAssegnata"];
  
     AvvioSopralluogo               -> AssegnazioneSopralluogo        [ label = "SopralluogoAvvioto"];
-    AssegnazioneSopralluogo        -> PianificazioneSopralluogo      [ label = "SopralluogoAssegnato"];
+    AssegnazioneSopralluogo        -> PianificazioneSopralluogo      [ label = "SopralluogoAssegnato" style = dotted];
     PianificazioneSopralluogo      -> EsecuzioneSopralluogo          [ label = "SopralluogoPianificato"];
     PianificazioneSopralluogo      -> VerificaSopralluogoDopoRifiuto [ label = "SopralluogoRifiutato"];
     VerificaSopralluogoDopoRifiuto -> PianificazioneSopralluogo      [ label = "SopralluogoAssegnato"];
     EsecuzioneSopralluogo          -> EsecuzioneSopralluogo          [ label = "AppuntamentoModificato"];
     EsecuzioneSopralluogo          -> PianificazioneSopralluogo      [ label = "AppuntamentoAnnullato"];
-    EsecuzioneSopralluogo          -> ApprovazioneSopralluogo        [ label = "SopralluogoCompletatoNuovo"];
+    EsecuzioneSopralluogo          -> ApprovazioneSopralluogo        [ label = "RichiestaNuovoSopralluogo" style = dotted];
     
 	ApprovazioneSopralluogo        -> NuovoSopralluogoNonApprovato   [ label = "NonApprovato"];
-    ApprovazioneSopralluogo        -> AvvioSopralluogo               [ label = "Approvato"];
+    ApprovazioneSopralluogo        -> PianificazioneSopralluogo      [ label = "Approvato" style = dotted];
+
     EsecuzioneSopralluogo          -> PianificazioneSopralluogo      [ label = "ChiusuraAttivita"];
     EsecuzioneSopralluogo	       -> EsecuzioneSopralluogo  	     [ label = "DatiObbligatoriMancanti"];
     EsecuzioneSopralluogo	       -> PianificazioneSopralluogo  	 [ label = "ChiusuraSoprallVariato"];
     EsecuzioneSopralluogo          -> AssegnazioneSopralluogo        [ label = "AnnullamentoSopralluogo" ];
-	
-	
-    AvvioSopralluogoPCE               -> AssegnazioneSopralluogoPCE        [ label = "SopralluogoPCEAvvioto"];
-    AssegnazioneSopralluogoPCE        -> PianificazioneSopralluogoPCE      [ label = "SopralluogoPCEAssegnato"];
-    PianificazioneSopralluogoPCE      -> EsecuzioneSopralluogoPCE          [ label = "SopralluogoPCEPianificato"];
-    PianificazioneSopralluogoPCE      -> VerificaSopralluogoPCEDopoRifiuto [ label = "SopralluogoPCERifiutato"];
-    VerificaSopralluogoPCEDopoRifiuto -> PianificazioneSopralluogoPCE      [ label = "SopralluogoPCEAssegnato"];
-    EsecuzioneSopralluogoPCE          -> EsecuzioneSopralluogoPCE          [ label = "AppuntamentoModificato"];
+
+commet = "PCE"
+
+	AvvioSopralluogoPCE               -> AssegnazioneSopralluogoPCE        [ label = "SopralluogoAvvioto"];
+    AssegnazioneSopralluogoPCE        -> PianificazioneSopralluogoPCE      [ label = "SopralluogoAssegnato" style = dotted];
+    PianificazioneSopralluogoPCE      -> EsecuzioneSopralluogoPCE          [ label = "SopralluogoPianificato"];
+    PianificazioneSopralluogoPCE      -> VerificaSopralluogoPCEDopoRifiuto [ label = "SopralluogoRifiutato"];
+    VerificaSopralluogoPCEDopoRifiuto -> PianificazioneSopralluogoPCE      [ label = "SopralluogoAssegnato"];
+    EsecuzioneSopralluogoPCE         -> EsecuzioneSopralluogoPCE          [ label = "AppuntamentoModificato"];
     EsecuzioneSopralluogoPCE          -> PianificazioneSopralluogoPCE      [ label = "AppuntamentoAnnullato"];
-    EsecuzioneSopralluogoPCE          -> ApprovazioneSopralluogoPCE        [ label = "SopralluogoPCECompletatoNuovo"];
-    ApprovazioneSopralluogoPCE        -> AvvioSopralluogoPCE               [ label = "Approvato"];
-    EsecuzioneSopralluogoPCE          -> PianificazioneSopralluogoPCE      [ label = "ChiusuraAttivita"];       
-    EsecuzioneSopralluogoPCE	       -> EsecuzioneSopralluogoPCE  	     [ label = "DatiObbligatoriMancanti"];   
+    EsecuzioneSopralluogoPCE          -> ApprovazioneSopralluogoPCE        [ label = "RichiestaNuovoSopralluogo" style = dotted];
+    
+	ApprovazioneSopralluogoPCE        -> NuovoSopralluogoNonApprovatoPCE   [ label = "NonApprovato"];
+    ApprovazioneSopralluogoPCE        -> PianificazioneSopralluogoPCE      [ label = "Approvato" style = dotted];
 
-    EsecuzioneSopralluogoPCE             -> AssegnazioneSopralluogoPCE        [ label = "AnnullamentoSopralluogo" ];
+    EsecuzioneSopralluogoPCE          -> PianificazioneSopralluogoPCE      [ label = "ChiusuraAttivita"];
+    EsecuzioneSopralluogoPCE	       -> EsecuzioneSopralluogoPCE  	     [ label = "DatiObbligatoriMancanti"];
+    EsecuzioneSopralluogoPCE	       -> PianificazioneSopralluogoPCE  	 [ label = "ChiusuraSoprallVariato"];
+    EsecuzioneSopralluogo          -> AssegnazioneSopralluogoPCE        [ label = "AnnullamentoSopralluogo" ];
 
-    EsecuzioneSopralluogo                   -> AvvioPerizia        [ label = "SoprallugoCompletato"];
-    NuovoSopralluogoNonApprovato            -> AvvioPerizia        [ label = "NonApprovato"];
-    EsecuzioneSopralluogoPCE                -> AvvioPerizia        [ label = "SoprallugoCompletato"];
-    NuovoSopralluogoNonApprovatoPCE         -> AvvioPerizia        [ label = "NonApprovato"];
-    EsecuzioneSopralluogoPCE	       -> PianificazioneSopralluogoPCE  	 [ label = "ChisuraSoprallVariato"];
 
-	RichiestaModificaApptoPaVisio		   -> EsecuzioneVisio  [ label = "RichiestaPaRicevuta"] ;
-	ConfermaModificaApptoPaVisio		   -> EsecuzioneVisio  [ label = "ConfermaPaRicevuta"] ;
 	
-	RichiestaModificaApptoPaDesk		   -> EsecuzioneVisio  [ label = "RichiestaPaRicevuta"] ;
-	ConfermaModificaApptoPaDesk		       -> EsecuzioneVisio  [ label = "ConfermaPaRicevuta"] ;	
+	Pa_Visio		       -> EsecuzioneVisio  [ label = "RichiestaPaRicevuta" style = dotted] ;
+	Pa_Visio		       -> EsecuzioneVisio  [ label = "ConfermaPaRicevuta"  style = dotted] ;
+	
+	Pa_Desk		       -> EsecuzioneDesk  [ label = "RichiestaPaRicevuta" style = dotted] ;
+	Pa_Desk	           -> EsecuzioneDesk  [ label = "ConfermaPaRicevuta"  style = dotted] ;	
 
-	RichiestaModificaApptoPaSopralluogo		   -> EsecuzioneVisio  [ label = "RichiestaPaRicevuta"] ;
-	ConfermaModificaApptoPaSopralluogo		   -> EsecuzioneVisio  [ label = "ConfermaPaRicevuta"] ;
+	Pa_Sopralluogo	   -> EsecuzioneSopralluogo  [ label = "RichiestaPaRicevuta" style = dotted] ;
+	Pa_Sopralluogo	   -> EsecuzioneSopralluogo  [ label = "ConfermaPaRicevuta"  style = dotted] ;
 	
-	RichiestaModificaApptoPaSopralluogoPCE		   -> EsecuzioneVisio  [ label = "RichiestaPaRicevuta"] ;
-	ConfermaModificaApptoPaSopralluogoPCE		   -> EsecuzioneVisio  [ label = "ConfermaPaRicevuta"] ;
-	
+	Pa_SopralluogoPCE		       -> EsecuzioneSopralluogoPCE  [ label = "RichiestaPaRicevuta" style = dotted] ;
+	Pa_SopralluogoPCE			   -> EsecuzioneSopralluogoPCE  [ label = "ConfermaPaRicevuta"  style = dotted] ;
+
 	AvvioAccertSelfCare                 -> GestioneSelfCare [ label = "AccertSelfCareAvviati" ] 	
-	GestioneSelfCare                    -> AvvioPerizia     [ xlabel = "AvvioPeriziaPostSelfCare"]
-	GestioneSelfCare                    -> AvvioChiusura    [ label = "AvvioChiusuraPostSelfCare"]
+
+	GestioneSelfCare                    -> AvvioPerizia     [ xlabel = "AvvioPeriziaPostSelfCare"  ]
+	GestioneSelfCare                    -> AvvioChiusura    [ label = "AvvioChiusuraPostSelfCare"  ]
 	
-	      
-   }
-
-
   
+  
+
+
 }

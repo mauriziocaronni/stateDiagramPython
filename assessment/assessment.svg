@@ -5,729 +5,679 @@
  -->
 <!-- ACCERTAMENTI -->
 <!-- Title: finite_state_machine Pages: 1 -->
-<svg width="576pt" height="127pt"
- viewBox="0.00 0.00 576.00 126.65" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-<g id="graph0" class="graph" transform="scale(0.161085 0.161085) rotate(0) translate(4 782.25)">
+<svg width="576pt" height="150pt"
+ viewBox="0.00 0.00 576.00 149.95" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="graph0" class="graph" transform="scale(0.149688 0.149688) rotate(0) translate(4 997.75)">
 <title>finite_state_machine</title>
-<polygon fill="white" stroke="none" points="-4,4 -4,-782.25 3571.75,-782.25 3571.75,4 -4,4"/>
-<text text-anchor="middle" x="1783.88" y="-6.45" font-family="Times New Roman,serif" font-size="14.00">Assessment</text>
-<g id="clust3" class="cluster">
-<title>cluster_chiusura</title>
-<polygon fill="gray" stroke="gray" points="3275,-410.5 3275,-486.25 3464,-486.25 3464,-410.5 3275,-410.5"/>
-<text text-anchor="middle" x="3369.5" y="-468.95" font-family="Times New Roman,serif" font-size="14.00">CHIUSURA e RIAPERTURA</text>
-</g>
+<polygon fill="white" stroke="none" points="-4,4 -4,-997.75 3844,-997.75 3844,4 -4,4"/>
+<text text-anchor="middle" x="1920" y="-6.45" font-family="Times New Roman,serif" font-size="14.00">Assessment</text>
 <g id="clust2" class="cluster">
-<title>cluster_perizia</title>
-<polygon fill="gray" stroke="gray" points="3098,-31.75 3098,-107.5 3359,-107.5 3359,-31.75 3098,-31.75"/>
-<text text-anchor="middle" x="3228.5" y="-90.2" font-family="Times New Roman,serif" font-size="14.00">PERIZIA</text>
+<title>cluster_Accertamenti</title>
+<polygon fill="none" stroke="black" points="8,-31.75 8,-892.75 3563,-892.75 3563,-31.75 8,-31.75"/>
+<text text-anchor="middle" x="1785.5" y="-875.45" font-family="Times New Roman,serif" font-size="14.00">Assessment</text>
 </g>
 <g id="clust4" class="cluster">
-<title>cluster_accertamenti</title>
-<polygon fill="none" stroke="black" points="8,-139.25 8,-715.25 3267,-715.25 3267,-139.25 8,-139.25"/>
-<text text-anchor="middle" x="1637.5" y="-697.95" font-family="Times New Roman,serif" font-size="14.00">ACCERTAMENTI</text>
+<title>cluster_desk</title>
+<polygon fill="none" stroke="black" points="1184,-478.5 1184,-861 1778,-861 1778,-478.5 1184,-478.5"/>
+<text text-anchor="middle" x="1481" y="-843.7" font-family="Times New Roman,serif" font-size="14.00">DESK</text>
 </g>
 <g id="clust5" class="cluster">
 <title>cluster_visio</title>
-<polygon fill="none" stroke="black" points="2498,-322.75 2498,-683.5 3092,-683.5 3092,-322.75 2498,-322.75"/>
-<text text-anchor="middle" x="2795" y="-666.2" font-family="Times New Roman,serif" font-size="14.00">VISIO</text>
+<polygon fill="none" stroke="black" points="1786,-478.5 1786,-861 2380,-861 2380,-478.5 1786,-478.5"/>
+<text text-anchor="middle" x="2083" y="-843.7" font-family="Times New Roman,serif" font-size="14.00">VISIO</text>
+</g>
+<g id="clust3" class="cluster">
+<title>cluster_sopralluogoPce</title>
+<polygon fill="none" stroke="black" points="16,-39.75 16,-554.25 1176,-554.25 1176,-39.75 16,-39.75"/>
+<text text-anchor="middle" x="596" y="-536.95" font-family="Times New Roman,serif" font-size="14.00">SOPRALLUOGOPCE</text>
 </g>
 <g id="clust6" class="cluster">
-<title>cluster_desk</title>
-<polygon fill="none" stroke="black" points="912,-322.75 912,-683.5 1506,-683.5 1506,-322.75 912,-322.75"/>
-<text text-anchor="middle" x="1209" y="-666.2" font-family="Times New Roman,serif" font-size="14.00">DESK</text>
+<title>cluster_sopralluogo</title>
+<polygon fill="none" stroke="black" points="2388,-303 2388,-861 3555,-861 3555,-303 2388,-303"/>
+<text text-anchor="middle" x="2971.5" y="-843.7" font-family="Times New Roman,serif" font-size="14.00">SOPRALLUOGO</text>
 </g>
 <g id="clust7" class="cluster">
 <title>cluster_selfcare</title>
-<polygon fill="none" stroke="black" points="3100,-520 3100,-683.5 3259,-683.5 3259,-520 3100,-520"/>
-<text text-anchor="middle" x="3179.5" y="-666.2" font-family="Times New Roman,serif" font-size="14.00">SELFCARE</text>
+<polygon fill="none" stroke="black" points="985,-588 985,-861 1176,-861 1176,-588 985,-588"/>
+<text text-anchor="middle" x="1080.5" y="-843.7" font-family="Times New Roman,serif" font-size="14.00">SELFCARE</text>
 </g>
 <g id="clust8" class="cluster">
-<title>cluster_sopralluogo</title>
-<polygon fill="none" stroke="black" points="16,-147.25 16,-683.5 904,-683.5 904,-147.25 16,-147.25"/>
-<text text-anchor="middle" x="460" y="-666.2" font-family="Times New Roman,serif" font-size="14.00">SOPRALLUOGO</text>
-</g>
-<g id="clust9" class="cluster">
-<title>cluster_sopralluogoPce</title>
-<polygon fill="none" stroke="black" points="1514,-235 1514,-683.5 2490,-683.5 2490,-235 1514,-235"/>
-<text text-anchor="middle" x="2002" y="-666.2" font-family="Times New Roman,serif" font-size="14.00">SOPRALLUOGOPCE</text>
+<title>cluster_perizia</title>
+<polygon fill="lightgrey" stroke="black" points="3571,-588 3571,-663.75 3832,-663.75 3832,-588 3571,-588"/>
+<text text-anchor="middle" x="3701.5" y="-646.45" font-family="Times New Roman,serif" font-size="14.00">PERIZIA</text>
 </g>
 <!-- Apertura -->
 <g id="node1" class="node">
 <title>Apertura</title>
-<polygon fill="lightgrey" stroke="black" points="3012.38,-778.25 2947.62,-778.25 2947.62,-742.25 3012.38,-742.25 3012.38,-778.25"/>
-<text text-anchor="middle" x="2980" y="-754.83" font-family="Times New Roman,serif" font-size="14.00">Apertura</text>
-</g>
-<!-- AvvioVisio -->
-<g id="node5" class="node">
-<title>AvvioVisio</title>
-<path fill="none" stroke="black" d="M3007.5,-651.75C3007.5,-651.75 2952.5,-651.75 2952.5,-651.75 2946.5,-651.75 2940.5,-645.75 2940.5,-639.75 2940.5,-639.75 2940.5,-627.75 2940.5,-627.75 2940.5,-621.75 2946.5,-615.75 2952.5,-615.75 2952.5,-615.75 3007.5,-615.75 3007.5,-615.75 3013.5,-615.75 3019.5,-621.75 3019.5,-627.75 3019.5,-627.75 3019.5,-639.75 3019.5,-639.75 3019.5,-645.75 3013.5,-651.75 3007.5,-651.75"/>
-<text text-anchor="middle" x="2980" y="-628.33" font-family="Times New Roman,serif" font-size="14.00">AvvioVisio</text>
-</g>
-<!-- Apertura&#45;&gt;AvvioVisio -->
-<g id="edge2" class="edge">
-<title>Apertura&#45;&gt;AvvioVisio</title>
-<path fill="none" stroke="black" d="M2980,-741.94C2980,-721.59 2980,-687.53 2980,-663.26"/>
-<polygon fill="black" stroke="black" points="2983.5,-663.43 2980,-653.43 2976.5,-663.43 2983.5,-663.43"/>
-</g>
-<!-- AvvioManualeVisio -->
-<g id="node6" class="node">
-<title>AvvioManualeVisio</title>
-<path fill="none" stroke="black" d="M2819.75,-366.75C2819.75,-366.75 2718.25,-366.75 2718.25,-366.75 2712.25,-366.75 2706.25,-360.75 2706.25,-354.75 2706.25,-354.75 2706.25,-342.75 2706.25,-342.75 2706.25,-336.75 2712.25,-330.75 2718.25,-330.75 2718.25,-330.75 2819.75,-330.75 2819.75,-330.75 2825.75,-330.75 2831.75,-336.75 2831.75,-342.75 2831.75,-342.75 2831.75,-354.75 2831.75,-354.75 2831.75,-360.75 2825.75,-366.75 2819.75,-366.75"/>
-<text text-anchor="middle" x="2769" y="-343.32" font-family="Times New Roman,serif" font-size="14.00">AvvioManualeVisio</text>
-</g>
-<!-- Apertura&#45;&gt;AvvioManualeVisio -->
-<g id="edge3" class="edge">
-<title>Apertura&#45;&gt;AvvioManualeVisio</title>
-<path fill="none" stroke="black" d="M3012.6,-759.2C3120.11,-758.76 3458.73,-754.91 3496,-724.25 3527.81,-698.09 3520,-675.93 3520,-634.75 3520,-634.75 3520,-634.75 3520,-501.12 3520,-459.46 3527.93,-437.27 3496,-410.5 3446.75,-369.22 3018.72,-355.21 2843.4,-351.18"/>
-<polygon fill="black" stroke="black" points="2843.56,-347.68 2833.49,-350.95 2843.4,-354.68 2843.56,-347.68"/>
-</g>
-<!-- AvvioDesk -->
-<g id="node11" class="node">
-<title>AvvioDesk</title>
-<path fill="none" stroke="black" d="M1023.12,-651.75C1023.12,-651.75 968.88,-651.75 968.88,-651.75 962.88,-651.75 956.88,-645.75 956.88,-639.75 956.88,-639.75 956.88,-627.75 956.88,-627.75 956.88,-621.75 962.88,-615.75 968.88,-615.75 968.88,-615.75 1023.12,-615.75 1023.12,-615.75 1029.12,-615.75 1035.12,-621.75 1035.12,-627.75 1035.12,-627.75 1035.12,-639.75 1035.12,-639.75 1035.12,-645.75 1029.12,-651.75 1023.12,-651.75"/>
-<text text-anchor="middle" x="996" y="-628.33" font-family="Times New Roman,serif" font-size="14.00">AvvioDesk</text>
-</g>
-<!-- Apertura&#45;&gt;AvvioDesk -->
-<g id="edge4" class="edge">
-<title>Apertura&#45;&gt;AvvioDesk</title>
-<path fill="none" stroke="black" d="M2947.32,-759.22C2702.23,-758.94 1158.99,-755.55 1070,-715.25 1045.37,-704.1 1025.25,-680.44 1012.23,-661.65"/>
-<polygon fill="black" stroke="black" points="1015.19,-659.76 1006.76,-653.35 1009.34,-663.62 1015.19,-659.76"/>
-</g>
-<!-- AvvioManualeDesk -->
-<g id="node12" class="node">
-<title>AvvioManualeDesk</title>
-<path fill="none" stroke="black" d="M1233.38,-366.75C1233.38,-366.75 1132.62,-366.75 1132.62,-366.75 1126.62,-366.75 1120.62,-360.75 1120.62,-354.75 1120.62,-354.75 1120.62,-342.75 1120.62,-342.75 1120.62,-336.75 1126.62,-330.75 1132.62,-330.75 1132.62,-330.75 1233.38,-330.75 1233.38,-330.75 1239.38,-330.75 1245.38,-336.75 1245.38,-342.75 1245.38,-342.75 1245.38,-354.75 1245.38,-354.75 1245.38,-360.75 1239.38,-366.75 1233.38,-366.75"/>
-<text text-anchor="middle" x="1183" y="-343.32" font-family="Times New Roman,serif" font-size="14.00">AvvioManualeDesk</text>
-</g>
-<!-- Apertura&#45;&gt;AvvioManualeDesk -->
-<g id="edge5" class="edge">
-<title>Apertura&#45;&gt;AvvioManualeDesk</title>
-<path fill="none" stroke="black" d="M3012.55,-758.2C3123.79,-753.74 3482,-731.84 3482,-634.75 3482,-634.75 3482,-634.75 3482,-501.12 3482,-460.37 3498.01,-438.08 3468,-410.5 3460.37,-403.49 3106.35,-385.17 3096,-384.75 2391.64,-356.4 2214.58,-389.05 1510,-366.75 1422.99,-364 1323.06,-358.45 1256.81,-354.44"/>
-<polygon fill="black" stroke="black" points="1257.36,-350.97 1247.17,-353.86 1256.94,-357.96 1257.36,-350.97"/>
-</g>
-<!-- AvvioAccertSelfCare -->
-<g id="node17" class="node">
-<title>AvvioAccertSelfCare</title>
-<path fill="none" stroke="black" d="M3231.62,-651.75C3231.62,-651.75 3120.38,-651.75 3120.38,-651.75 3114.38,-651.75 3108.38,-645.75 3108.38,-639.75 3108.38,-639.75 3108.38,-627.75 3108.38,-627.75 3108.38,-621.75 3114.38,-615.75 3120.38,-615.75 3120.38,-615.75 3231.62,-615.75 3231.62,-615.75 3237.62,-615.75 3243.62,-621.75 3243.62,-627.75 3243.62,-627.75 3243.62,-639.75 3243.62,-639.75 3243.62,-645.75 3237.62,-651.75 3231.62,-651.75"/>
-<text text-anchor="middle" x="3176" y="-628.33" font-family="Times New Roman,serif" font-size="14.00">AvvioAccertSelfCare</text>
-</g>
-<!-- Apertura&#45;&gt;AvvioAccertSelfCare -->
-<g id="edge1" class="edge">
-<title>Apertura&#45;&gt;AvvioAccertSelfCare</title>
-<path fill="none" stroke="black" d="M3012.75,-750.9C3036.99,-743.78 3070.16,-732.01 3096,-715.25 3118.94,-700.36 3140.53,-677.95 3155.48,-660.56"/>
-<polygon fill="black" stroke="black" points="3157.95,-663.05 3161.69,-653.14 3152.59,-658.56 3157.95,-663.05"/>
-</g>
-<!-- AvvioSopralluogo -->
-<g id="node19" class="node">
-<title>AvvioSopralluogo</title>
-<path fill="none" stroke="black" d="M240,-651.75C240,-651.75 146,-651.75 146,-651.75 140,-651.75 134,-645.75 134,-639.75 134,-639.75 134,-627.75 134,-627.75 134,-621.75 140,-615.75 146,-615.75 146,-615.75 240,-615.75 240,-615.75 246,-615.75 252,-621.75 252,-627.75 252,-627.75 252,-639.75 252,-639.75 252,-645.75 246,-651.75 240,-651.75"/>
-<text text-anchor="middle" x="193" y="-628.33" font-family="Times New Roman,serif" font-size="14.00">AvvioSopralluogo</text>
-</g>
-<!-- Apertura&#45;&gt;AvvioSopralluogo -->
-<g id="edge6" class="edge">
-<title>Apertura&#45;&gt;AvvioSopralluogo</title>
-<path fill="none" stroke="black" d="M2947.23,-759.03C2656.34,-757.07 524.25,-741.83 393,-715.25 336.26,-703.76 275.07,-676.76 235.52,-657.2"/>
-<polygon fill="black" stroke="black" points="237.32,-654.18 226.81,-652.83 234.18,-660.44 237.32,-654.18"/>
+<polygon fill="lightgrey" stroke="black" points="1095.38,-993.75 1030.62,-993.75 1030.62,-957.75 1095.38,-957.75 1095.38,-993.75"/>
+<text text-anchor="middle" x="1063" y="-970.33" font-family="Times New Roman,serif" font-size="14.00">Apertura</text>
 </g>
 <!-- AvvioSopralluogoPCE -->
-<g id="node28" class="node">
+<g id="node2" class="node">
 <title>AvvioSopralluogoPCE</title>
-<path fill="none" stroke="black" d="M1654.12,-651.75C1654.12,-651.75 1533.88,-651.75 1533.88,-651.75 1527.88,-651.75 1521.88,-645.75 1521.88,-639.75 1521.88,-639.75 1521.88,-627.75 1521.88,-627.75 1521.88,-621.75 1527.88,-615.75 1533.88,-615.75 1533.88,-615.75 1654.12,-615.75 1654.12,-615.75 1660.12,-615.75 1666.12,-621.75 1666.12,-627.75 1666.12,-627.75 1666.12,-639.75 1666.12,-639.75 1666.12,-645.75 1660.12,-651.75 1654.12,-651.75"/>
-<text text-anchor="middle" x="1594" y="-628.33" font-family="Times New Roman,serif" font-size="14.00">AvvioSopralluogoPCE</text>
+<path fill="none" stroke="black" d="M951.12,-522.5C951.12,-522.5 830.88,-522.5 830.88,-522.5 824.88,-522.5 818.88,-516.5 818.88,-510.5 818.88,-510.5 818.88,-498.5 818.88,-498.5 818.88,-492.5 824.88,-486.5 830.88,-486.5 830.88,-486.5 951.12,-486.5 951.12,-486.5 957.12,-486.5 963.12,-492.5 963.12,-498.5 963.12,-498.5 963.12,-510.5 963.12,-510.5 963.12,-516.5 957.12,-522.5 951.12,-522.5"/>
+<text text-anchor="middle" x="891" y="-499.07" font-family="Times New Roman,serif" font-size="14.00">AvvioSopralluogoPCE</text>
 </g>
 <!-- Apertura&#45;&gt;AvvioSopralluogoPCE -->
 <g id="edge7" class="edge">
 <title>Apertura&#45;&gt;AvvioSopralluogoPCE</title>
-<path fill="none" stroke="black" d="M2947.4,-758.05C2819.63,-753.37 2340.52,-735.94 1946,-723.25 1930.95,-722.77 1688.84,-721.2 1675,-715.25 1648.82,-704 1626.51,-680.01 1611.97,-661.13"/>
-<polygon fill="black" stroke="black" points="1614.94,-659.26 1606.19,-653.3 1609.31,-663.42 1614.94,-659.26"/>
+<path fill="none" stroke="black" d="M1030.24,-971.22C980.34,-964.93 891,-949.62 891,-920.75 891,-920.75 891,-920.75 891,-613 891,-586.2 891,-555.64 891,-533.97"/>
+<polygon fill="black" stroke="black" points="894.5,-534.14 891,-524.14 887.5,-534.14 894.5,-534.14"/>
 </g>
-<!-- AvvioPerizia -->
-<g id="node2" class="node">
-<title>AvvioPerizia</title>
-<path fill="none" stroke="black" d="M3180.25,-75.75C3180.25,-75.75 3117.75,-75.75 3117.75,-75.75 3111.75,-75.75 3105.75,-69.75 3105.75,-63.75 3105.75,-63.75 3105.75,-51.75 3105.75,-51.75 3105.75,-45.75 3111.75,-39.75 3117.75,-39.75 3117.75,-39.75 3180.25,-39.75 3180.25,-39.75 3186.25,-39.75 3192.25,-45.75 3192.25,-51.75 3192.25,-51.75 3192.25,-63.75 3192.25,-63.75 3192.25,-69.75 3186.25,-75.75 3180.25,-75.75"/>
-<text text-anchor="middle" x="3149" y="-52.33" font-family="Times New Roman,serif" font-size="14.00">AvvioPerizia</text>
-</g>
-<!-- AvvioPeriziaPostDesk -->
-<g id="node3" class="node">
-<title>AvvioPeriziaPostDesk</title>
-<path fill="none" stroke="black" d="M3339.25,-75.75C3339.25,-75.75 3222.75,-75.75 3222.75,-75.75 3216.75,-75.75 3210.75,-69.75 3210.75,-63.75 3210.75,-63.75 3210.75,-51.75 3210.75,-51.75 3210.75,-45.75 3216.75,-39.75 3222.75,-39.75 3222.75,-39.75 3339.25,-39.75 3339.25,-39.75 3345.25,-39.75 3351.25,-45.75 3351.25,-51.75 3351.25,-51.75 3351.25,-63.75 3351.25,-63.75 3351.25,-69.75 3345.25,-75.75 3339.25,-75.75"/>
-<text text-anchor="middle" x="3281" y="-52.33" font-family="Times New Roman,serif" font-size="14.00">AvvioPeriziaPostDesk</text>
-</g>
-<!-- AvvioChiusura -->
-<g id="node4" class="node">
-<title>AvvioChiusura</title>
-<path fill="none" stroke="black" d="M3372.62,-454.5C3372.62,-454.5 3297.38,-454.5 3297.38,-454.5 3291.38,-454.5 3285.38,-448.5 3285.38,-442.5 3285.38,-442.5 3285.38,-430.5 3285.38,-430.5 3285.38,-424.5 3291.38,-418.5 3297.38,-418.5 3297.38,-418.5 3372.62,-418.5 3372.62,-418.5 3378.62,-418.5 3384.62,-424.5 3384.62,-430.5 3384.62,-430.5 3384.62,-442.5 3384.62,-442.5 3384.62,-448.5 3378.62,-454.5 3372.62,-454.5"/>
-<text text-anchor="middle" x="3335" y="-431.07" font-family="Times New Roman,serif" font-size="14.00">AvvioChiusura</text>
-</g>
-<!-- EsecuzioneVisio -->
-<g id="node7" class="node">
-<title>EsecuzioneVisio</title>
-<path fill="none" stroke="black" d="M2602.12,-564C2602.12,-564 2517.88,-564 2517.88,-564 2511.88,-564 2505.88,-558 2505.88,-552 2505.88,-552 2505.88,-540 2505.88,-540 2505.88,-534 2511.88,-528 2517.88,-528 2517.88,-528 2602.12,-528 2602.12,-528 2608.12,-528 2614.12,-534 2614.12,-540 2614.12,-540 2614.12,-552 2614.12,-552 2614.12,-558 2608.12,-564 2602.12,-564"/>
-<text text-anchor="middle" x="2560" y="-540.58" font-family="Times New Roman,serif" font-size="14.00">EsecuzioneVisio</text>
-</g>
-<!-- AvvioVisio&#45;&gt;EsecuzioneVisio -->
-<g id="edge11" class="edge">
-<title>AvvioVisio&#45;&gt;EsecuzioneVisio</title>
-<path fill="none" stroke="black" d="M2948.05,-615.36C2925.72,-604 2894.84,-589.87 2866,-582 2785.14,-559.94 2688.58,-551.77 2625.86,-548.76"/>
-<polygon fill="black" stroke="black" points="2626.22,-545.27 2616.07,-548.32 2625.9,-552.26 2626.22,-545.27"/>
-<text text-anchor="middle" x="2950.12" y="-584.45" font-family="Times New Roman,serif" font-size="14.00">VisioPianificata</text>
-</g>
-<!-- AvvioManualeVisio&#45;&gt;EsecuzioneVisio -->
-<g id="edge12" class="edge">
-<title>AvvioManualeVisio&#45;&gt;EsecuzioneVisio</title>
-<path fill="none" stroke="black" d="M2797.02,-367.19C2811.26,-377.77 2827.18,-392.67 2835,-410.5 2848.52,-441.33 2856.17,-460.08 2835,-486.25 2809.17,-518.18 2698.51,-533.52 2625.68,-540.28"/>
-<polygon fill="black" stroke="black" points="2625.49,-536.78 2615.84,-541.16 2626.11,-543.75 2625.49,-536.78"/>
-<text text-anchor="middle" x="2891.12" y="-431.07" font-family="Times New Roman,serif" font-size="14.00">VisioPianificata</text>
-</g>
-<!-- EsecuzioneVisio&#45;&gt;AvvioPerizia -->
-<g id="edge13" class="edge">
-<title>EsecuzioneVisio&#45;&gt;AvvioPerizia</title>
-<path fill="none" stroke="black" d="M2614.48,-542.49C2767.42,-535.37 3190.03,-515.25 3195,-510 3256.81,-444.69 3169.42,-400.55 3150,-312.75 3132.26,-232.54 3139.81,-134.57 3145.23,-87.16"/>
-<polygon fill="black" stroke="black" points="3148.68,-87.82 3146.4,-77.47 3141.73,-86.98 3148.68,-87.82"/>
-<text text-anchor="middle" x="3196.5" y="-299.45" font-family="Times New Roman,serif" font-size="14.00">VisioCompletata</text>
-</g>
-<!-- EsecuzioneVisio&#45;&gt;AvvioManualeVisio -->
-<g id="edge14" class="edge">
-<title>EsecuzioneVisio&#45;&gt;AvvioManualeVisio</title>
-<path fill="none" stroke="black" d="M2614.2,-531.31C2625.66,-526.23 2636.77,-519.34 2645,-510 2675.3,-475.63 2644.7,-447.3 2672,-410.5 2683.77,-394.62 2701.04,-381.91 2717.76,-372.3"/>
-<polygon fill="black" stroke="black" points="2719.06,-375.58 2726.17,-367.73 2715.71,-369.44 2719.06,-375.58"/>
-<text text-anchor="middle" x="2751.5" y="-431.07" font-family="Times New Roman,serif" font-size="14.00">VisioCompletataNuovaVisio</text>
-</g>
-<!-- EsecuzioneVisio&#45;&gt;EsecuzioneVisio -->
-<g id="edge15" class="edge">
-<title>EsecuzioneVisio&#45;&gt;EsecuzioneVisio</title>
-<path fill="none" stroke="black" d="M2614.41,-548.61C2624.79,-548.3 2632.12,-547.43 2632.12,-546 2632.12,-545.17 2629.67,-544.54 2625.6,-544.08"/>
-<polygon fill="black" stroke="black" points="2626.12,-540.61 2615.92,-543.48 2625.69,-547.59 2626.12,-540.61"/>
-<text text-anchor="middle" x="2704.12" y="-540.58" font-family="Times New Roman,serif" font-size="14.00">AppuntamentoModificato</text>
-</g>
-<!-- EsecuzioneVisio&#45;&gt;EsecuzioneVisio -->
-<g id="edge16" class="edge">
-<title>EsecuzioneVisio&#45;&gt;EsecuzioneVisio</title>
-<path fill="none" stroke="black" d="M2614.5,-550.43C2679.73,-552.74 2776.12,-551.26 2776.12,-546 2776.12,-541.04 2690.34,-539.44 2625.86,-541.22"/>
-<polygon fill="black" stroke="black" points="2625.9,-537.72 2616.01,-541.53 2626.12,-544.71 2625.9,-537.72"/>
-<text text-anchor="middle" x="2844" y="-540.58" font-family="Times New Roman,serif" font-size="14.00">AppuntamentoAnnullato</text>
-</g>
-<!-- EsecuzioneVisio&#45;&gt;EsecuzioneVisio -->
-<g id="edge17" class="edge">
-<title>EsecuzioneVisio&#45;&gt;EsecuzioneVisio</title>
-<path fill="none" stroke="black" d="M2614.57,-551.48C2715.23,-556.48 2911.88,-554.66 2911.88,-546 2911.88,-537.66 2729.18,-535.66 2625.84,-540.01"/>
-<polygon fill="black" stroke="black" points="2625.91,-536.5 2616.08,-540.45 2626.23,-543.49 2625.91,-536.5"/>
-<text text-anchor="middle" x="2980.12" y="-540.58" font-family="Times New Roman,serif" font-size="14.00">DatiObbligatoriMancanti</text>
-</g>
-<!-- RiassegnazioneVisio -->
-<g id="node8" class="node">
-<title>RiassegnazioneVisio</title>
-<path fill="none" stroke="black" d="M2624.38,-454.5C2624.38,-454.5 2517.62,-454.5 2517.62,-454.5 2511.62,-454.5 2505.62,-448.5 2505.62,-442.5 2505.62,-442.5 2505.62,-430.5 2505.62,-430.5 2505.62,-424.5 2511.62,-418.5 2517.62,-418.5 2517.62,-418.5 2624.38,-418.5 2624.38,-418.5 2630.38,-418.5 2636.38,-424.5 2636.38,-430.5 2636.38,-430.5 2636.38,-442.5 2636.38,-442.5 2636.38,-448.5 2630.38,-454.5 2624.38,-454.5"/>
-<text text-anchor="middle" x="2571" y="-431.07" font-family="Times New Roman,serif" font-size="14.00">RiassegnazioneVisio</text>
-</g>
-<!-- EsecuzioneVisio&#45;&gt;RiassegnazioneVisio -->
-<g id="edge18" class="edge">
-<title>EsecuzioneVisio&#45;&gt;RiassegnazioneVisio</title>
-<path fill="none" stroke="black" d="M2561.77,-527.73C2563.47,-511.12 2566.07,-485.7 2568.08,-466.07"/>
-<polygon fill="black" stroke="black" points="2571.55,-466.54 2569.08,-456.23 2564.58,-465.83 2571.55,-466.54"/>
-<text text-anchor="middle" x="2602.88" y="-496.7" font-family="Times New Roman,serif" font-size="14.00">VisioRifiutata</text>
-</g>
-<!-- RiassegnazioneVisio&#45;&gt;AvvioManualeVisio -->
-<g id="edge19" class="edge">
-<title>RiassegnazioneVisio&#45;&gt;AvvioManualeVisio</title>
-<path fill="none" stroke="black" d="M2569.71,-418.17C2569.89,-407.14 2572.1,-393.35 2580.75,-384.75 2596.83,-368.76 2649.24,-359.87 2694.69,-355.06"/>
-<polygon fill="black" stroke="black" points="2694.96,-358.55 2704.57,-354.07 2694.27,-351.59 2694.96,-358.55"/>
-<text text-anchor="middle" x="2623.12" y="-387.2" font-family="Times New Roman,serif" font-size="14.00">VisioAssegnata</text>
-</g>
-<!-- RichiestaModificaApptoPaVisio -->
-<g id="node9" class="node">
-<title>RichiestaModificaApptoPaVisio</title>
-<path fill="none" stroke="black" d="M2910.38,-651.75C2910.38,-651.75 2737.62,-651.75 2737.62,-651.75 2731.62,-651.75 2725.62,-645.75 2725.62,-639.75 2725.62,-639.75 2725.62,-627.75 2725.62,-627.75 2725.62,-621.75 2731.62,-615.75 2737.62,-615.75 2737.62,-615.75 2910.38,-615.75 2910.38,-615.75 2916.38,-615.75 2922.38,-621.75 2922.38,-627.75 2922.38,-627.75 2922.38,-639.75 2922.38,-639.75 2922.38,-645.75 2916.38,-651.75 2910.38,-651.75"/>
-<text text-anchor="middle" x="2824" y="-628.33" font-family="Times New Roman,serif" font-size="14.00">RichiestaModificaApptoPaVisio</text>
-</g>
-<!-- RichiestaModificaApptoPaVisio&#45;&gt;EsecuzioneVisio -->
-<g id="edge20" class="edge">
-<title>RichiestaModificaApptoPaVisio&#45;&gt;EsecuzioneVisio</title>
-<path fill="none" stroke="black" d="M2789.5,-615.34C2767.24,-604.61 2737.42,-591.21 2710,-582 2682.83,-572.87 2652.11,-565.25 2625.59,-559.48"/>
-<polygon fill="black" stroke="black" points="2626.49,-556.09 2615.98,-557.43 2625.03,-562.94 2626.49,-556.09"/>
-<text text-anchor="middle" x="2805" y="-584.45" font-family="Times New Roman,serif" font-size="14.00">RichiestaPaRicevuta</text>
-</g>
-<!-- ConfermaModificaApptoPaVisio -->
+<!-- AvvioDesk -->
 <g id="node10" class="node">
-<title>ConfermaModificaApptoPaVisio</title>
-<path fill="none" stroke="black" d="M2695.62,-651.75C2695.62,-651.75 2518.38,-651.75 2518.38,-651.75 2512.38,-651.75 2506.38,-645.75 2506.38,-639.75 2506.38,-639.75 2506.38,-627.75 2506.38,-627.75 2506.38,-621.75 2512.38,-615.75 2518.38,-615.75 2518.38,-615.75 2695.62,-615.75 2695.62,-615.75 2701.62,-615.75 2707.62,-621.75 2707.62,-627.75 2707.62,-627.75 2707.62,-639.75 2707.62,-639.75 2707.62,-645.75 2701.62,-651.75 2695.62,-651.75"/>
-<text text-anchor="middle" x="2607" y="-628.33" font-family="Times New Roman,serif" font-size="14.00">ConfermaModificaApptoPaVisio</text>
+<title>AvvioDesk</title>
+<path fill="none" stroke="black" d="M1459.12,-829.25C1459.12,-829.25 1404.88,-829.25 1404.88,-829.25 1398.88,-829.25 1392.88,-823.25 1392.88,-817.25 1392.88,-817.25 1392.88,-805.25 1392.88,-805.25 1392.88,-799.25 1398.88,-793.25 1404.88,-793.25 1404.88,-793.25 1459.12,-793.25 1459.12,-793.25 1465.12,-793.25 1471.12,-799.25 1471.12,-805.25 1471.12,-805.25 1471.12,-817.25 1471.12,-817.25 1471.12,-823.25 1465.12,-829.25 1459.12,-829.25"/>
+<text text-anchor="middle" x="1432" y="-805.83" font-family="Times New Roman,serif" font-size="14.00">AvvioDesk</text>
 </g>
-<!-- ConfermaModificaApptoPaVisio&#45;&gt;EsecuzioneVisio -->
-<g id="edge21" class="edge">
-<title>ConfermaModificaApptoPaVisio&#45;&gt;EsecuzioneVisio</title>
-<path fill="none" stroke="black" d="M2597.49,-615.4C2590.99,-603.54 2582.25,-587.59 2574.84,-574.08"/>
-<polygon fill="black" stroke="black" points="2578.1,-572.74 2570.22,-565.65 2571.96,-576.11 2578.1,-572.74"/>
-<text text-anchor="middle" x="2646.25" y="-584.45" font-family="Times New Roman,serif" font-size="14.00">ConfermaPaRicevuta</text>
+<!-- Apertura&#45;&gt;AvvioDesk -->
+<g id="edge4" class="edge">
+<title>Apertura&#45;&gt;AvvioDesk</title>
+<path fill="none" stroke="black" d="M1095.86,-968.55C1147.43,-957.97 1249.59,-933.51 1328,-892.75 1356.64,-877.86 1385.36,-854.87 1405.34,-837.27"/>
+<polygon fill="black" stroke="black" points="1407.64,-839.9 1412.74,-830.62 1402.97,-834.69 1407.64,-839.9"/>
+</g>
+<!-- AvvioManualeDesk -->
+<g id="node11" class="node">
+<title>AvvioManualeDesk</title>
+<path fill="none" stroke="black" d="M1366.38,-522.5C1366.38,-522.5 1265.62,-522.5 1265.62,-522.5 1259.62,-522.5 1253.62,-516.5 1253.62,-510.5 1253.62,-510.5 1253.62,-498.5 1253.62,-498.5 1253.62,-492.5 1259.62,-486.5 1265.62,-486.5 1265.62,-486.5 1366.38,-486.5 1366.38,-486.5 1372.38,-486.5 1378.38,-492.5 1378.38,-498.5 1378.38,-498.5 1378.38,-510.5 1378.38,-510.5 1378.38,-516.5 1372.38,-522.5 1366.38,-522.5"/>
+<text text-anchor="middle" x="1316" y="-499.07" font-family="Times New Roman,serif" font-size="14.00">AvvioManualeDesk</text>
+</g>
+<!-- Apertura&#45;&gt;AvvioManualeDesk -->
+<g id="edge5" class="edge">
+<title>Apertura&#45;&gt;AvvioManualeDesk</title>
+<path fill="none" stroke="black" d="M1030.22,-975.1C990.55,-973.6 929,-964.27 929,-920.75 929,-920.75 929,-920.75 929,-613 929,-588.05 932.16,-575.97 953,-562.25 974.08,-548.37 1155.21,-559.01 1180,-554.25 1209.64,-548.56 1241.45,-537.45 1266.86,-527.27"/>
+<polygon fill="black" stroke="black" points="1268,-530.59 1275.93,-523.56 1265.35,-524.11 1268,-530.59"/>
+</g>
+<!-- AvvioVisio -->
+<g id="node15" class="node">
+<title>AvvioVisio</title>
+<path fill="none" stroke="black" d="M2062.5,-829.25C2062.5,-829.25 2007.5,-829.25 2007.5,-829.25 2001.5,-829.25 1995.5,-823.25 1995.5,-817.25 1995.5,-817.25 1995.5,-805.25 1995.5,-805.25 1995.5,-799.25 2001.5,-793.25 2007.5,-793.25 2007.5,-793.25 2062.5,-793.25 2062.5,-793.25 2068.5,-793.25 2074.5,-799.25 2074.5,-805.25 2074.5,-805.25 2074.5,-817.25 2074.5,-817.25 2074.5,-823.25 2068.5,-829.25 2062.5,-829.25"/>
+<text text-anchor="middle" x="2035" y="-805.83" font-family="Times New Roman,serif" font-size="14.00">AvvioVisio</text>
+</g>
+<!-- Apertura&#45;&gt;AvvioVisio -->
+<g id="edge2" class="edge">
+<title>Apertura&#45;&gt;AvvioVisio</title>
+<path fill="none" stroke="black" d="M1095.66,-974.09C1234.32,-970.89 1774.4,-954.66 1931,-892.75 1961.89,-880.54 1991.26,-856.21 2010.86,-837.48"/>
+<polygon fill="black" stroke="black" points="2013.13,-840.16 2017.81,-830.65 2008.22,-835.16 2013.13,-840.16"/>
+</g>
+<!-- AvvioManualeVisio -->
+<g id="node16" class="node">
+<title>AvvioManualeVisio</title>
+<path fill="none" stroke="black" d="M1969.75,-522.5C1969.75,-522.5 1868.25,-522.5 1868.25,-522.5 1862.25,-522.5 1856.25,-516.5 1856.25,-510.5 1856.25,-510.5 1856.25,-498.5 1856.25,-498.5 1856.25,-492.5 1862.25,-486.5 1868.25,-486.5 1868.25,-486.5 1969.75,-486.5 1969.75,-486.5 1975.75,-486.5 1981.75,-492.5 1981.75,-498.5 1981.75,-498.5 1981.75,-510.5 1981.75,-510.5 1981.75,-516.5 1975.75,-522.5 1969.75,-522.5"/>
+<text text-anchor="middle" x="1919" y="-499.07" font-family="Times New Roman,serif" font-size="14.00">AvvioManualeVisio</text>
+</g>
+<!-- Apertura&#45;&gt;AvvioManualeVisio -->
+<g id="edge3" class="edge">
+<title>Apertura&#45;&gt;AvvioManualeVisio</title>
+<path fill="none" stroke="black" d="M1030.23,-970.07C1002.42,-964.02 967,-950.49 967,-920.75 967,-920.75 967,-920.75 967,-613 967,-600.27 970.45,-595.13 981,-588 1054.88,-538.05 1091.04,-568.58 1180,-562.25 1246.73,-557.51 1716.16,-566.07 1782,-554.25 1812.11,-548.85 1844.42,-537.63 1870.09,-527.32"/>
+<polygon fill="black" stroke="black" points="1871.34,-530.59 1879.26,-523.55 1868.68,-524.12 1871.34,-530.59"/>
+</g>
+<!-- AvvioSopralluogo -->
+<g id="node20" class="node">
+<title>AvvioSopralluogo</title>
+<path fill="none" stroke="black" d="M2612,-829.25C2612,-829.25 2518,-829.25 2518,-829.25 2512,-829.25 2506,-823.25 2506,-817.25 2506,-817.25 2506,-805.25 2506,-805.25 2506,-799.25 2512,-793.25 2518,-793.25 2518,-793.25 2612,-793.25 2612,-793.25 2618,-793.25 2624,-799.25 2624,-805.25 2624,-805.25 2624,-817.25 2624,-817.25 2624,-823.25 2618,-829.25 2612,-829.25"/>
+<text text-anchor="middle" x="2565" y="-805.83" font-family="Times New Roman,serif" font-size="14.00">AvvioSopralluogo</text>
+</g>
+<!-- Apertura&#45;&gt;AvvioSopralluogo -->
+<g id="edge6" class="edge">
+<title>Apertura&#45;&gt;AvvioSopralluogo</title>
+<path fill="none" stroke="black" d="M1095.75,-974.32C1274.03,-971.74 2128.81,-956.19 2384,-892.75 2434.73,-880.14 2489.03,-854.13 2524.77,-835.07"/>
+<polygon fill="black" stroke="black" points="2526.33,-838.21 2533.46,-830.37 2523,-832.05 2526.33,-838.21"/>
+</g>
+<!-- AvvioAccertSelfCare -->
+<g id="node28" class="node">
+<title>AvvioAccertSelfCare</title>
+<path fill="none" stroke="black" d="M1118.62,-829.25C1118.62,-829.25 1007.38,-829.25 1007.38,-829.25 1001.38,-829.25 995.38,-823.25 995.38,-817.25 995.38,-817.25 995.38,-805.25 995.38,-805.25 995.38,-799.25 1001.38,-793.25 1007.38,-793.25 1007.38,-793.25 1118.62,-793.25 1118.62,-793.25 1124.62,-793.25 1130.62,-799.25 1130.62,-805.25 1130.62,-805.25 1130.62,-817.25 1130.62,-817.25 1130.62,-823.25 1124.62,-829.25 1118.62,-829.25"/>
+<text text-anchor="middle" x="1063" y="-805.83" font-family="Times New Roman,serif" font-size="14.00">AvvioAccertSelfCare</text>
+</g>
+<!-- Apertura&#45;&gt;AvvioAccertSelfCare -->
+<g id="edge1" class="edge">
+<title>Apertura&#45;&gt;AvvioAccertSelfCare</title>
+<path fill="none" stroke="black" d="M1063,-957.36C1063,-929.5 1063,-874.6 1063,-840.89"/>
+<polygon fill="black" stroke="black" points="1066.5,-841.03 1063,-831.03 1059.5,-841.03 1066.5,-841.03"/>
+</g>
+<!-- AssegnazioneSopralluogoPCE -->
+<g id="node3" class="node">
+<title>AssegnazioneSopralluogoPCE</title>
+<path fill="none" stroke="black" d="M972.5,-434.75C972.5,-434.75 809.5,-434.75 809.5,-434.75 803.5,-434.75 797.5,-428.75 797.5,-422.75 797.5,-422.75 797.5,-410.75 797.5,-410.75 797.5,-404.75 803.5,-398.75 809.5,-398.75 809.5,-398.75 972.5,-398.75 972.5,-398.75 978.5,-398.75 984.5,-404.75 984.5,-410.75 984.5,-410.75 984.5,-422.75 984.5,-422.75 984.5,-428.75 978.5,-434.75 972.5,-434.75"/>
+<text text-anchor="middle" x="891" y="-411.32" font-family="Times New Roman,serif" font-size="14.00">AssegnazioneSopralluogoPCE</text>
+</g>
+<!-- AvvioSopralluogoPCE&#45;&gt;AssegnazioneSopralluogoPCE -->
+<g id="edge50" class="edge">
+<title>AvvioSopralluogoPCE&#45;&gt;AssegnazioneSopralluogoPCE</title>
+<path fill="none" stroke="black" d="M891,-486.15C891,-474.76 891,-459.59 891,-446.43"/>
+<polygon fill="black" stroke="black" points="894.5,-446.59 891,-436.59 887.5,-446.59 894.5,-446.59"/>
+<text text-anchor="middle" x="947.62" y="-455.2" font-family="Times New Roman,serif" font-size="14.00">SopralluogoAvvioto</text>
+</g>
+<!-- PianificazioneSopralluogoPCE -->
+<g id="node4" class="node">
+<title>PianificazioneSopralluogoPCE</title>
+<path fill="none" stroke="black" d="M912.5,-347C912.5,-347 749.5,-347 749.5,-347 743.5,-347 737.5,-341 737.5,-335 737.5,-335 737.5,-323 737.5,-323 737.5,-317 743.5,-311 749.5,-311 749.5,-311 912.5,-311 912.5,-311 918.5,-311 924.5,-317 924.5,-323 924.5,-323 924.5,-335 924.5,-335 924.5,-341 918.5,-347 912.5,-347"/>
+<text text-anchor="middle" x="831" y="-323.57" font-family="Times New Roman,serif" font-size="14.00">PianificazioneSopralluogoPCE</text>
+</g>
+<!-- AssegnazioneSopralluogoPCE&#45;&gt;PianificazioneSopralluogoPCE -->
+<g id="edge51" class="edge">
+<title>AssegnazioneSopralluogoPCE&#45;&gt;PianificazioneSopralluogoPCE</title>
+<path fill="none" stroke="black" stroke-dasharray="1,5" d="M878.86,-398.4C870.48,-386.43 859.18,-370.28 849.67,-356.68"/>
+<polygon fill="black" stroke="black" points="852.59,-354.75 843.99,-348.57 846.86,-358.77 852.59,-354.75"/>
+<text text-anchor="middle" x="929.38" y="-367.45" font-family="Times New Roman,serif" font-size="14.00">SopralluogoAssegnato</text>
+</g>
+<!-- EsecuzioneSopralluogoPCE -->
+<g id="node5" class="node">
+<title>EsecuzioneSopralluogoPCE</title>
+<path fill="none" stroke="black" d="M500.75,-259.25C500.75,-259.25 351.25,-259.25 351.25,-259.25 345.25,-259.25 339.25,-253.25 339.25,-247.25 339.25,-247.25 339.25,-235.25 339.25,-235.25 339.25,-229.25 345.25,-223.25 351.25,-223.25 351.25,-223.25 500.75,-223.25 500.75,-223.25 506.75,-223.25 512.75,-229.25 512.75,-235.25 512.75,-235.25 512.75,-247.25 512.75,-247.25 512.75,-253.25 506.75,-259.25 500.75,-259.25"/>
+<text text-anchor="middle" x="426" y="-235.82" font-family="Times New Roman,serif" font-size="14.00">EsecuzioneSopralluogoPCE</text>
+</g>
+<!-- PianificazioneSopralluogoPCE&#45;&gt;EsecuzioneSopralluogoPCE -->
+<g id="edge52" class="edge">
+<title>PianificazioneSopralluogoPCE&#45;&gt;EsecuzioneSopralluogoPCE</title>
+<path fill="none" stroke="black" d="M737.31,-326.02C647.76,-322.84 519.97,-314.56 475.25,-293 463.52,-287.34 453.05,-277.66 444.82,-268.26"/>
+<polygon fill="black" stroke="black" points="447.63,-266.17 438.59,-260.64 442.21,-270.6 447.63,-266.17"/>
+<text text-anchor="middle" x="538.38" y="-279.7" font-family="Times New Roman,serif" font-size="14.00">SopralluogoPianificato</text>
+</g>
+<!-- VerificaSopralluogoPCEDopoRifiuto -->
+<g id="node6" class="node">
+<title>VerificaSopralluogoPCEDopoRifiuto</title>
+<path fill="none" stroke="black" d="M1156.25,-259.25C1156.25,-259.25 955.75,-259.25 955.75,-259.25 949.75,-259.25 943.75,-253.25 943.75,-247.25 943.75,-247.25 943.75,-235.25 943.75,-235.25 943.75,-229.25 949.75,-223.25 955.75,-223.25 955.75,-223.25 1156.25,-223.25 1156.25,-223.25 1162.25,-223.25 1168.25,-229.25 1168.25,-235.25 1168.25,-235.25 1168.25,-247.25 1168.25,-247.25 1168.25,-253.25 1162.25,-259.25 1156.25,-259.25"/>
+<text text-anchor="middle" x="1056" y="-235.82" font-family="Times New Roman,serif" font-size="14.00">VerificaSopralluogoPCEDopoRifiuto</text>
+</g>
+<!-- PianificazioneSopralluogoPCE&#45;&gt;VerificaSopralluogoPCEDopoRifiuto -->
+<g id="edge53" class="edge">
+<title>PianificazioneSopralluogoPCE&#45;&gt;VerificaSopralluogoPCEDopoRifiuto</title>
+<path fill="none" stroke="black" d="M924.94,-319.51C967.91,-314.04 1012.99,-305.55 1030,-293 1037.73,-287.3 1043.33,-278.63 1047.32,-270.06"/>
+<polygon fill="black" stroke="black" points="1050.52,-271.48 1050.97,-260.89 1044.01,-268.89 1050.52,-271.48"/>
+<text text-anchor="middle" x="1101.12" y="-279.7" font-family="Times New Roman,serif" font-size="14.00">SopralluogoRifiutato</text>
+</g>
+<!-- EsecuzioneSopralluogoPCE&#45;&gt;PianificazioneSopralluogoPCE -->
+<g id="edge54" class="edge">
+<title>EsecuzioneSopralluogoPCE&#45;&gt;PianificazioneSopralluogoPCE</title>
+<path fill="none" stroke="black" d="M513.08,-252.5C542.1,-257.75 574.12,-265.6 602,-277.25 613.52,-282.06 613.67,-288.35 625.25,-293 656.82,-305.68 692.9,-313.77 725.95,-318.92"/>
+<polygon fill="black" stroke="black" points="725.13,-322.34 735.53,-320.34 726.15,-315.42 725.13,-322.34"/>
+<text text-anchor="middle" x="692.88" y="-279.7" font-family="Times New Roman,serif" font-size="14.00">AppuntamentoAnnullato</text>
+</g>
+<!-- EsecuzioneSopralluogoPCE&#45;&gt;PianificazioneSopralluogoPCE -->
+<g id="edge55" class="edge">
+<title>EsecuzioneSopralluogoPCE&#45;&gt;PianificazioneSopralluogoPCE</title>
+<path fill="none" stroke="black" d="M513.17,-246.24C597,-251 717.24,-260.49 761,-277.25 763.3,-278.13 781.61,-291.43 798.93,-304.19"/>
+<polygon fill="black" stroke="black" points="796.46,-306.72 806.59,-309.84 800.62,-301.09 796.46,-306.72"/>
+<text text-anchor="middle" x="825.62" y="-279.7" font-family="Times New Roman,serif" font-size="14.00">ChiusuraAttivita</text>
+</g>
+<!-- EsecuzioneSopralluogoPCE&#45;&gt;PianificazioneSopralluogoPCE -->
+<g id="edge56" class="edge">
+<title>EsecuzioneSopralluogoPCE&#45;&gt;PianificazioneSopralluogoPCE</title>
+<path fill="none" stroke="black" d="M338.83,-259.47C318.08,-267.31 305.45,-278.23 319.25,-293 346.36,-322.03 584.26,-327.6 725.96,-328.3"/>
+<polygon fill="black" stroke="black" points="725.72,-331.8 735.74,-328.34 725.75,-324.8 725.72,-331.8"/>
+<text text-anchor="middle" x="383.88" y="-279.7" font-family="Times New Roman,serif" font-size="14.00">ChiusuraSoprallVariato</text>
+</g>
+<!-- EsecuzioneSopralluogoPCE&#45;&gt;EsecuzioneSopralluogoPCE -->
+<g id="edge57" class="edge">
+<title>EsecuzioneSopralluogoPCE&#45;&gt;EsecuzioneSopralluogoPCE</title>
+<path fill="none" stroke="black" d="M513.09,-244.81C523.76,-244.17 530.75,-242.99 530.75,-241.25 530.75,-240.25 528.41,-239.43 524.38,-238.79"/>
+<polygon fill="black" stroke="black" points="524.89,-235.32 514.6,-237.84 524.21,-242.29 524.89,-235.32"/>
+<text text-anchor="middle" x="602.75" y="-235.82" font-family="Times New Roman,serif" font-size="14.00">AppuntamentoModificato</text>
+</g>
+<!-- EsecuzioneSopralluogoPCE&#45;&gt;EsecuzioneSopralluogoPCE -->
+<g id="edge58" class="edge">
+<title>EsecuzioneSopralluogoPCE&#45;&gt;EsecuzioneSopralluogoPCE</title>
+<path fill="none" stroke="black" d="M513.12,-248.7C586.04,-250.9 674.75,-248.42 674.75,-241.25 674.75,-234.45 594.82,-231.86 524.34,-233.5"/>
+<polygon fill="black" stroke="black" points="524.54,-229.99 514.64,-233.76 524.73,-236.99 524.54,-229.99"/>
+<text text-anchor="middle" x="743" y="-235.82" font-family="Times New Roman,serif" font-size="14.00">DatiObbligatoriMancanti</text>
+</g>
+<!-- ApprovazioneSopralluogoPCE -->
+<g id="node7" class="node">
+<title>ApprovazioneSopralluogoPCE</title>
+<path fill="none" stroke="black" d="M837.62,-171.5C837.62,-171.5 672.38,-171.5 672.38,-171.5 666.38,-171.5 660.38,-165.5 660.38,-159.5 660.38,-159.5 660.38,-147.5 660.38,-147.5 660.38,-141.5 666.38,-135.5 672.38,-135.5 672.38,-135.5 837.62,-135.5 837.62,-135.5 843.62,-135.5 849.62,-141.5 849.62,-147.5 849.62,-147.5 849.62,-159.5 849.62,-159.5 849.62,-165.5 843.62,-171.5 837.62,-171.5"/>
+<text text-anchor="middle" x="755" y="-148.07" font-family="Times New Roman,serif" font-size="14.00">ApprovazioneSopralluogoPCE</text>
+</g>
+<!-- EsecuzioneSopralluogoPCE&#45;&gt;ApprovazioneSopralluogoPCE -->
+<g id="edge59" class="edge">
+<title>EsecuzioneSopralluogoPCE&#45;&gt;ApprovazioneSopralluogoPCE</title>
+<path fill="none" stroke="black" stroke-dasharray="1,5" d="M492.97,-222.79C546.34,-208.88 621.15,-189.39 677.18,-174.78"/>
+<polygon fill="black" stroke="black" points="677.86,-178.22 686.65,-172.31 676.1,-171.45 677.86,-178.22"/>
+<text text-anchor="middle" x="697.75" y="-191.95" font-family="Times New Roman,serif" font-size="14.00">RichiestaNuovoSopralluogo</text>
+</g>
+<!-- VerificaSopralluogoPCEDopoRifiuto&#45;&gt;PianificazioneSopralluogoPCE -->
+<g id="edge60" class="edge">
+<title>VerificaSopralluogoPCEDopoRifiuto&#45;&gt;PianificazioneSopralluogoPCE</title>
+<path fill="none" stroke="black" d="M946.67,-259.75C930.35,-264.32 914.04,-270.05 899.25,-277.25 889.31,-282.09 888.78,-286.28 880,-293 875.34,-296.56 870.38,-300.24 865.46,-303.82"/>
+<polygon fill="black" stroke="black" points="863.46,-300.94 857.39,-309.62 867.55,-306.63 863.46,-300.94"/>
+<text text-anchor="middle" x="962.38" y="-279.7" font-family="Times New Roman,serif" font-size="14.00">SopralluogoAssegnato</text>
+</g>
+<!-- ApprovazioneSopralluogoPCE&#45;&gt;PianificazioneSopralluogoPCE -->
+<g id="edge61" class="edge">
+<title>ApprovazioneSopralluogoPCE&#45;&gt;PianificazioneSopralluogoPCE</title>
+<path fill="none" stroke="black" stroke-dasharray="1,5" d="M783.34,-171.9C813.6,-192.55 859.08,-230.19 873,-277.25 874.99,-283.96 875.97,-286.66 873,-293 871.34,-296.55 869.12,-299.86 866.57,-302.92"/>
+<polygon fill="black" stroke="black" points="864.31,-300.23 859.76,-309.79 869.28,-305.16 864.31,-300.23"/>
+<text text-anchor="middle" x="895.38" y="-235.82" font-family="Times New Roman,serif" font-size="14.00">Approvato</text>
+</g>
+<!-- NuovoSopralluogoNonApprovatoPCE -->
+<g id="node8" class="node">
+<title>NuovoSopralluogoNonApprovatoPCE</title>
+<path fill="none" stroke="black" d="M859.75,-83.75C859.75,-83.75 650.25,-83.75 650.25,-83.75 644.25,-83.75 638.25,-77.75 638.25,-71.75 638.25,-71.75 638.25,-59.75 638.25,-59.75 638.25,-53.75 644.25,-47.75 650.25,-47.75 650.25,-47.75 859.75,-47.75 859.75,-47.75 865.75,-47.75 871.75,-53.75 871.75,-59.75 871.75,-59.75 871.75,-71.75 871.75,-71.75 871.75,-77.75 865.75,-83.75 859.75,-83.75"/>
+<text text-anchor="middle" x="755" y="-60.33" font-family="Times New Roman,serif" font-size="14.00">NuovoSopralluogoNonApprovatoPCE</text>
+</g>
+<!-- ApprovazioneSopralluogoPCE&#45;&gt;NuovoSopralluogoNonApprovatoPCE -->
+<g id="edge62" class="edge">
+<title>ApprovazioneSopralluogoPCE&#45;&gt;NuovoSopralluogoNonApprovatoPCE</title>
+<path fill="none" stroke="black" d="M755,-135.15C755,-123.76 755,-108.59 755,-95.43"/>
+<polygon fill="black" stroke="black" points="758.5,-95.59 755,-85.59 751.5,-95.59 758.5,-95.59"/>
+<text text-anchor="middle" x="797.38" y="-104.2" font-family="Times New Roman,serif" font-size="14.00">NonApprovato</text>
+</g>
+<!-- Pa_SopralluogoPCE -->
+<g id="node9" class="node">
+<title>Pa_SopralluogoPCE</title>
+<path fill="none" stroke="black" d="M191.12,-347C191.12,-347 82.88,-347 82.88,-347 76.88,-347 70.88,-341 70.88,-335 70.88,-335 70.88,-323 70.88,-323 70.88,-317 76.88,-311 82.88,-311 82.88,-311 191.12,-311 191.12,-311 197.12,-311 203.12,-317 203.12,-323 203.12,-323 203.12,-335 203.12,-335 203.12,-341 197.12,-347 191.12,-347"/>
+<text text-anchor="middle" x="137" y="-323.57" font-family="Times New Roman,serif" font-size="14.00">Pa_SopralluogoPCE</text>
+</g>
+<!-- Pa_SopralluogoPCE&#45;&gt;EsecuzioneSopralluogoPCE -->
+<g id="edge63" class="edge">
+<title>Pa_SopralluogoPCE&#45;&gt;EsecuzioneSopralluogoPCE</title>
+<path fill="none" stroke="black" stroke-dasharray="1,5" d="M148.73,-310.51C157.36,-299.1 170.15,-284.96 185,-277.25 209.62,-264.47 272.31,-255.6 327.58,-249.98"/>
+<polygon fill="black" stroke="black" points="327.77,-253.48 337.38,-249.02 327.08,-246.52 327.77,-253.48"/>
+<text text-anchor="middle" x="242" y="-279.7" font-family="Times New Roman,serif" font-size="14.00">RichiestaPaRicevuta</text>
+</g>
+<!-- Pa_SopralluogoPCE&#45;&gt;EsecuzioneSopralluogoPCE -->
+<g id="edge64" class="edge">
+<title>Pa_SopralluogoPCE&#45;&gt;EsecuzioneSopralluogoPCE</title>
+<path fill="none" stroke="black" stroke-dasharray="1,5" d="M70.68,-313.59C46.29,-305.32 27.81,-293.34 42.5,-277.25 61.42,-256.53 220.45,-247.93 327.69,-244.47"/>
+<polygon fill="black" stroke="black" points="327.8,-247.97 337.69,-244.16 327.58,-240.97 327.8,-247.97"/>
+<text text-anchor="middle" x="101.25" y="-279.7" font-family="Times New Roman,serif" font-size="14.00">ConfermaPaRicevuta</text>
 </g>
 <!-- EsecuzioneDesk -->
-<g id="node13" class="node">
+<g id="node12" class="node">
 <title>EsecuzioneDesk</title>
-<path fill="none" stroke="black" d="M1015.75,-564C1015.75,-564 932.25,-564 932.25,-564 926.25,-564 920.25,-558 920.25,-552 920.25,-552 920.25,-540 920.25,-540 920.25,-534 926.25,-528 932.25,-528 932.25,-528 1015.75,-528 1015.75,-528 1021.75,-528 1027.75,-534 1027.75,-540 1027.75,-540 1027.75,-552 1027.75,-552 1027.75,-558 1021.75,-564 1015.75,-564"/>
-<text text-anchor="middle" x="974" y="-540.58" font-family="Times New Roman,serif" font-size="14.00">EsecuzioneDesk</text>
+<path fill="none" stroke="black" d="M1287.75,-741.5C1287.75,-741.5 1204.25,-741.5 1204.25,-741.5 1198.25,-741.5 1192.25,-735.5 1192.25,-729.5 1192.25,-729.5 1192.25,-717.5 1192.25,-717.5 1192.25,-711.5 1198.25,-705.5 1204.25,-705.5 1204.25,-705.5 1287.75,-705.5 1287.75,-705.5 1293.75,-705.5 1299.75,-711.5 1299.75,-717.5 1299.75,-717.5 1299.75,-729.5 1299.75,-729.5 1299.75,-735.5 1293.75,-741.5 1287.75,-741.5"/>
+<text text-anchor="middle" x="1246" y="-718.08" font-family="Times New Roman,serif" font-size="14.00">EsecuzioneDesk</text>
 </g>
 <!-- AvvioDesk&#45;&gt;EsecuzioneDesk -->
 <g id="edge22" class="edge">
 <title>AvvioDesk&#45;&gt;EsecuzioneDesk</title>
-<path fill="none" stroke="black" d="M991.55,-615.4C988.6,-603.89 984.65,-588.53 981.25,-575.28"/>
-<polygon fill="black" stroke="black" points="984.7,-574.61 978.82,-565.79 977.92,-576.35 984.7,-574.61"/>
-<text text-anchor="middle" x="1028.75" y="-584.45" font-family="Times New Roman,serif" font-size="14.00">DeskPianificata</text>
+<path fill="none" stroke="black" d="M1445.87,-793.18C1452.76,-782.53 1458.07,-769.08 1450,-759.5 1432.47,-738.7 1364.33,-730.26 1311.57,-726.84"/>
+<polygon fill="black" stroke="black" points="1311.93,-723.35 1301.74,-726.25 1311.51,-730.34 1311.93,-723.35"/>
+<text text-anchor="middle" x="1496.75" y="-761.95" font-family="Times New Roman,serif" font-size="14.00">DeskPianificata</text>
 </g>
 <!-- AvvioManualeDesk&#45;&gt;EsecuzioneDesk -->
 <g id="edge23" class="edge">
 <title>AvvioManualeDesk&#45;&gt;EsecuzioneDesk</title>
-<path fill="none" stroke="black" d="M1210.27,-367.03C1224.38,-377.65 1240.25,-392.65 1248,-410.5 1261.41,-441.38 1269.16,-460.07 1248,-486.25 1222.27,-518.08 1112.01,-533.45 1039.44,-540.24"/>
-<polygon fill="black" stroke="black" points="1039.29,-536.74 1029.65,-541.13 1039.92,-543.71 1039.29,-536.74"/>
-<text text-anchor="middle" x="1303.75" y="-431.07" font-family="Times New Roman,serif" font-size="14.00">DeskPianificata</text>
-</g>
-<!-- EsecuzioneDesk&#45;&gt;AvvioPeriziaPostDesk -->
-<g id="edge24" class="edge">
-<title>EsecuzioneDesk&#45;&gt;AvvioPeriziaPostDesk</title>
-<path fill="none" stroke="black" d="M1027.99,-541.76C1124.62,-536.12 1333.53,-524.67 1510,-520 1532.02,-519.42 3076.28,-519.82 3096,-510 3131.39,-492.38 3297.03,-262.68 3309,-225 3323.73,-178.62 3320.06,-162.89 3309,-115.5 3306.63,-105.35 3302.17,-94.93 3297.5,-85.83"/>
-<polygon fill="black" stroke="black" points="3300.63,-84.26 3292.75,-77.18 3294.5,-87.63 3300.63,-84.26"/>
-<text text-anchor="middle" x="3311.12" y="-299.45" font-family="Times New Roman,serif" font-size="14.00">DeskCompletata</text>
+<path fill="none" stroke="black" d="M1283.9,-522.8C1261.25,-536.99 1232.69,-559.37 1219.5,-588 1203.5,-622.73 1218.02,-666.85 1231.06,-694.89"/>
+<polygon fill="black" stroke="black" points="1227.88,-696.35 1235.43,-703.79 1234.16,-693.27 1227.88,-696.35"/>
+<text text-anchor="middle" x="1261.75" y="-608.58" font-family="Times New Roman,serif" font-size="14.00">DeskPianificata</text>
 </g>
 <!-- EsecuzioneDesk&#45;&gt;AvvioManualeDesk -->
-<g id="edge25" class="edge">
+<g id="edge24" class="edge">
 <title>EsecuzioneDesk&#45;&gt;AvvioManualeDesk</title>
-<path fill="none" stroke="black" d="M1027.91,-530.92C1039.09,-525.87 1049.91,-519.09 1058,-510 1088.59,-475.64 1058.88,-447.29 1086.5,-410.5 1098.32,-394.75 1115.53,-382.07 1132.15,-372.45"/>
-<polygon fill="black" stroke="black" points="1133.41,-375.75 1140.49,-367.86 1130.04,-369.61 1133.41,-375.75"/>
-<text text-anchor="middle" x="1164.75" y="-431.07" font-family="Times New Roman,serif" font-size="14.00">DeskCompletataNuovaDesk</text>
+<path fill="none" stroke="black" d="M1300.16,-714.9C1355.39,-705.87 1435.38,-688.81 1453,-663.75 1479,-626.76 1475.55,-596.47 1446,-562.25 1431.13,-545.03 1410.06,-532.85 1389.2,-524.31"/>
+<polygon fill="black" stroke="black" points="1390.69,-521.13 1380.09,-520.83 1388.19,-527.67 1390.69,-521.13"/>
+<text text-anchor="middle" x="1548.75" y="-608.58" font-family="Times New Roman,serif" font-size="14.00">DeskCompletataNuovaDesk</text>
+</g>
+<!-- EsecuzioneDesk&#45;&gt;EsecuzioneDesk -->
+<g id="edge25" class="edge">
+<title>EsecuzioneDesk&#45;&gt;EsecuzioneDesk</title>
+<path fill="none" stroke="black" d="M1300.13,-726.11C1310.45,-725.8 1317.75,-724.93 1317.75,-723.5 1317.75,-722.7 1315.44,-722.07 1311.58,-721.62"/>
+<polygon fill="black" stroke="black" points="1311.84,-718.13 1301.64,-720.99 1311.4,-725.11 1311.84,-718.13"/>
+<text text-anchor="middle" x="1389.75" y="-718.08" font-family="Times New Roman,serif" font-size="14.00">AppuntamentoModificato</text>
 </g>
 <!-- EsecuzioneDesk&#45;&gt;EsecuzioneDesk -->
 <g id="edge26" class="edge">
 <title>EsecuzioneDesk&#45;&gt;EsecuzioneDesk</title>
-<path fill="none" stroke="black" d="M1028.13,-548.61C1038.45,-548.3 1045.75,-547.43 1045.75,-546 1045.75,-545.2 1043.44,-544.57 1039.58,-544.12"/>
-<polygon fill="black" stroke="black" points="1039.84,-540.63 1029.64,-543.49 1039.4,-547.61 1039.84,-540.63"/>
-<text text-anchor="middle" x="1117.75" y="-540.58" font-family="Times New Roman,serif" font-size="14.00">AppuntamentoModificato</text>
+<path fill="none" stroke="black" d="M1300.11,-727.92C1365.23,-730.24 1461.75,-728.77 1461.75,-723.5 1461.75,-718.53 1375.85,-716.94 1311.45,-718.73"/>
+<polygon fill="black" stroke="black" points="1311.51,-715.22 1301.62,-719.04 1311.73,-722.22 1311.51,-715.22"/>
+<text text-anchor="middle" x="1529.62" y="-718.08" font-family="Times New Roman,serif" font-size="14.00">AppuntamentoAnnullato</text>
 </g>
 <!-- EsecuzioneDesk&#45;&gt;EsecuzioneDesk -->
 <g id="edge27" class="edge">
 <title>EsecuzioneDesk&#45;&gt;EsecuzioneDesk</title>
-<path fill="none" stroke="black" d="M1028.11,-550.42C1093.23,-552.74 1189.75,-551.27 1189.75,-546 1189.75,-541.03 1103.85,-539.44 1039.45,-541.23"/>
-<polygon fill="black" stroke="black" points="1039.51,-537.72 1029.62,-541.54 1039.73,-544.72 1039.51,-537.72"/>
-<text text-anchor="middle" x="1257.62" y="-540.58" font-family="Times New Roman,serif" font-size="14.00">AppuntamentoAnnullato</text>
-</g>
-<!-- EsecuzioneDesk&#45;&gt;EsecuzioneDesk -->
-<g id="edge28" class="edge">
-<title>EsecuzioneDesk&#45;&gt;EsecuzioneDesk</title>
-<path fill="none" stroke="black" d="M1028.1,-551.46C1128.52,-556.49 1325.5,-554.67 1325.5,-546 1325.5,-537.65 1142.5,-535.66 1039.35,-540.02"/>
-<polygon fill="black" stroke="black" points="1039.44,-536.52 1029.61,-540.47 1039.76,-543.51 1039.44,-536.52"/>
-<text text-anchor="middle" x="1393.75" y="-540.58" font-family="Times New Roman,serif" font-size="14.00">DatiObbligatoriMancanti</text>
+<path fill="none" stroke="black" d="M1300.1,-728.96C1400.52,-733.99 1597.5,-732.17 1597.5,-723.5 1597.5,-715.15 1414.5,-713.16 1311.35,-717.52"/>
+<polygon fill="black" stroke="black" points="1311.44,-714.02 1301.61,-717.97 1311.76,-721.01 1311.44,-714.02"/>
+<text text-anchor="middle" x="1665.75" y="-718.08" font-family="Times New Roman,serif" font-size="14.00">DatiObbligatoriMancanti</text>
 </g>
 <!-- RiassegnazioneDesk -->
-<g id="node14" class="node">
+<g id="node13" class="node">
 <title>RiassegnazioneDesk</title>
-<path fill="none" stroke="black" d="M1038,-454.5C1038,-454.5 932,-454.5 932,-454.5 926,-454.5 920,-448.5 920,-442.5 920,-442.5 920,-430.5 920,-430.5 920,-424.5 926,-418.5 932,-418.5 932,-418.5 1038,-418.5 1038,-418.5 1044,-418.5 1050,-424.5 1050,-430.5 1050,-430.5 1050,-442.5 1050,-442.5 1050,-448.5 1044,-454.5 1038,-454.5"/>
-<text text-anchor="middle" x="985" y="-431.07" font-family="Times New Roman,serif" font-size="14.00">RiassegnazioneDesk</text>
+<path fill="none" stroke="black" d="M1432,-632C1432,-632 1326,-632 1326,-632 1320,-632 1314,-626 1314,-620 1314,-620 1314,-608 1314,-608 1314,-602 1320,-596 1326,-596 1326,-596 1432,-596 1432,-596 1438,-596 1444,-602 1444,-608 1444,-608 1444,-620 1444,-620 1444,-626 1438,-632 1432,-632"/>
+<text text-anchor="middle" x="1379" y="-608.58" font-family="Times New Roman,serif" font-size="14.00">RiassegnazioneDesk</text>
 </g>
 <!-- EsecuzioneDesk&#45;&gt;RiassegnazioneDesk -->
-<g id="edge29" class="edge">
+<g id="edge28" class="edge">
 <title>EsecuzioneDesk&#45;&gt;RiassegnazioneDesk</title>
-<path fill="none" stroke="black" d="M975.77,-527.73C977.47,-511.12 980.07,-485.7 982.08,-466.07"/>
-<polygon fill="black" stroke="black" points="985.55,-466.54 983.08,-456.23 978.58,-465.83 985.55,-466.54"/>
-<text text-anchor="middle" x="1016.5" y="-496.7" font-family="Times New Roman,serif" font-size="14.00">DeskRifiutata</text>
+<path fill="none" stroke="black" d="M1267.37,-705.23C1289.47,-687.36 1324.17,-659.31 1349.02,-639.23"/>
+<polygon fill="black" stroke="black" points="1350.93,-642.19 1356.51,-633.18 1346.53,-636.74 1350.93,-642.19"/>
+<text text-anchor="middle" x="1345.5" y="-674.2" font-family="Times New Roman,serif" font-size="14.00">DeskRifiutata</text>
+</g>
+<!-- AvvioPeriziaPostDesk -->
+<g id="node32" class="node">
+<title>AvvioPeriziaPostDesk</title>
+<path fill="none" stroke="black" d="M3812.25,-632C3812.25,-632 3695.75,-632 3695.75,-632 3689.75,-632 3683.75,-626 3683.75,-620 3683.75,-620 3683.75,-608 3683.75,-608 3683.75,-602 3689.75,-596 3695.75,-596 3695.75,-596 3812.25,-596 3812.25,-596 3818.25,-596 3824.25,-602 3824.25,-608 3824.25,-608 3824.25,-620 3824.25,-620 3824.25,-626 3818.25,-632 3812.25,-632"/>
+<text text-anchor="middle" x="3754" y="-608.58" font-family="Times New Roman,serif" font-size="14.00">AvvioPeriziaPostDesk</text>
+</g>
+<!-- EsecuzioneDesk&#45;&gt;AvvioPeriziaPostDesk -->
+<g id="edge29" class="edge">
+<title>EsecuzioneDesk&#45;&gt;AvvioPeriziaPostDesk</title>
+<path fill="none" stroke="black" d="M1300.01,-720.4C1396.66,-716.73 1605.61,-709.18 1782,-705.5 1832.05,-704.46 3537.05,-704.87 3584,-687.5 3594.21,-683.72 3592.75,-676.04 3602.75,-671.75 3632.03,-659.19 3643.85,-674.06 3674,-663.75 3691.01,-657.93 3708.24,-648.06 3722.33,-638.71"/>
+<polygon fill="black" stroke="black" points="3724.03,-641.78 3730.29,-633.23 3720.07,-636.01 3724.03,-641.78"/>
+<text text-anchor="middle" x="3648.12" y="-674.2" font-family="Times New Roman,serif" font-size="14.00">DeskCompletata</text>
 </g>
 <!-- RiassegnazioneDesk&#45;&gt;AvvioManualeDesk -->
 <g id="edge30" class="edge">
 <title>RiassegnazioneDesk&#45;&gt;AvvioManualeDesk</title>
-<path fill="none" stroke="black" d="M984,-418.15C984.35,-407.11 986.76,-393.32 995.5,-384.75 1011.63,-368.93 1063.82,-360.03 1109.06,-355.17"/>
-<polygon fill="black" stroke="black" points="1109.28,-358.67 1118.88,-354.17 1108.58,-351.7 1109.28,-358.67"/>
-<text text-anchor="middle" x="1037.75" y="-387.2" font-family="Times New Roman,serif" font-size="14.00">DeskAssegnata</text>
+<path fill="none" stroke="black" d="M1368.88,-595.73C1358.87,-578.65 1343.4,-552.25 1331.78,-532.42"/>
+<polygon fill="black" stroke="black" points="1334.94,-530.89 1326.86,-524.03 1328.9,-534.43 1334.94,-530.89"/>
+<text text-anchor="middle" x="1398.75" y="-564.7" font-family="Times New Roman,serif" font-size="14.00">DeskAssegnata</text>
 </g>
-<!-- RichiestaModificaApptoPaDesk -->
-<g id="node15" class="node">
-<title>RichiestaModificaApptoPaDesk</title>
-<path fill="none" stroke="black" d="M1263,-651.75C1263,-651.75 1091,-651.75 1091,-651.75 1085,-651.75 1079,-645.75 1079,-639.75 1079,-639.75 1079,-627.75 1079,-627.75 1079,-621.75 1085,-615.75 1091,-615.75 1091,-615.75 1263,-615.75 1263,-615.75 1269,-615.75 1275,-621.75 1275,-627.75 1275,-627.75 1275,-639.75 1275,-639.75 1275,-645.75 1269,-651.75 1263,-651.75"/>
-<text text-anchor="middle" x="1177" y="-628.33" font-family="Times New Roman,serif" font-size="14.00">RichiestaModificaApptoPaDesk</text>
+<!-- Pa_Desk -->
+<g id="node14" class="node">
+<title>Pa_Desk</title>
+<path fill="none" stroke="black" d="M1307.12,-829.25C1307.12,-829.25 1264.88,-829.25 1264.88,-829.25 1258.88,-829.25 1252.88,-823.25 1252.88,-817.25 1252.88,-817.25 1252.88,-805.25 1252.88,-805.25 1252.88,-799.25 1258.88,-793.25 1264.88,-793.25 1264.88,-793.25 1307.12,-793.25 1307.12,-793.25 1313.12,-793.25 1319.12,-799.25 1319.12,-805.25 1319.12,-805.25 1319.12,-817.25 1319.12,-817.25 1319.12,-823.25 1313.12,-829.25 1307.12,-829.25"/>
+<text text-anchor="middle" x="1286" y="-805.83" font-family="Times New Roman,serif" font-size="14.00">Pa_Desk</text>
 </g>
-<!-- RichiestaModificaApptoPaDesk&#45;&gt;EsecuzioneVisio -->
+<!-- Pa_Desk&#45;&gt;EsecuzioneDesk -->
 <g id="edge31" class="edge">
-<title>RichiestaModificaApptoPaDesk&#45;&gt;EsecuzioneVisio</title>
-<path fill="none" stroke="black" d="M1199.73,-615.48C1216.92,-603.54 1241.63,-588.65 1266,-582 1397.64,-546.07 2358.75,-582.15 2494,-564 2494.12,-563.98 2494.23,-563.97 2494.35,-563.95"/>
-<polygon fill="black" stroke="black" points="2494.67,-567.45 2503.96,-562.36 2493.52,-560.54 2494.67,-567.45"/>
-<text text-anchor="middle" x="1323" y="-584.45" font-family="Times New Roman,serif" font-size="14.00">RichiestaPaRicevuta</text>
+<title>Pa_Desk&#45;&gt;EsecuzioneDesk</title>
+<path fill="none" stroke="black" stroke-dasharray="1,5" d="M1252.44,-803.3C1237.04,-798.25 1220.19,-789.67 1211,-775.25 1205.68,-766.9 1208.78,-757.95 1214.9,-749.93"/>
+<polygon fill="black" stroke="black" points="1217.28,-752.52 1221.46,-742.79 1212.12,-747.79 1217.28,-752.52"/>
+<text text-anchor="middle" x="1268" y="-761.95" font-family="Times New Roman,serif" font-size="14.00">RichiestaPaRicevuta</text>
 </g>
-<!-- ConfermaModificaApptoPaDesk -->
-<g id="node16" class="node">
-<title>ConfermaModificaApptoPaDesk</title>
-<path fill="none" stroke="black" d="M1481.25,-651.75C1481.25,-651.75 1304.75,-651.75 1304.75,-651.75 1298.75,-651.75 1292.75,-645.75 1292.75,-639.75 1292.75,-639.75 1292.75,-627.75 1292.75,-627.75 1292.75,-621.75 1298.75,-615.75 1304.75,-615.75 1304.75,-615.75 1481.25,-615.75 1481.25,-615.75 1487.25,-615.75 1493.25,-621.75 1493.25,-627.75 1493.25,-627.75 1493.25,-639.75 1493.25,-639.75 1493.25,-645.75 1487.25,-651.75 1481.25,-651.75"/>
-<text text-anchor="middle" x="1393" y="-628.33" font-family="Times New Roman,serif" font-size="14.00">ConfermaModificaApptoPaDesk</text>
-</g>
-<!-- ConfermaModificaApptoPaDesk&#45;&gt;EsecuzioneVisio -->
+<!-- Pa_Desk&#45;&gt;EsecuzioneDesk -->
 <g id="edge32" class="edge">
-<title>ConfermaModificaApptoPaDesk&#45;&gt;EsecuzioneVisio</title>
-<path fill="none" stroke="black" d="M1386.78,-615.38C1384.04,-604.33 1383.09,-590.55 1391.5,-582 1412.98,-560.17 2463.65,-568.1 2494,-564 2494.12,-563.98 2494.23,-563.97 2494.35,-563.95"/>
-<polygon fill="black" stroke="black" points="2494.67,-567.45 2503.96,-562.35 2493.52,-560.54 2494.67,-567.45"/>
-<text text-anchor="middle" x="1450.25" y="-584.45" font-family="Times New Roman,serif" font-size="14.00">ConfermaPaRicevuta</text>
+<title>Pa_Desk&#45;&gt;EsecuzioneDesk</title>
+<path fill="none" stroke="black" stroke-dasharray="1,5" d="M1312.41,-792.9C1323.6,-783.32 1332.51,-771.05 1325,-759.5 1321.08,-753.48 1315.86,-748.48 1309.97,-744.34"/>
+<polygon fill="black" stroke="black" points="1311.91,-741.43 1301.53,-739.29 1308.32,-747.43 1311.91,-741.43"/>
+<text text-anchor="middle" x="1386.25" y="-761.95" font-family="Times New Roman,serif" font-size="14.00">ConfermaPaRicevuta</text>
 </g>
-<!-- GestioneSelfCare -->
+<!-- EsecuzioneVisio -->
+<g id="node17" class="node">
+<title>EsecuzioneVisio</title>
+<path fill="none" stroke="black" d="M1890.12,-741.5C1890.12,-741.5 1805.88,-741.5 1805.88,-741.5 1799.88,-741.5 1793.88,-735.5 1793.88,-729.5 1793.88,-729.5 1793.88,-717.5 1793.88,-717.5 1793.88,-711.5 1799.88,-705.5 1805.88,-705.5 1805.88,-705.5 1890.12,-705.5 1890.12,-705.5 1896.12,-705.5 1902.12,-711.5 1902.12,-717.5 1902.12,-717.5 1902.12,-729.5 1902.12,-729.5 1902.12,-735.5 1896.12,-741.5 1890.12,-741.5"/>
+<text text-anchor="middle" x="1848" y="-718.08" font-family="Times New Roman,serif" font-size="14.00">EsecuzioneVisio</text>
+</g>
+<!-- AvvioVisio&#45;&gt;EsecuzioneVisio -->
+<g id="edge11" class="edge">
+<title>AvvioVisio&#45;&gt;EsecuzioneVisio</title>
+<path fill="none" stroke="black" d="M2048.37,-793.14C2054.99,-782.48 2060.03,-769.02 2052,-759.5 2034.47,-738.7 1966.33,-730.26 1913.57,-726.84"/>
+<polygon fill="black" stroke="black" points="1913.93,-723.35 1903.74,-726.25 1913.51,-730.34 1913.93,-723.35"/>
+<text text-anchor="middle" x="2099.12" y="-761.95" font-family="Times New Roman,serif" font-size="14.00">VisioPianificata</text>
+</g>
+<!-- AvvioManualeVisio&#45;&gt;EsecuzioneVisio -->
+<g id="edge12" class="edge">
+<title>AvvioManualeVisio&#45;&gt;EsecuzioneVisio</title>
+<path fill="none" stroke="black" d="M1886.66,-522.74C1863.84,-536.89 1835.05,-559.27 1821.75,-588 1805.69,-622.69 1820.13,-666.82 1833.11,-694.87"/>
+<polygon fill="black" stroke="black" points="1829.93,-696.33 1837.46,-703.77 1836.21,-693.25 1829.93,-696.33"/>
+<text text-anchor="middle" x="1864.12" y="-608.58" font-family="Times New Roman,serif" font-size="14.00">VisioPianificata</text>
+</g>
+<!-- EsecuzioneVisio&#45;&gt;AvvioManualeVisio -->
+<g id="edge13" class="edge">
+<title>EsecuzioneVisio&#45;&gt;AvvioManualeVisio</title>
+<path fill="none" stroke="black" d="M1902.43,-714.94C1957.92,-705.95 2038.31,-688.92 2056,-663.75 2082,-626.76 2078.55,-596.47 2049,-562.25 2034.2,-545.11 2013.25,-532.96 1992.49,-524.43"/>
+<polygon fill="black" stroke="black" points="1994.02,-521.27 1983.43,-520.95 1991.51,-527.8 1994.02,-521.27"/>
+<text text-anchor="middle" x="2152.5" y="-608.58" font-family="Times New Roman,serif" font-size="14.00">VisioCompletataNuovaVisio</text>
+</g>
+<!-- EsecuzioneVisio&#45;&gt;EsecuzioneVisio -->
+<g id="edge14" class="edge">
+<title>EsecuzioneVisio&#45;&gt;EsecuzioneVisio</title>
+<path fill="none" stroke="black" d="M1902.41,-726.11C1912.79,-725.8 1920.12,-724.93 1920.12,-723.5 1920.12,-722.67 1917.67,-722.04 1913.6,-721.58"/>
+<polygon fill="black" stroke="black" points="1914.12,-718.11 1903.92,-720.98 1913.69,-725.09 1914.12,-718.11"/>
+<text text-anchor="middle" x="1992.12" y="-718.08" font-family="Times New Roman,serif" font-size="14.00">AppuntamentoModificato</text>
+</g>
+<!-- EsecuzioneVisio&#45;&gt;EsecuzioneVisio -->
+<g id="edge15" class="edge">
+<title>EsecuzioneVisio&#45;&gt;EsecuzioneVisio</title>
+<path fill="none" stroke="black" d="M1902.5,-727.93C1967.73,-730.24 2064.12,-728.76 2064.12,-723.5 2064.12,-718.54 1978.34,-716.94 1913.86,-718.72"/>
+<polygon fill="black" stroke="black" points="1913.9,-715.22 1904.01,-719.03 1914.12,-722.21 1913.9,-715.22"/>
+<text text-anchor="middle" x="2132" y="-718.08" font-family="Times New Roman,serif" font-size="14.00">AppuntamentoAnnullato</text>
+</g>
+<!-- EsecuzioneVisio&#45;&gt;EsecuzioneVisio -->
+<g id="edge16" class="edge">
+<title>EsecuzioneVisio&#45;&gt;EsecuzioneVisio</title>
+<path fill="none" stroke="black" d="M1902.57,-728.98C2003.23,-733.98 2199.88,-732.16 2199.88,-723.5 2199.88,-715.16 2017.18,-713.16 1913.84,-717.51"/>
+<polygon fill="black" stroke="black" points="1913.91,-714 1904.08,-717.95 1914.23,-720.99 1913.91,-714"/>
+<text text-anchor="middle" x="2268.12" y="-718.08" font-family="Times New Roman,serif" font-size="14.00">DatiObbligatoriMancanti</text>
+</g>
+<!-- RiassegnazioneVisio -->
 <g id="node18" class="node">
-<title>GestioneSelfCare</title>
-<path fill="none" stroke="black" d="M3238.75,-564C3238.75,-564 3149.25,-564 3149.25,-564 3143.25,-564 3137.25,-558 3137.25,-552 3137.25,-552 3137.25,-540 3137.25,-540 3137.25,-534 3143.25,-528 3149.25,-528 3149.25,-528 3238.75,-528 3238.75,-528 3244.75,-528 3250.75,-534 3250.75,-540 3250.75,-540 3250.75,-552 3250.75,-552 3250.75,-558 3244.75,-564 3238.75,-564"/>
-<text text-anchor="middle" x="3194" y="-540.58" font-family="Times New Roman,serif" font-size="14.00">GestioneSelfCare</text>
+<title>RiassegnazioneVisio</title>
+<path fill="none" stroke="black" d="M2035.38,-632C2035.38,-632 1928.62,-632 1928.62,-632 1922.62,-632 1916.62,-626 1916.62,-620 1916.62,-620 1916.62,-608 1916.62,-608 1916.62,-602 1922.62,-596 1928.62,-596 1928.62,-596 2035.38,-596 2035.38,-596 2041.38,-596 2047.38,-602 2047.38,-608 2047.38,-608 2047.38,-620 2047.38,-620 2047.38,-626 2041.38,-632 2035.38,-632"/>
+<text text-anchor="middle" x="1982" y="-608.58" font-family="Times New Roman,serif" font-size="14.00">RiassegnazioneVisio</text>
 </g>
-<!-- AvvioAccertSelfCare&#45;&gt;GestioneSelfCare -->
-<g id="edge8" class="edge">
-<title>AvvioAccertSelfCare&#45;&gt;GestioneSelfCare</title>
-<path fill="none" stroke="black" d="M3179.64,-615.4C3182.06,-603.89 3185.28,-588.53 3188.06,-575.28"/>
-<polygon fill="black" stroke="black" points="3191.42,-576.31 3190.05,-565.81 3184.57,-574.88 3191.42,-576.31"/>
-<text text-anchor="middle" x="3248.25" y="-584.45" font-family="Times New Roman,serif" font-size="14.00">AccertSelfCareAvviati</text>
+<!-- EsecuzioneVisio&#45;&gt;RiassegnazioneVisio -->
+<g id="edge17" class="edge">
+<title>EsecuzioneVisio&#45;&gt;RiassegnazioneVisio</title>
+<path fill="none" stroke="black" d="M1869.53,-705.23C1891.8,-687.36 1926.76,-659.31 1951.79,-639.23"/>
+<polygon fill="black" stroke="black" points="1953.73,-642.16 1959.34,-633.18 1949.35,-636.7 1953.73,-642.16"/>
+<text text-anchor="middle" x="1947.88" y="-674.2" font-family="Times New Roman,serif" font-size="14.00">VisioRifiutata</text>
 </g>
-<!-- GestioneSelfCare&#45;&gt;AvvioPerizia -->
-<g id="edge9" class="edge">
-<title>GestioneSelfCare&#45;&gt;AvvioPerizia</title>
-<path fill="none" stroke="black" d="M3217.08,-527.86C3222.91,-522.64 3228.72,-516.55 3233,-510 3251.59,-481.6 3257,-471.44 3257,-437.5 3257,-437.5 3257,-437.5 3257,-172.25 3257,-160.55 3208.18,-113.27 3176.19,-83.55"/>
-<polygon fill="black" stroke="black" points="3178.89,-81.28 3169.17,-77.07 3174.14,-86.43 3178.89,-81.28"/>
-<text text-anchor="middle" x="3185" y="-174.7" font-family="Times New Roman,serif" font-size="14.00">AvvioPeriziaPostSelfCare</text>
+<!-- AvvioPerizia -->
+<g id="node31" class="node">
+<title>AvvioPerizia</title>
+<path fill="none" stroke="black" d="M3653.25,-632C3653.25,-632 3590.75,-632 3590.75,-632 3584.75,-632 3578.75,-626 3578.75,-620 3578.75,-620 3578.75,-608 3578.75,-608 3578.75,-602 3584.75,-596 3590.75,-596 3590.75,-596 3653.25,-596 3653.25,-596 3659.25,-596 3665.25,-602 3665.25,-608 3665.25,-608 3665.25,-620 3665.25,-620 3665.25,-626 3659.25,-632 3653.25,-632"/>
+<text text-anchor="middle" x="3622" y="-608.58" font-family="Times New Roman,serif" font-size="14.00">AvvioPerizia</text>
 </g>
-<!-- GestioneSelfCare&#45;&gt;AvvioChiusura -->
-<g id="edge10" class="edge">
-<title>GestioneSelfCare&#45;&gt;AvvioChiusura</title>
-<path fill="none" stroke="black" d="M3240.56,-527.65C3251.05,-522.72 3261.79,-516.81 3271,-510 3288.43,-497.1 3304.57,-478.75 3316.28,-463.75"/>
-<polygon fill="black" stroke="black" points="3318.81,-466.2 3322.06,-456.12 3313.23,-461.98 3318.81,-466.2"/>
-<text text-anchor="middle" x="3367.38" y="-496.7" font-family="Times New Roman,serif" font-size="14.00">AvvioChiusuraPostSelfCare</text>
+<!-- EsecuzioneVisio&#45;&gt;AvvioPerizia -->
+<g id="edge18" class="edge">
+<title>EsecuzioneVisio&#45;&gt;AvvioPerizia</title>
+<path fill="none" stroke="black" d="M1902.39,-720.45C1999.21,-716.88 2207.85,-709.5 2384,-705.5 2402.26,-705.09 3686.17,-700.5 3699,-687.5 3703.92,-682.52 3703.09,-677.43 3699,-671.75 3692.43,-662.63 3684.69,-669.46 3675,-663.75 3664.34,-657.46 3654,-648.75 3645.32,-640.42"/>
+<polygon fill="black" stroke="black" points="3647.86,-638.01 3638.32,-633.41 3642.9,-642.96 3647.86,-638.01"/>
+<text text-anchor="middle" x="3748.5" y="-674.2" font-family="Times New Roman,serif" font-size="14.00">VisioCompletata</text>
+</g>
+<!-- RiassegnazioneVisio&#45;&gt;AvvioManualeVisio -->
+<g id="edge19" class="edge">
+<title>RiassegnazioneVisio&#45;&gt;AvvioManualeVisio</title>
+<path fill="none" stroke="black" d="M1971.88,-595.73C1961.87,-578.65 1946.4,-552.25 1934.78,-532.42"/>
+<polygon fill="black" stroke="black" points="1937.94,-530.89 1929.86,-524.03 1931.9,-534.43 1937.94,-530.89"/>
+<text text-anchor="middle" x="2002.12" y="-564.7" font-family="Times New Roman,serif" font-size="14.00">VisioAssegnata</text>
+</g>
+<!-- Pa_Visio -->
+<g id="node19" class="node">
+<title>Pa_Visio</title>
+<path fill="none" stroke="black" d="M1909.5,-829.25C1909.5,-829.25 1866.5,-829.25 1866.5,-829.25 1860.5,-829.25 1854.5,-823.25 1854.5,-817.25 1854.5,-817.25 1854.5,-805.25 1854.5,-805.25 1854.5,-799.25 1860.5,-793.25 1866.5,-793.25 1866.5,-793.25 1909.5,-793.25 1909.5,-793.25 1915.5,-793.25 1921.5,-799.25 1921.5,-805.25 1921.5,-805.25 1921.5,-817.25 1921.5,-817.25 1921.5,-823.25 1915.5,-829.25 1909.5,-829.25"/>
+<text text-anchor="middle" x="1888" y="-805.83" font-family="Times New Roman,serif" font-size="14.00">Pa_Visio</text>
+</g>
+<!-- Pa_Visio&#45;&gt;EsecuzioneVisio -->
+<g id="edge20" class="edge">
+<title>Pa_Visio&#45;&gt;EsecuzioneVisio</title>
+<path fill="none" stroke="black" stroke-dasharray="1,5" d="M1854.05,-803.17C1838.75,-798.1 1822.11,-789.55 1813,-775.25 1807.68,-766.9 1810.78,-757.95 1816.9,-749.93"/>
+<polygon fill="black" stroke="black" points="1819.28,-752.52 1823.46,-742.79 1814.12,-747.79 1819.28,-752.52"/>
+<text text-anchor="middle" x="1870" y="-761.95" font-family="Times New Roman,serif" font-size="14.00">RichiestaPaRicevuta</text>
+</g>
+<!-- Pa_Visio&#45;&gt;EsecuzioneVisio -->
+<g id="edge21" class="edge">
+<title>Pa_Visio&#45;&gt;EsecuzioneVisio</title>
+<path fill="none" stroke="black" stroke-dasharray="1,5" d="M1914.41,-792.9C1925.6,-783.32 1934.51,-771.05 1927,-759.5 1923.08,-753.48 1917.86,-748.48 1911.97,-744.34"/>
+<polygon fill="black" stroke="black" points="1913.91,-741.43 1903.53,-739.29 1910.32,-747.43 1913.91,-741.43"/>
+<text text-anchor="middle" x="1988.25" y="-761.95" font-family="Times New Roman,serif" font-size="14.00">ConfermaPaRicevuta</text>
 </g>
 <!-- AssegnazioneSopralluogo -->
-<g id="node20" class="node">
+<g id="node21" class="node">
 <title>AssegnazioneSopralluogo</title>
-<path fill="none" stroke="black" d="M261.38,-564C261.38,-564 124.62,-564 124.62,-564 118.62,-564 112.62,-558 112.62,-552 112.62,-552 112.62,-540 112.62,-540 112.62,-534 118.62,-528 124.62,-528 124.62,-528 261.38,-528 261.38,-528 267.38,-528 273.38,-534 273.38,-540 273.38,-540 273.38,-552 273.38,-552 273.38,-558 267.38,-564 261.38,-564"/>
-<text text-anchor="middle" x="193" y="-540.58" font-family="Times New Roman,serif" font-size="14.00">AssegnazioneSopralluogo</text>
+<path fill="none" stroke="black" d="M2744.38,-741.5C2744.38,-741.5 2607.62,-741.5 2607.62,-741.5 2601.62,-741.5 2595.62,-735.5 2595.62,-729.5 2595.62,-729.5 2595.62,-717.5 2595.62,-717.5 2595.62,-711.5 2601.62,-705.5 2607.62,-705.5 2607.62,-705.5 2744.38,-705.5 2744.38,-705.5 2750.38,-705.5 2756.38,-711.5 2756.38,-717.5 2756.38,-717.5 2756.38,-729.5 2756.38,-729.5 2756.38,-735.5 2750.38,-741.5 2744.38,-741.5"/>
+<text text-anchor="middle" x="2676" y="-718.08" font-family="Times New Roman,serif" font-size="14.00">AssegnazioneSopralluogo</text>
 </g>
 <!-- AvvioSopralluogo&#45;&gt;AssegnazioneSopralluogo -->
 <g id="edge33" class="edge">
 <title>AvvioSopralluogo&#45;&gt;AssegnazioneSopralluogo</title>
-<path fill="none" stroke="black" d="M193,-615.4C193,-604.01 193,-588.84 193,-575.68"/>
-<polygon fill="black" stroke="black" points="196.5,-575.84 193,-565.84 189.5,-575.84 196.5,-575.84"/>
-<text text-anchor="middle" x="249.62" y="-584.45" font-family="Times New Roman,serif" font-size="14.00">SopralluogoAvvioto</text>
+<path fill="none" stroke="black" d="M2587.46,-792.9C2603.86,-780.23 2626.31,-762.89 2644.5,-748.83"/>
+<polygon fill="black" stroke="black" points="2646.6,-751.64 2652.37,-742.75 2642.32,-746.1 2646.6,-751.64"/>
+<text text-anchor="middle" x="2686.62" y="-761.95" font-family="Times New Roman,serif" font-size="14.00">SopralluogoAvvioto</text>
 </g>
 <!-- PianificazioneSopralluogo -->
-<g id="node21" class="node">
+<g id="node22" class="node">
 <title>PianificazioneSopralluogo</title>
-<path fill="none" stroke="black" d="M450.38,-454.5C450.38,-454.5 313.62,-454.5 313.62,-454.5 307.62,-454.5 301.62,-448.5 301.62,-442.5 301.62,-442.5 301.62,-430.5 301.62,-430.5 301.62,-424.5 307.62,-418.5 313.62,-418.5 313.62,-418.5 450.38,-418.5 450.38,-418.5 456.38,-418.5 462.38,-424.5 462.38,-430.5 462.38,-430.5 462.38,-442.5 462.38,-442.5 462.38,-448.5 456.38,-454.5 450.38,-454.5"/>
-<text text-anchor="middle" x="382" y="-431.07" font-family="Times New Roman,serif" font-size="14.00">PianificazioneSopralluogo</text>
+<path fill="none" stroke="black" d="M3133.38,-632C3133.38,-632 2996.62,-632 2996.62,-632 2990.62,-632 2984.62,-626 2984.62,-620 2984.62,-620 2984.62,-608 2984.62,-608 2984.62,-602 2990.62,-596 2996.62,-596 2996.62,-596 3133.38,-596 3133.38,-596 3139.38,-596 3145.38,-602 3145.38,-608 3145.38,-608 3145.38,-620 3145.38,-620 3145.38,-626 3139.38,-632 3133.38,-632"/>
+<text text-anchor="middle" x="3065" y="-608.58" font-family="Times New Roman,serif" font-size="14.00">PianificazioneSopralluogo</text>
 </g>
 <!-- AssegnazioneSopralluogo&#45;&gt;PianificazioneSopralluogo -->
 <g id="edge34" class="edge">
 <title>AssegnazioneSopralluogo&#45;&gt;PianificazioneSopralluogo</title>
-<path fill="none" stroke="black" d="M223.37,-527.73C255.51,-509.45 306.4,-480.5 341.84,-460.34"/>
-<polygon fill="black" stroke="black" points="343.12,-463.64 350.08,-455.66 339.66,-457.56 343.12,-463.64"/>
-<text text-anchor="middle" x="344.38" y="-496.7" font-family="Times New Roman,serif" font-size="14.00">SopralluogoAssegnato</text>
+<path fill="none" stroke="black" stroke-dasharray="1,5" d="M2738.93,-705.11C2807.76,-686.09 2917.96,-655.64 2990.91,-635.48"/>
+<polygon fill="black" stroke="black" points="2991.67,-638.9 3000.38,-632.86 2989.81,-632.15 2991.67,-638.9"/>
+<text text-anchor="middle" x="2921.38" y="-674.2" font-family="Times New Roman,serif" font-size="14.00">SopralluogoAssegnato</text>
 </g>
 <!-- EsecuzioneSopralluogo -->
-<g id="node22" class="node">
+<g id="node23" class="node">
 <title>EsecuzioneSopralluogo</title>
-<path fill="none" stroke="black" d="M288.62,-366.75C288.62,-366.75 165.38,-366.75 165.38,-366.75 159.38,-366.75 153.38,-360.75 153.38,-354.75 153.38,-354.75 153.38,-342.75 153.38,-342.75 153.38,-336.75 159.38,-330.75 165.38,-330.75 165.38,-330.75 288.62,-330.75 288.62,-330.75 294.62,-330.75 300.62,-336.75 300.62,-342.75 300.62,-342.75 300.62,-354.75 300.62,-354.75 300.62,-360.75 294.62,-366.75 288.62,-366.75"/>
-<text text-anchor="middle" x="227" y="-343.32" font-family="Times New Roman,serif" font-size="14.00">EsecuzioneSopralluogo</text>
+<path fill="none" stroke="black" d="M2761.62,-522.5C2761.62,-522.5 2638.38,-522.5 2638.38,-522.5 2632.38,-522.5 2626.38,-516.5 2626.38,-510.5 2626.38,-510.5 2626.38,-498.5 2626.38,-498.5 2626.38,-492.5 2632.38,-486.5 2638.38,-486.5 2638.38,-486.5 2761.62,-486.5 2761.62,-486.5 2767.62,-486.5 2773.62,-492.5 2773.62,-498.5 2773.62,-498.5 2773.62,-510.5 2773.62,-510.5 2773.62,-516.5 2767.62,-522.5 2761.62,-522.5"/>
+<text text-anchor="middle" x="2700" y="-499.07" font-family="Times New Roman,serif" font-size="14.00">EsecuzioneSopralluogo</text>
 </g>
 <!-- PianificazioneSopralluogo&#45;&gt;EsecuzioneSopralluogo -->
 <g id="edge35" class="edge">
 <title>PianificazioneSopralluogo&#45;&gt;EsecuzioneSopralluogo</title>
-<path fill="none" stroke="black" d="M438.09,-418.18C456.49,-409.62 469.59,-398.22 458,-384.75 439.22,-362.91 370.17,-354.53 312.42,-351.4"/>
-<polygon fill="black" stroke="black" points="312.71,-347.91 302.55,-350.91 312.36,-354.9 312.71,-347.91"/>
-<text text-anchor="middle" x="525.38" y="-387.2" font-family="Times New Roman,serif" font-size="14.00">SopralluogoPianificato</text>
+<path fill="none" stroke="black" d="M2984.22,-604.11C2937.69,-599.11 2878.08,-592.91 2825,-588 2811.26,-586.73 2710.69,-588.06 2701.25,-578 2690.51,-566.56 2689.93,-549.06 2692.17,-534.13"/>
+<polygon fill="black" stroke="black" points="2695.6,-534.84 2694.13,-524.35 2688.73,-533.47 2695.6,-534.84"/>
+<text text-anchor="middle" x="2764.38" y="-564.7" font-family="Times New Roman,serif" font-size="14.00">SopralluogoPianificato</text>
 </g>
 <!-- VerificaSopralluogoDopoRifiuto -->
-<g id="node23" class="node">
+<g id="node24" class="node">
 <title>VerificaSopralluogoDopoRifiuto</title>
-<path fill="none" stroke="black" d="M844.12,-366.75C844.12,-366.75 669.88,-366.75 669.88,-366.75 663.88,-366.75 657.88,-360.75 657.88,-354.75 657.88,-354.75 657.88,-342.75 657.88,-342.75 657.88,-336.75 663.88,-330.75 669.88,-330.75 669.88,-330.75 844.12,-330.75 844.12,-330.75 850.12,-330.75 856.12,-336.75 856.12,-342.75 856.12,-342.75 856.12,-354.75 856.12,-354.75 856.12,-360.75 850.12,-366.75 844.12,-366.75"/>
-<text text-anchor="middle" x="757" y="-343.32" font-family="Times New Roman,serif" font-size="14.00">VerificaSopralluogoDopoRifiuto</text>
+<path fill="none" stroke="black" d="M3399.12,-522.5C3399.12,-522.5 3224.88,-522.5 3224.88,-522.5 3218.88,-522.5 3212.88,-516.5 3212.88,-510.5 3212.88,-510.5 3212.88,-498.5 3212.88,-498.5 3212.88,-492.5 3218.88,-486.5 3224.88,-486.5 3224.88,-486.5 3399.12,-486.5 3399.12,-486.5 3405.12,-486.5 3411.12,-492.5 3411.12,-498.5 3411.12,-498.5 3411.12,-510.5 3411.12,-510.5 3411.12,-516.5 3405.12,-522.5 3399.12,-522.5"/>
+<text text-anchor="middle" x="3312" y="-499.07" font-family="Times New Roman,serif" font-size="14.00">VerificaSopralluogoDopoRifiuto</text>
 </g>
 <!-- PianificazioneSopralluogo&#45;&gt;VerificaSopralluogoDopoRifiuto -->
 <g id="edge36" class="edge">
 <title>PianificazioneSopralluogo&#45;&gt;VerificaSopralluogoDopoRifiuto</title>
-<path fill="none" stroke="black" d="M462.87,-426.54C502.56,-421.02 550.8,-412.63 593,-400.5 610.47,-395.48 613.57,-390.69 630.75,-384.75 645.68,-379.59 661.81,-374.65 677.38,-370.19"/>
-<polygon fill="black" stroke="black" points="677.92,-373.68 686.59,-367.6 676.02,-366.94 677.92,-373.68"/>
-<text text-anchor="middle" x="688.12" y="-387.2" font-family="Times New Roman,serif" font-size="14.00">SopralluogoRifiutato</text>
+<path fill="none" stroke="black" d="M3145.8,-610.18C3240.03,-606.05 3385.14,-596.7 3402,-578 3419.04,-559.1 3397.11,-541.14 3370.65,-527.82"/>
+<polygon fill="black" stroke="black" points="3372.26,-524.71 3361.72,-523.6 3369.27,-531.04 3372.26,-524.71"/>
+<text text-anchor="middle" x="3466.12" y="-564.7" font-family="Times New Roman,serif" font-size="14.00">SopralluogoRifiutato</text>
 </g>
-<!-- EsecuzioneSopralluogo&#45;&gt;AvvioPerizia -->
-<g id="edge37" class="edge">
-<title>EsecuzioneSopralluogo&#45;&gt;AvvioPerizia</title>
-<path fill="none" stroke="black" d="M300.89,-342.17C385.09,-336.08 526.87,-326.7 649,-322.75 700.22,-321.1 2443.9,-323.56 2494,-312.75 2604.37,-288.94 2621.2,-251.27 2726,-209.25 2811.86,-174.83 2834.85,-170.26 2922,-139.25 2981.08,-118.22 3048.85,-94.2 3094.85,-77.92"/>
-<polygon fill="black" stroke="black" points="3095.79,-81.3 3104.05,-74.66 3093.45,-74.7 3095.79,-81.3"/>
-<text text-anchor="middle" x="2789" y="-211.7" font-family="Times New Roman,serif" font-size="14.00">SoprallugoCompletato</text>
+<!-- EsecuzioneSopralluogo&#45;&gt;AssegnazioneSopralluogoPCE -->
+<g id="edge44" class="edge">
+<title>EsecuzioneSopralluogo&#45;&gt;AssegnazioneSopralluogoPCE</title>
+<path fill="none" stroke="black" d="M2625.99,-496.84C2561.99,-491.27 2466.95,-483.47 2384,-478.5 1863.67,-447.34 1240.36,-427.67 996.29,-420.65"/>
+<polygon fill="black" stroke="black" points="996.57,-417.15 986.47,-420.37 996.36,-424.15 996.57,-417.15"/>
+<text text-anchor="middle" x="2253.38" y="-455.2" font-family="Times New Roman,serif" font-size="14.00">AnnullamentoSopralluogo</text>
 </g>
 <!-- EsecuzioneSopralluogo&#45;&gt;AssegnazioneSopralluogo -->
-<g id="edge38" class="edge">
+<g id="edge37" class="edge">
 <title>EsecuzioneSopralluogo&#45;&gt;AssegnazioneSopralluogo</title>
-<path fill="none" stroke="black" d="M153.22,-354.54C109.06,-359.12 58.88,-367.94 45,-384.75 40.54,-390.15 40.46,-395.17 45,-400.5 63.1,-421.75 84.22,-394.37 107,-410.5 138.29,-432.65 127.41,-454.08 148.25,-486.25 155.33,-497.18 163.83,-508.68 171.52,-518.58"/>
-<polygon fill="black" stroke="black" points="168.68,-520.64 177.62,-526.33 174.18,-516.31 168.68,-520.64"/>
-<text text-anchor="middle" x="220.38" y="-431.07" font-family="Times New Roman,serif" font-size="14.00">AnnullamentoSopralluogo</text>
+<path fill="none" stroke="black" d="M2696.13,-522.8C2693.75,-534 2690.83,-548.93 2689,-562.25 2682.72,-608.1 2679.12,-661.79 2677.36,-693.92"/>
+<polygon fill="black" stroke="black" points="2673.88,-693.44 2676.86,-703.61 2680.87,-693.81 2673.88,-693.44"/>
+<text text-anchor="middle" x="2757.38" y="-608.58" font-family="Times New Roman,serif" font-size="14.00">AnnullamentoSopralluogo</text>
+</g>
+<!-- EsecuzioneSopralluogo&#45;&gt;PianificazioneSopralluogo -->
+<g id="edge38" class="edge">
+<title>EsecuzioneSopralluogo&#45;&gt;PianificazioneSopralluogo</title>
+<path fill="none" stroke="black" d="M2744.48,-522.92C2769.54,-533.3 2801.11,-547.34 2828,-562.25 2838.91,-568.3 2839.65,-573.38 2851.25,-578 2889.57,-593.25 2934.28,-601.86 2972.88,-606.72"/>
+<polygon fill="black" stroke="black" points="2972.28,-610.17 2982.62,-607.87 2973.1,-603.22 2972.28,-610.17"/>
+<text text-anchor="middle" x="2918.88" y="-564.7" font-family="Times New Roman,serif" font-size="14.00">AppuntamentoAnnullato</text>
 </g>
 <!-- EsecuzioneSopralluogo&#45;&gt;PianificazioneSopralluogo -->
 <g id="edge39" class="edge">
 <title>EsecuzioneSopralluogo&#45;&gt;PianificazioneSopralluogo</title>
-<path fill="none" stroke="black" d="M152.89,-351.15C93.24,-354.76 24.33,-366.12 57.25,-400.5 66.12,-409.77 275.32,-408.56 288,-410.5 296.24,-411.76 304.8,-413.46 313.25,-415.39"/>
-<polygon fill="black" stroke="black" points="312.24,-418.75 322.78,-417.69 313.87,-411.94 312.24,-418.75"/>
-<text text-anchor="middle" x="125.88" y="-387.2" font-family="Times New Roman,serif" font-size="14.00">AppuntamentoAnnullato</text>
+<path fill="none" stroke="black" d="M2774.09,-511.74C2833.53,-518.71 2918.12,-533.1 2987,-562.25 2998.33,-567.04 2999.5,-571.21 3009.75,-578 3015.53,-581.83 3021.69,-585.82 3027.73,-589.68"/>
+<polygon fill="black" stroke="black" points="3025.44,-592.37 3035.76,-594.78 3029.19,-586.46 3025.44,-592.37"/>
+<text text-anchor="middle" x="3053.62" y="-564.7" font-family="Times New Roman,serif" font-size="14.00">ChiusuraAttivita</text>
 </g>
 <!-- EsecuzioneSopralluogo&#45;&gt;PianificazioneSopralluogo -->
 <g id="edge40" class="edge">
 <title>EsecuzioneSopralluogo&#45;&gt;PianificazioneSopralluogo</title>
-<path fill="none" stroke="black" d="M216.36,-367.13C211.26,-377.9 207.81,-391.38 215.75,-400.5 226.4,-412.72 272.11,-407.3 288,-410.5 295.04,-411.92 302.33,-413.55 309.59,-415.29"/>
-<polygon fill="black" stroke="black" points="308.55,-418.64 319.1,-417.64 310.23,-411.85 308.55,-418.64"/>
-<text text-anchor="middle" x="259.62" y="-387.2" font-family="Times New Roman,serif" font-size="14.00">ChiusuraAttivita</text>
+<path fill="none" stroke="black" d="M2773.7,-504.96C2877.23,-505.96 3057.73,-514.69 3099,-562.25 3105.66,-569.92 3102.58,-578.95 3096.11,-587.25"/>
+<polygon fill="black" stroke="black" points="3093.68,-584.73 3089.45,-594.44 3098.82,-589.49 3093.68,-584.73"/>
+<text text-anchor="middle" x="3166.88" y="-564.7" font-family="Times New Roman,serif" font-size="14.00">ChiusuraSoprallVariato</text>
 </g>
-<!-- EsecuzioneSopralluogo&#45;&gt;PianificazioneSopralluogo -->
+<!-- EsecuzioneSopralluogo&#45;&gt;EsecuzioneSopralluogo -->
 <g id="edge41" class="edge">
-<title>EsecuzioneSopralluogo&#45;&gt;PianificazioneSopralluogo</title>
-<path fill="none" stroke="black" d="M271.36,-367.22C282.64,-372.31 294.52,-378.27 305,-384.75 314.4,-390.56 315.22,-394.12 324.25,-400.5 329.9,-404.5 336.02,-408.51 342.09,-412.33"/>
-<polygon fill="black" stroke="black" points="339.87,-415.07 350.22,-417.33 343.54,-409.11 339.87,-415.07"/>
-<text text-anchor="middle" x="388.88" y="-387.2" font-family="Times New Roman,serif" font-size="14.00">ChiusuraSoprallVariato</text>
+<title>EsecuzioneSopralluogo&#45;&gt;EsecuzioneSopralluogo</title>
+<path fill="none" stroke="black" d="M2774.06,-508.19C2784.57,-507.59 2791.62,-506.36 2791.62,-504.5 2791.62,-503.42 2789.27,-502.56 2785.25,-501.9"/>
+<polygon fill="black" stroke="black" points="2785.86,-498.45 2775.56,-500.96 2785.18,-505.41 2785.86,-498.45"/>
+<text text-anchor="middle" x="2863.62" y="-499.07" font-family="Times New Roman,serif" font-size="14.00">AppuntamentoModificato</text>
 </g>
 <!-- EsecuzioneSopralluogo&#45;&gt;EsecuzioneSopralluogo -->
 <g id="edge42" class="edge">
 <title>EsecuzioneSopralluogo&#45;&gt;EsecuzioneSopralluogo</title>
-<path fill="none" stroke="black" d="M301.06,-352.44C311.57,-351.84 318.62,-350.61 318.62,-348.75 318.62,-347.67 316.27,-346.81 312.25,-346.15"/>
-<polygon fill="black" stroke="black" points="312.86,-342.7 302.56,-345.21 312.18,-349.66 312.86,-342.7"/>
-<text text-anchor="middle" x="390.62" y="-343.32" font-family="Times New Roman,serif" font-size="14.00">AppuntamentoModificato</text>
-</g>
-<!-- EsecuzioneSopralluogo&#45;&gt;EsecuzioneSopralluogo -->
-<g id="edge43" class="edge">
-<title>EsecuzioneSopralluogo&#45;&gt;EsecuzioneSopralluogo</title>
-<path fill="none" stroke="black" d="M300.87,-355.94C371.18,-358.58 462.62,-356.18 462.62,-348.75 462.62,-341.71 380.57,-339.19 312.15,-341.19"/>
-<polygon fill="black" stroke="black" points="312.26,-337.68 302.38,-341.51 312.49,-344.68 312.26,-337.68"/>
-<text text-anchor="middle" x="530.88" y="-343.32" font-family="Times New Roman,serif" font-size="14.00">DatiObbligatoriMancanti</text>
+<path fill="none" stroke="black" d="M2773.87,-511.69C2844.18,-514.33 2935.62,-511.93 2935.62,-504.5 2935.62,-497.46 2853.57,-494.94 2785.15,-496.94"/>
+<polygon fill="black" stroke="black" points="2785.26,-493.43 2775.38,-497.26 2785.49,-500.43 2785.26,-493.43"/>
+<text text-anchor="middle" x="3003.88" y="-499.07" font-family="Times New Roman,serif" font-size="14.00">DatiObbligatoriMancanti</text>
 </g>
 <!-- ApprovazioneSopralluogo -->
-<g id="node24" class="node">
+<g id="node25" class="node">
 <title>ApprovazioneSopralluogo</title>
-<path fill="none" stroke="black" d="M296.5,-279C296.5,-279 157.5,-279 157.5,-279 151.5,-279 145.5,-273 145.5,-267 145.5,-267 145.5,-255 145.5,-255 145.5,-249 151.5,-243 157.5,-243 157.5,-243 296.5,-243 296.5,-243 302.5,-243 308.5,-249 308.5,-255 308.5,-255 308.5,-267 308.5,-267 308.5,-273 302.5,-279 296.5,-279"/>
-<text text-anchor="middle" x="227" y="-255.57" font-family="Times New Roman,serif" font-size="14.00">ApprovazioneSopralluogo</text>
+<path fill="none" stroke="black" d="M3326.5,-434.75C3326.5,-434.75 3187.5,-434.75 3187.5,-434.75 3181.5,-434.75 3175.5,-428.75 3175.5,-422.75 3175.5,-422.75 3175.5,-410.75 3175.5,-410.75 3175.5,-404.75 3181.5,-398.75 3187.5,-398.75 3187.5,-398.75 3326.5,-398.75 3326.5,-398.75 3332.5,-398.75 3338.5,-404.75 3338.5,-410.75 3338.5,-410.75 3338.5,-422.75 3338.5,-422.75 3338.5,-428.75 3332.5,-434.75 3326.5,-434.75"/>
+<text text-anchor="middle" x="3257" y="-411.32" font-family="Times New Roman,serif" font-size="14.00">ApprovazioneSopralluogo</text>
 </g>
 <!-- EsecuzioneSopralluogo&#45;&gt;ApprovazioneSopralluogo -->
-<g id="edge44" class="edge">
+<g id="edge43" class="edge">
 <title>EsecuzioneSopralluogo&#45;&gt;ApprovazioneSopralluogo</title>
-<path fill="none" stroke="black" d="M227,-330.4C227,-319.01 227,-303.84 227,-290.68"/>
-<polygon fill="black" stroke="black" points="230.5,-290.84 227,-280.84 223.5,-290.84 230.5,-290.84"/>
-<text text-anchor="middle" x="312.88" y="-299.45" font-family="Times New Roman,serif" font-size="14.00">SopralluogoCompletatoNuovo</text>
+<path fill="none" stroke="black" stroke-dasharray="1,5" d="M2773.97,-492.11C2874.43,-476.65 3054.03,-449 3163.66,-432.12"/>
+<polygon fill="black" stroke="black" points="3164.18,-435.58 3173.53,-430.6 3163.11,-428.66 3164.18,-435.58"/>
+<text text-anchor="middle" x="3106.75" y="-455.2" font-family="Times New Roman,serif" font-size="14.00">RichiestaNuovoSopralluogo</text>
 </g>
 <!-- VerificaSopralluogoDopoRifiuto&#45;&gt;PianificazioneSopralluogo -->
 <g id="edge45" class="edge">
 <title>VerificaSopralluogoDopoRifiuto&#45;&gt;PianificazioneSopralluogo</title>
-<path fill="none" stroke="black" d="M758.44,-366.86C758.37,-378.08 756.19,-392.18 747,-400.5 727.15,-418.48 575.71,-427.94 474.23,-432.32"/>
-<polygon fill="black" stroke="black" points="474.09,-428.82 464.25,-432.74 474.38,-435.82 474.09,-428.82"/>
-<text text-anchor="middle" x="818.38" y="-387.2" font-family="Times New Roman,serif" font-size="14.00">SopralluogoAssegnato</text>
+<path fill="none" stroke="black" d="M3299.8,-522.84C3285.97,-541.99 3263.83,-571.04 3252,-578 3223.49,-594.79 3188.65,-603.8 3156.81,-608.55"/>
+<polygon fill="black" stroke="black" points="3156.62,-605.04 3147.18,-609.85 3157.56,-611.98 3156.62,-605.04"/>
+<text text-anchor="middle" x="3331.38" y="-564.7" font-family="Times New Roman,serif" font-size="14.00">SopralluogoAssegnato</text>
 </g>
-<!-- ApprovazioneSopralluogo&#45;&gt;AvvioSopralluogo -->
+<!-- ApprovazioneSopralluogo&#45;&gt;PianificazioneSopralluogo -->
 <g id="edge46" class="edge">
-<title>ApprovazioneSopralluogo&#45;&gt;AvvioSopralluogo</title>
-<path fill="none" stroke="black" d="M175.47,-279.36C130.12,-297.7 66.94,-331.45 38,-384.75 -2.51,-459.36 43.57,-504.38 104,-564 120.54,-580.31 140.92,-596.31 158.01,-608.77"/>
-<polygon fill="black" stroke="black" points="155.72,-611.43 165.89,-614.42 159.8,-605.74 155.72,-611.43"/>
-<text text-anchor="middle" x="67.38" y="-431.07" font-family="Times New Roman,serif" font-size="14.00">Approvato</text>
+<title>ApprovazioneSopralluogo&#45;&gt;PianificazioneSopralluogo</title>
+<path fill="none" stroke="black" stroke-dasharray="1,5" d="M3338.58,-434.15C3440.36,-458.03 3593.5,-507.36 3528,-578 3503.36,-604.57 3284.89,-611.08 3157.05,-612.61"/>
+<polygon fill="black" stroke="black" points="3157.2,-609.1 3147.24,-612.71 3157.28,-616.1 3157.2,-609.1"/>
+<text text-anchor="middle" x="3573.38" y="-499.07" font-family="Times New Roman,serif" font-size="14.00">Approvato</text>
 </g>
 <!-- NuovoSopralluogoNonApprovato -->
-<g id="node27" class="node">
+<g id="node26" class="node">
 <title>NuovoSopralluogoNonApprovato</title>
-<path fill="none" stroke="black" d="M595.62,-191.25C595.62,-191.25 412.38,-191.25 412.38,-191.25 406.38,-191.25 400.38,-185.25 400.38,-179.25 400.38,-179.25 400.38,-167.25 400.38,-167.25 400.38,-161.25 406.38,-155.25 412.38,-155.25 412.38,-155.25 595.62,-155.25 595.62,-155.25 601.62,-155.25 607.62,-161.25 607.62,-167.25 607.62,-167.25 607.62,-179.25 607.62,-179.25 607.62,-185.25 601.62,-191.25 595.62,-191.25"/>
-<text text-anchor="middle" x="504" y="-167.82" font-family="Times New Roman,serif" font-size="14.00">NuovoSopralluogoNonApprovato</text>
+<path fill="none" stroke="black" d="M3348.62,-347C3348.62,-347 3165.38,-347 3165.38,-347 3159.38,-347 3153.38,-341 3153.38,-335 3153.38,-335 3153.38,-323 3153.38,-323 3153.38,-317 3159.38,-311 3165.38,-311 3165.38,-311 3348.62,-311 3348.62,-311 3354.62,-311 3360.62,-317 3360.62,-323 3360.62,-323 3360.62,-335 3360.62,-335 3360.62,-341 3354.62,-347 3348.62,-347"/>
+<text text-anchor="middle" x="3257" y="-323.57" font-family="Times New Roman,serif" font-size="14.00">NuovoSopralluogoNonApprovato</text>
 </g>
 <!-- ApprovazioneSopralluogo&#45;&gt;NuovoSopralluogoNonApprovato -->
 <g id="edge47" class="edge">
 <title>ApprovazioneSopralluogo&#45;&gt;NuovoSopralluogoNonApprovato</title>
-<path fill="none" stroke="black" d="M283.39,-242.54C327.76,-228.81 389.73,-209.62 436.7,-195.08"/>
-<polygon fill="black" stroke="black" points="437.73,-198.43 446.24,-192.13 435.66,-191.74 437.73,-198.43"/>
-<text text-anchor="middle" x="432.38" y="-211.7" font-family="Times New Roman,serif" font-size="14.00">NonApprovato</text>
+<path fill="none" stroke="black" d="M3257,-398.4C3257,-387.01 3257,-371.84 3257,-358.68"/>
+<polygon fill="black" stroke="black" points="3260.5,-358.84 3257,-348.84 3253.5,-358.84 3260.5,-358.84"/>
+<text text-anchor="middle" x="3299.38" y="-367.45" font-family="Times New Roman,serif" font-size="14.00">NonApprovato</text>
 </g>
-<!-- RichiestaModificaApptoPaSopralluogo -->
-<g id="node25" class="node">
-<title>RichiestaModificaApptoPaSopralluogo</title>
-<path fill="none" stroke="black" d="M883.88,-651.75C883.88,-651.75 672.12,-651.75 672.12,-651.75 666.12,-651.75 660.12,-645.75 660.12,-639.75 660.12,-639.75 660.12,-627.75 660.12,-627.75 660.12,-621.75 666.12,-615.75 672.12,-615.75 672.12,-615.75 883.88,-615.75 883.88,-615.75 889.88,-615.75 895.88,-621.75 895.88,-627.75 895.88,-627.75 895.88,-639.75 895.88,-639.75 895.88,-645.75 889.88,-651.75 883.88,-651.75"/>
-<text text-anchor="middle" x="778" y="-628.33" font-family="Times New Roman,serif" font-size="14.00">RichiestaModificaApptoPaSopralluogo</text>
+<!-- Pa_Sopralluogo -->
+<g id="node27" class="node">
+<title>Pa_Sopralluogo</title>
+<path fill="none" stroke="black" d="M2544,-632C2544,-632 2462,-632 2462,-632 2456,-632 2450,-626 2450,-620 2450,-620 2450,-608 2450,-608 2450,-602 2456,-596 2462,-596 2462,-596 2544,-596 2544,-596 2550,-596 2556,-602 2556,-608 2556,-608 2556,-620 2556,-620 2556,-626 2550,-632 2544,-632"/>
+<text text-anchor="middle" x="2503" y="-608.58" font-family="Times New Roman,serif" font-size="14.00">Pa_Sopralluogo</text>
 </g>
-<!-- RichiestaModificaApptoPaSopralluogo&#45;&gt;EsecuzioneVisio -->
+<!-- Pa_Sopralluogo&#45;&gt;EsecuzioneSopralluogo -->
 <g id="edge48" class="edge">
-<title>RichiestaModificaApptoPaSopralluogo&#45;&gt;EsecuzioneVisio</title>
-<path fill="none" stroke="black" d="M778.48,-615.68C779.8,-604.16 783.61,-589.7 794,-582 831.94,-553.87 2447.18,-570.18 2494,-564 2494.12,-563.98 2494.23,-563.97 2494.35,-563.95"/>
-<polygon fill="black" stroke="black" points="2494.66,-567.45 2503.96,-562.38 2493.53,-560.54 2494.66,-567.45"/>
-<text text-anchor="middle" x="851" y="-584.45" font-family="Times New Roman,serif" font-size="14.00">RichiestaPaRicevuta</text>
+<title>Pa_Sopralluogo&#45;&gt;EsecuzioneSopralluogo</title>
+<path fill="none" stroke="black" stroke-dasharray="1,5" d="M2518.19,-595.71C2528.34,-584.97 2542.45,-571.5 2557,-562.25 2579.78,-547.77 2606.86,-535.88 2631.29,-526.79"/>
+<polygon fill="black" stroke="black" points="2632.3,-530.15 2640.51,-523.46 2629.92,-523.57 2632.3,-530.15"/>
+<text text-anchor="middle" x="2614" y="-564.7" font-family="Times New Roman,serif" font-size="14.00">RichiestaPaRicevuta</text>
 </g>
-<!-- ConfermaModificaApptoPaSopralluogo -->
-<g id="node26" class="node">
-<title>ConfermaModificaApptoPaSopralluogo</title>
-<path fill="none" stroke="black" d="M630.12,-651.75C630.12,-651.75 413.88,-651.75 413.88,-651.75 407.88,-651.75 401.88,-645.75 401.88,-639.75 401.88,-639.75 401.88,-627.75 401.88,-627.75 401.88,-621.75 407.88,-615.75 413.88,-615.75 413.88,-615.75 630.12,-615.75 630.12,-615.75 636.12,-615.75 642.12,-621.75 642.12,-627.75 642.12,-627.75 642.12,-639.75 642.12,-639.75 642.12,-645.75 636.12,-651.75 630.12,-651.75"/>
-<text text-anchor="middle" x="522" y="-628.33" font-family="Times New Roman,serif" font-size="14.00">ConfermaModificaApptoPaSopralluogo</text>
-</g>
-<!-- ConfermaModificaApptoPaSopralluogo&#45;&gt;EsecuzioneVisio -->
+<!-- Pa_Sopralluogo&#45;&gt;EsecuzioneSopralluogo -->
 <g id="edge49" class="edge">
-<title>ConfermaModificaApptoPaSopralluogo&#45;&gt;EsecuzioneVisio</title>
-<path fill="none" stroke="black" d="M558.94,-615.28C586.3,-603.32 624.85,-588.51 660.5,-582 860.92,-545.42 2292.01,-590.6 2494,-564 2494.12,-563.98 2494.23,-563.97 2494.35,-563.95"/>
-<polygon fill="black" stroke="black" points="2494.66,-567.45 2503.96,-562.38 2493.53,-560.54 2494.66,-567.45"/>
-<text text-anchor="middle" x="719.25" y="-584.45" font-family="Times New Roman,serif" font-size="14.00">ConfermaPaRicevuta</text>
+<title>Pa_Sopralluogo&#45;&gt;EsecuzioneSopralluogo</title>
+<path fill="none" stroke="black" stroke-dasharray="1,5" d="M2449.78,-601.34C2423.3,-593.05 2399.78,-580.18 2414.5,-562.25 2439.51,-531.78 2540.04,-517.37 2614.78,-510.77"/>
+<polygon fill="black" stroke="black" points="2614.89,-514.27 2624.56,-509.94 2614.3,-507.29 2614.89,-514.27"/>
+<text text-anchor="middle" x="2473.25" y="-564.7" font-family="Times New Roman,serif" font-size="14.00">ConfermaPaRicevuta</text>
 </g>
-<!-- NuovoSopralluogoNonApprovato&#45;&gt;AvvioPerizia -->
-<g id="edge50" class="edge">
-<title>NuovoSopralluogoNonApprovato&#45;&gt;AvvioPerizia</title>
-<path fill="none" stroke="black" d="M608.09,-167.78C1050.28,-148.81 2765.27,-75.22 3094.26,-61.1"/>
-<polygon fill="black" stroke="black" points="3094.02,-64.61 3103.86,-60.69 3093.72,-57.62 3094.02,-64.61"/>
-<text text-anchor="middle" x="1868.38" y="-117.95" font-family="Times New Roman,serif" font-size="14.00">NonApprovato</text>
-</g>
-<!-- AssegnazioneSopralluogoPCE -->
+<!-- GestioneSelfCare -->
 <g id="node29" class="node">
-<title>AssegnazioneSopralluogoPCE</title>
-<path fill="none" stroke="black" d="M1734.5,-564C1734.5,-564 1571.5,-564 1571.5,-564 1565.5,-564 1559.5,-558 1559.5,-552 1559.5,-552 1559.5,-540 1559.5,-540 1559.5,-534 1565.5,-528 1571.5,-528 1571.5,-528 1734.5,-528 1734.5,-528 1740.5,-528 1746.5,-534 1746.5,-540 1746.5,-540 1746.5,-552 1746.5,-552 1746.5,-558 1740.5,-564 1734.5,-564"/>
-<text text-anchor="middle" x="1653" y="-540.58" font-family="Times New Roman,serif" font-size="14.00">AssegnazioneSopralluogoPCE</text>
+<title>GestioneSelfCare</title>
+<path fill="none" stroke="black" d="M1096.75,-741.5C1096.75,-741.5 1007.25,-741.5 1007.25,-741.5 1001.25,-741.5 995.25,-735.5 995.25,-729.5 995.25,-729.5 995.25,-717.5 995.25,-717.5 995.25,-711.5 1001.25,-705.5 1007.25,-705.5 1007.25,-705.5 1096.75,-705.5 1096.75,-705.5 1102.75,-705.5 1108.75,-711.5 1108.75,-717.5 1108.75,-717.5 1108.75,-729.5 1108.75,-729.5 1108.75,-735.5 1102.75,-741.5 1096.75,-741.5"/>
+<text text-anchor="middle" x="1052" y="-718.08" font-family="Times New Roman,serif" font-size="14.00">GestioneSelfCare</text>
 </g>
-<!-- AvvioSopralluogoPCE&#45;&gt;AssegnazioneSopralluogoPCE -->
-<g id="edge51" class="edge">
-<title>AvvioSopralluogoPCE&#45;&gt;AssegnazioneSopralluogoPCE</title>
-<path fill="none" stroke="black" d="M1605.94,-615.4C1614.18,-603.43 1625.29,-587.28 1634.64,-573.68"/>
-<polygon fill="black" stroke="black" points="1637.44,-575.8 1640.22,-565.57 1631.67,-571.83 1637.44,-575.8"/>
-<text text-anchor="middle" x="1697.75" y="-584.45" font-family="Times New Roman,serif" font-size="14.00">SopralluogoPCEAvvioto</text>
+<!-- AvvioAccertSelfCare&#45;&gt;GestioneSelfCare -->
+<g id="edge8" class="edge">
+<title>AvvioAccertSelfCare&#45;&gt;GestioneSelfCare</title>
+<path fill="none" stroke="black" d="M1058.77,-792.89C1057.54,-787.29 1056.31,-781.03 1055.5,-775.25 1054.51,-768.19 1053.79,-760.54 1053.28,-753.37"/>
+<polygon fill="black" stroke="black" points="1056.77,-753.23 1052.68,-743.46 1049.79,-753.65 1056.77,-753.23"/>
+<text text-anchor="middle" x="1117.25" y="-761.95" font-family="Times New Roman,serif" font-size="14.00">AccertSelfCareAvviati</text>
 </g>
-<!-- PianificazioneSopralluogoPCE -->
+<!-- AvvioChiusura -->
 <g id="node30" class="node">
-<title>PianificazioneSopralluogoPCE</title>
-<path fill="none" stroke="black" d="M1974.5,-454.5C1974.5,-454.5 1811.5,-454.5 1811.5,-454.5 1805.5,-454.5 1799.5,-448.5 1799.5,-442.5 1799.5,-442.5 1799.5,-430.5 1799.5,-430.5 1799.5,-424.5 1805.5,-418.5 1811.5,-418.5 1811.5,-418.5 1974.5,-418.5 1974.5,-418.5 1980.5,-418.5 1986.5,-424.5 1986.5,-430.5 1986.5,-430.5 1986.5,-442.5 1986.5,-442.5 1986.5,-448.5 1980.5,-454.5 1974.5,-454.5"/>
-<text text-anchor="middle" x="1893" y="-431.07" font-family="Times New Roman,serif" font-size="14.00">PianificazioneSopralluogoPCE</text>
+<title>AvvioChiusura</title>
+<path fill="none" stroke="black" d="M1082.62,-632C1082.62,-632 1007.38,-632 1007.38,-632 1001.38,-632 995.38,-626 995.38,-620 995.38,-620 995.38,-608 995.38,-608 995.38,-602 1001.38,-596 1007.38,-596 1007.38,-596 1082.62,-596 1082.62,-596 1088.62,-596 1094.62,-602 1094.62,-608 1094.62,-608 1094.62,-620 1094.62,-620 1094.62,-626 1088.62,-632 1082.62,-632"/>
+<text text-anchor="middle" x="1045" y="-608.58" font-family="Times New Roman,serif" font-size="14.00">AvvioChiusura</text>
 </g>
-<!-- AssegnazioneSopralluogoPCE&#45;&gt;PianificazioneSopralluogoPCE -->
-<g id="edge52" class="edge">
-<title>AssegnazioneSopralluogoPCE&#45;&gt;PianificazioneSopralluogoPCE</title>
-<path fill="none" stroke="black" d="M1692.92,-527.51C1719.36,-515.89 1754.79,-500.25 1786,-486.25 1805.15,-477.66 1826.18,-468.1 1844.49,-459.75"/>
-<polygon fill="black" stroke="black" points="1845.9,-462.95 1853.54,-455.61 1842.99,-456.58 1845.9,-462.95"/>
-<text text-anchor="middle" x="1843.5" y="-496.7" font-family="Times New Roman,serif" font-size="14.00">SopralluogoPCEAssegnato</text>
+<!-- GestioneSelfCare&#45;&gt;AvvioChiusura -->
+<g id="edge9" class="edge">
+<title>GestioneSelfCare&#45;&gt;AvvioChiusura</title>
+<path fill="none" stroke="black" d="M1033.82,-705.12C1029.52,-699.91 1025.53,-693.87 1023.25,-687.5 1018.01,-672.86 1022.26,-656.26 1028.35,-642.64"/>
+<polygon fill="black" stroke="black" points="1031.43,-644.31 1032.8,-633.8 1025.18,-641.16 1031.43,-644.31"/>
+<text text-anchor="middle" x="1101.38" y="-674.2" font-family="Times New Roman,serif" font-size="14.00">AvvioChiusuraPostSelfCare</text>
 </g>
-<!-- EsecuzioneSopralluogoPCE -->
-<g id="node31" class="node">
-<title>EsecuzioneSopralluogoPCE</title>
-<path fill="none" stroke="black" d="M1803.75,-366.75C1803.75,-366.75 1654.25,-366.75 1654.25,-366.75 1648.25,-366.75 1642.25,-360.75 1642.25,-354.75 1642.25,-354.75 1642.25,-342.75 1642.25,-342.75 1642.25,-336.75 1648.25,-330.75 1654.25,-330.75 1654.25,-330.75 1803.75,-330.75 1803.75,-330.75 1809.75,-330.75 1815.75,-336.75 1815.75,-342.75 1815.75,-342.75 1815.75,-354.75 1815.75,-354.75 1815.75,-360.75 1809.75,-366.75 1803.75,-366.75"/>
-<text text-anchor="middle" x="1729" y="-343.32" font-family="Times New Roman,serif" font-size="14.00">EsecuzioneSopralluogoPCE</text>
-</g>
-<!-- PianificazioneSopralluogoPCE&#45;&gt;EsecuzioneSopralluogoPCE -->
-<g id="edge53" class="edge">
-<title>PianificazioneSopralluogoPCE&#45;&gt;EsecuzioneSopralluogoPCE</title>
-<path fill="none" stroke="black" d="M1945.39,-418.16C1963.36,-409.46 1976.39,-397.95 1965,-384.75 1946.96,-363.84 1883.67,-355.21 1827.17,-351.75"/>
-<polygon fill="black" stroke="black" points="1827.67,-348.28 1817.49,-351.21 1827.28,-355.26 1827.67,-348.28"/>
-<text text-anchor="middle" x="2045.5" y="-387.2" font-family="Times New Roman,serif" font-size="14.00">SopralluogoPCEPianificato</text>
-</g>
-<!-- VerificaSopralluogoPCEDopoRifiuto -->
-<g id="node32" class="node">
-<title>VerificaSopralluogoPCEDopoRifiuto</title>
-<path fill="none" stroke="black" d="M2396.25,-366.75C2396.25,-366.75 2195.75,-366.75 2195.75,-366.75 2189.75,-366.75 2183.75,-360.75 2183.75,-354.75 2183.75,-354.75 2183.75,-342.75 2183.75,-342.75 2183.75,-336.75 2189.75,-330.75 2195.75,-330.75 2195.75,-330.75 2396.25,-330.75 2396.25,-330.75 2402.25,-330.75 2408.25,-336.75 2408.25,-342.75 2408.25,-342.75 2408.25,-354.75 2408.25,-354.75 2408.25,-360.75 2402.25,-366.75 2396.25,-366.75"/>
-<text text-anchor="middle" x="2296" y="-343.32" font-family="Times New Roman,serif" font-size="14.00">VerificaSopralluogoPCEDopoRifiuto</text>
-</g>
-<!-- PianificazioneSopralluogoPCE&#45;&gt;VerificaSopralluogoPCEDopoRifiuto -->
-<g id="edge54" class="edge">
-<title>PianificazioneSopralluogoPCE&#45;&gt;VerificaSopralluogoPCEDopoRifiuto</title>
-<path fill="none" stroke="black" d="M1986.76,-426.6C2029.7,-421.21 2080.94,-412.91 2126,-400.5 2143.82,-395.59 2146.98,-390.64 2164.5,-384.75 2179.97,-379.55 2196.66,-374.61 2212.79,-370.17"/>
-<polygon fill="black" stroke="black" points="2213.65,-373.56 2222.38,-367.57 2211.82,-366.81 2213.65,-373.56"/>
-<text text-anchor="middle" x="2235.25" y="-387.2" font-family="Times New Roman,serif" font-size="14.00">SopralluogoPCERifiutato</text>
-</g>
-<!-- EsecuzioneSopralluogoPCE&#45;&gt;AvvioPerizia -->
-<g id="edge55" class="edge">
-<title>EsecuzioneSopralluogoPCE&#45;&gt;AvvioPerizia</title>
-<path fill="none" stroke="black" d="M1816.13,-342.01C1906,-336.3 2050.24,-327.68 2175,-322.75 2223.31,-320.84 2562.95,-323.85 2610,-312.75 2812.45,-264.99 3029.4,-135.55 3113.17,-82.21"/>
-<polygon fill="black" stroke="black" points="3114.91,-85.25 3121.44,-76.91 3111.14,-79.36 3114.91,-85.25"/>
-<text text-anchor="middle" x="2947" y="-211.7" font-family="Times New Roman,serif" font-size="14.00">SoprallugoCompletato</text>
-</g>
-<!-- EsecuzioneSopralluogoPCE&#45;&gt;AssegnazioneSopralluogoPCE -->
-<g id="edge56" class="edge">
-<title>EsecuzioneSopralluogoPCE&#45;&gt;AssegnazioneSopralluogoPCE</title>
-<path fill="none" stroke="black" d="M1641.99,-357.55C1605.98,-362.75 1570.04,-371.2 1559,-384.75 1554.58,-390.18 1554.61,-395.05 1559,-400.5 1572.13,-416.79 1589.29,-396.69 1605,-410.5 1635.74,-437.52 1646.8,-485.62 1650.77,-516.38"/>
-<polygon fill="black" stroke="black" points="1647.27,-516.56 1651.84,-526.12 1654.23,-515.8 1647.27,-516.56"/>
-<text text-anchor="middle" x="1717.38" y="-431.07" font-family="Times New Roman,serif" font-size="14.00">AnnullamentoSopralluogo</text>
-</g>
-<!-- EsecuzioneSopralluogoPCE&#45;&gt;PianificazioneSopralluogoPCE -->
-<g id="edge57" class="edge">
-<title>EsecuzioneSopralluogoPCE&#45;&gt;PianificazioneSopralluogoPCE</title>
-<path fill="none" stroke="black" d="M1641.88,-353.85C1591.82,-359.28 1543.84,-371.78 1571.25,-400.5 1579.5,-409.14 1774.17,-408.86 1786,-410.5 1795.68,-411.84 1805.77,-413.65 1815.72,-415.68"/>
-<polygon fill="black" stroke="black" points="1814.87,-419.08 1825.38,-417.74 1816.33,-412.23 1814.87,-419.08"/>
-<text text-anchor="middle" x="1638.88" y="-387.2" font-family="Times New Roman,serif" font-size="14.00">AppuntamentoAnnullato</text>
-</g>
-<!-- EsecuzioneSopralluogoPCE&#45;&gt;PianificazioneSopralluogoPCE -->
-<g id="edge58" class="edge">
-<title>EsecuzioneSopralluogoPCE&#45;&gt;PianificazioneSopralluogoPCE</title>
-<path fill="none" stroke="black" d="M1724.14,-367.21C1722.25,-378.02 1722.1,-391.51 1729.75,-400.5 1737.98,-410.17 1773.56,-407.94 1786,-410.5 1793.62,-412.07 1801.53,-413.77 1809.44,-415.52"/>
-<polygon fill="black" stroke="black" points="1808.59,-418.92 1819.12,-417.7 1810.13,-412.09 1808.59,-418.92"/>
-<text text-anchor="middle" x="1773.62" y="-387.2" font-family="Times New Roman,serif" font-size="14.00">ChiusuraAttivita</text>
-</g>
-<!-- EsecuzioneSopralluogoPCE&#45;&gt;PianificazioneSopralluogoPCE -->
-<g id="edge59" class="edge">
-<title>EsecuzioneSopralluogoPCE&#45;&gt;PianificazioneSopralluogoPCE</title>
-<path fill="none" stroke="black" d="M1782.2,-367.18C1794.64,-372.13 1807.58,-378.04 1819,-384.75 1828.46,-390.31 1829.13,-394.04 1838,-400.5 1843.28,-404.34 1848.96,-408.23 1854.61,-411.94"/>
-<polygon fill="black" stroke="black" points="1852.43,-414.7 1862.73,-417.18 1856.22,-408.82 1852.43,-414.7"/>
-<text text-anchor="middle" x="1899.5" y="-387.2" font-family="Times New Roman,serif" font-size="14.00">ChisuraSoprallVariato</text>
-</g>
-<!-- EsecuzioneSopralluogoPCE&#45;&gt;EsecuzioneSopralluogoPCE -->
-<g id="edge60" class="edge">
-<title>EsecuzioneSopralluogoPCE&#45;&gt;EsecuzioneSopralluogoPCE</title>
-<path fill="none" stroke="black" d="M1816.09,-352.31C1826.76,-351.67 1833.75,-350.49 1833.75,-348.75 1833.75,-347.75 1831.41,-346.93 1827.38,-346.29"/>
-<polygon fill="black" stroke="black" points="1827.89,-342.82 1817.6,-345.34 1827.21,-349.79 1827.89,-342.82"/>
-<text text-anchor="middle" x="1905.75" y="-343.32" font-family="Times New Roman,serif" font-size="14.00">AppuntamentoModificato</text>
-</g>
-<!-- EsecuzioneSopralluogoPCE&#45;&gt;EsecuzioneSopralluogoPCE -->
-<g id="edge61" class="edge">
-<title>EsecuzioneSopralluogoPCE&#45;&gt;EsecuzioneSopralluogoPCE</title>
-<path fill="none" stroke="black" d="M1816.12,-356.2C1889.04,-358.4 1977.75,-355.92 1977.75,-348.75 1977.75,-341.95 1897.82,-339.36 1827.34,-341"/>
-<polygon fill="black" stroke="black" points="1827.54,-337.49 1817.64,-341.26 1827.73,-344.49 1827.54,-337.49"/>
-<text text-anchor="middle" x="2046" y="-343.32" font-family="Times New Roman,serif" font-size="14.00">DatiObbligatoriMancanti</text>
-</g>
-<!-- ApprovazioneSopralluogoPCE -->
-<g id="node33" class="node">
-<title>ApprovazioneSopralluogoPCE</title>
-<path fill="none" stroke="black" d="M1755.62,-279C1755.62,-279 1590.38,-279 1590.38,-279 1584.38,-279 1578.38,-273 1578.38,-267 1578.38,-267 1578.38,-255 1578.38,-255 1578.38,-249 1584.38,-243 1590.38,-243 1590.38,-243 1755.62,-243 1755.62,-243 1761.62,-243 1767.62,-249 1767.62,-255 1767.62,-255 1767.62,-267 1767.62,-267 1767.62,-273 1761.62,-279 1755.62,-279"/>
-<text text-anchor="middle" x="1673" y="-255.57" font-family="Times New Roman,serif" font-size="14.00">ApprovazioneSopralluogoPCE</text>
-</g>
-<!-- EsecuzioneSopralluogoPCE&#45;&gt;ApprovazioneSopralluogoPCE -->
-<g id="edge62" class="edge">
-<title>EsecuzioneSopralluogoPCE&#45;&gt;ApprovazioneSopralluogoPCE</title>
-<path fill="none" stroke="black" d="M1717.67,-330.4C1709.85,-318.43 1699.31,-302.28 1690.43,-288.68"/>
-<polygon fill="black" stroke="black" points="1693.54,-287.05 1685.14,-280.59 1687.68,-290.88 1693.54,-287.05"/>
-<text text-anchor="middle" x="1805" y="-299.45" font-family="Times New Roman,serif" font-size="14.00">SopralluogoPCECompletatoNuovo</text>
-</g>
-<!-- VerificaSopralluogoPCEDopoRifiuto&#45;&gt;PianificazioneSopralluogoPCE -->
-<g id="edge63" class="edge">
-<title>VerificaSopralluogoPCEDopoRifiuto&#45;&gt;PianificazioneSopralluogoPCE</title>
-<path fill="none" stroke="black" d="M2306.45,-366.8C2311.67,-377.71 2315.3,-391.47 2307,-400.5 2286.45,-422.86 2113.81,-430.95 1998.05,-433.86"/>
-<polygon fill="black" stroke="black" points="1998.11,-430.36 1988.2,-434.1 1998.28,-437.36 1998.11,-430.36"/>
-<text text-anchor="middle" x="2387.5" y="-387.2" font-family="Times New Roman,serif" font-size="14.00">SopralluogoPCEAssegnato</text>
-</g>
-<!-- ApprovazioneSopralluogoPCE&#45;&gt;AvvioSopralluogoPCE -->
-<g id="edge64" class="edge">
-<title>ApprovazioneSopralluogoPCE&#45;&gt;AvvioSopralluogoPCE</title>
-<path fill="none" stroke="black" d="M1645.11,-279.37C1609.81,-303.56 1552.14,-351.16 1540.25,-410.5 1526.81,-477.56 1527.67,-499.71 1551,-564 1556.42,-578.93 1565.42,-594.06 1573.78,-606.3"/>
-<polygon fill="black" stroke="black" points="1570.76,-608.09 1579.4,-614.22 1576.46,-604.04 1570.76,-608.09"/>
-<text text-anchor="middle" x="1570.38" y="-431.07" font-family="Times New Roman,serif" font-size="14.00">Approvato</text>
-</g>
-<!-- RichiestaModificaApptoPaSopralluogoPCE -->
-<g id="node34" class="node">
-<title>RichiestaModificaApptoPaSopralluogoPCE</title>
-<path fill="none" stroke="black" d="M2218,-651.75C2218,-651.75 1980,-651.75 1980,-651.75 1974,-651.75 1968,-645.75 1968,-639.75 1968,-639.75 1968,-627.75 1968,-627.75 1968,-621.75 1974,-615.75 1980,-615.75 1980,-615.75 2218,-615.75 2218,-615.75 2224,-615.75 2230,-621.75 2230,-627.75 2230,-627.75 2230,-639.75 2230,-639.75 2230,-645.75 2224,-651.75 2218,-651.75"/>
-<text text-anchor="middle" x="2099" y="-628.33" font-family="Times New Roman,serif" font-size="14.00">RichiestaModificaApptoPaSopralluogoPCE</text>
-</g>
-<!-- RichiestaModificaApptoPaSopralluogoPCE&#45;&gt;EsecuzioneVisio -->
-<g id="edge65" class="edge">
-<title>RichiestaModificaApptoPaSopralluogoPCE&#45;&gt;EsecuzioneVisio</title>
-<path fill="none" stroke="black" d="M2213.55,-615.29C2292.65,-602.63 2400.1,-584.23 2494,-564 2494.24,-563.95 2494.48,-563.9 2494.72,-563.84"/>
-<polygon fill="black" stroke="black" points="2495.24,-567.31 2504.22,-561.69 2493.69,-560.49 2495.24,-567.31"/>
-<text text-anchor="middle" x="2453" y="-584.45" font-family="Times New Roman,serif" font-size="14.00">RichiestaPaRicevuta</text>
-</g>
-<!-- ConfermaModificaApptoPaSopralluogoPCE -->
-<g id="node35" class="node">
-<title>ConfermaModificaApptoPaSopralluogoPCE</title>
-<path fill="none" stroke="black" d="M1938.25,-651.75C1938.25,-651.75 1695.75,-651.75 1695.75,-651.75 1689.75,-651.75 1683.75,-645.75 1683.75,-639.75 1683.75,-639.75 1683.75,-627.75 1683.75,-627.75 1683.75,-621.75 1689.75,-615.75 1695.75,-615.75 1695.75,-615.75 1938.25,-615.75 1938.25,-615.75 1944.25,-615.75 1950.25,-621.75 1950.25,-627.75 1950.25,-627.75 1950.25,-639.75 1950.25,-639.75 1950.25,-645.75 1944.25,-651.75 1938.25,-651.75"/>
-<text text-anchor="middle" x="1817" y="-628.33" font-family="Times New Roman,serif" font-size="14.00">ConfermaModificaApptoPaSopralluogoPCE</text>
-</g>
-<!-- ConfermaModificaApptoPaSopralluogoPCE&#45;&gt;EsecuzioneVisio -->
-<g id="edge66" class="edge">
-<title>ConfermaModificaApptoPaSopralluogoPCE&#45;&gt;EsecuzioneVisio</title>
-<path fill="none" stroke="black" d="M1931.95,-615.28C2007.54,-604.33 2108.72,-590.69 2198.5,-582 2329.46,-569.32 2364.03,-584.5 2494,-564 2494.12,-563.98 2494.23,-563.96 2494.35,-563.94"/>
-<polygon fill="black" stroke="black" points="2494.73,-567.43 2503.94,-562.19 2493.47,-560.55 2494.73,-567.43"/>
-<text text-anchor="middle" x="2257.25" y="-584.45" font-family="Times New Roman,serif" font-size="14.00">ConfermaPaRicevuta</text>
-</g>
-<!-- NuovoSopralluogoNonApprovatoPCE -->
-<g id="node36" class="node">
-<title>NuovoSopralluogoNonApprovatoPCE</title>
-<path fill="none" stroke="black" d="M2469.75,-651.75C2469.75,-651.75 2260.25,-651.75 2260.25,-651.75 2254.25,-651.75 2248.25,-645.75 2248.25,-639.75 2248.25,-639.75 2248.25,-627.75 2248.25,-627.75 2248.25,-621.75 2254.25,-615.75 2260.25,-615.75 2260.25,-615.75 2469.75,-615.75 2469.75,-615.75 2475.75,-615.75 2481.75,-621.75 2481.75,-627.75 2481.75,-627.75 2481.75,-639.75 2481.75,-639.75 2481.75,-645.75 2475.75,-651.75 2469.75,-651.75"/>
-<text text-anchor="middle" x="2365" y="-628.33" font-family="Times New Roman,serif" font-size="14.00">NuovoSopralluogoNonApprovatoPCE</text>
-</g>
-<!-- NuovoSopralluogoNonApprovatoPCE&#45;&gt;AvvioPerizia -->
-<g id="edge67" class="edge">
-<title>NuovoSopralluogoNonApprovatoPCE&#45;&gt;AvvioPerizia</title>
-<path fill="none" stroke="black" d="M2482.01,-616.77C2486.05,-616.4 2490.06,-616.05 2494,-615.75 2664.43,-602.56 3094.48,-626.38 3263,-597.75 3387.81,-576.55 3459.53,-612.38 3534,-510 3648.19,-353 3330.81,-337.16 3311,-312.75 3261.13,-251.31 3317.31,-203.42 3271,-139.25 3259.12,-122.79 3250.66,-123.47 3232,-115.5 3219.31,-110.08 3214.1,-114.14 3202,-107.5 3190.87,-101.39 3180.23,-92.46 3171.45,-83.9"/>
-<polygon fill="black" stroke="black" points="3174.19,-81.7 3164.69,-77 3169.19,-86.6 3174.19,-81.7"/>
-<text text-anchor="middle" x="3525.38" y="-343.32" font-family="Times New Roman,serif" font-size="14.00">NonApprovato</text>
+<!-- GestioneSelfCare&#45;&gt;AvvioPerizia -->
+<g id="edge10" class="edge">
+<title>GestioneSelfCare&#45;&gt;AvvioPerizia</title>
+<path fill="none" stroke="black" d="M1109.19,-713.36C1131.26,-710.24 1156.74,-707.13 1180,-705.5 1245.92,-700.89 3498.97,-715.14 3559,-687.5 3579.45,-678.09 3595.85,-658.44 3606.78,-641.98"/>
+<polygon fill="black" stroke="black" points="3609.73,-643.87 3612.07,-633.53 3603.79,-640.15 3609.73,-643.87"/>
+<text text-anchor="middle" x="2289.11" y="-691.84" font-family="Times New Roman,serif" font-size="14.00">AvvioPeriziaPostSelfCare</text>
 </g>
 </g>
 </svg>
