@@ -1,0 +1,104 @@
+digraph finite_state_machine {
+    rankdir=TB;
+    size="8,5"
+    label="SopralluogoPCE"
+    node [shape = box style = rounded];
+    
+    subgraph Opening {
+            node [style =  filled shape = box]
+            label = "Opening";
+            color=green
+            rank= min
+            Apertura    
+    }
+
+
+subgraph cluster_Accertamenti {
+label="Accertamenti"
+
+	
+
+
+    subgraph cluster_sopralluogo {
+            node [shape=box,style=rounded ];
+            label = "SOPRALLUOGO PCE";
+
+
+            subgraph cluster_gestoreReferente {
+                node [shape=box,style=rounded ];
+                rank = max
+                label = "Gestore Referente";
+                AvvioSopralluogoPCE
+                AssegnazioneSopralluogoPCE
+                VerificaSopralluogoPCEDopoRifiuto
+                ApprovazioneSopralluogoPCE
+                NuovoSopralluogoPCENonApprovato
+            }
+
+            subgraph cluster_sopralluoghista {
+                node [shape=box,style=rounded ];
+                rank = max 
+                label = "Sopralluoghista";
+                PianificazioneSopralluogoPCE
+                EsecuzioneSopralluogoPCE   
+            }
+
+            node [shape = rect style= filled]	
+            PortaleAssicurato
+    }
+
+
+
+}
+
+    subgraph perizia  { 
+        node [shape=box style=rounded  ]
+        label = "PERIZIA"
+        rank = max
+        node [style = filled ]
+        AvvioPerizia  
+    }
+	
+       
+
+    
+        Apertura -> AvvioSopralluogoPCE  
+
+comment = "ACCERTAMENTI"
+
+   
+ 
+ { node [rank = max ]
+    AvvioSopralluogoPCE               -> AssegnazioneSopralluogoPCE        [ label = "SopralluogoAvviato"];
+    AssegnazioneSopralluogoPCE        -> PianificazioneSopralluogoPCE      [ label = "SopralluogoAssegnato" style = dotted];
+    PianificazioneSopralluogoPCE      -> EsecuzioneSopralluogoPCE          [ label = "SopralluogoPianificato"];
+    PianificazioneSopralluogoPCE      -> VerificaSopralluogoPCEDopoRifiuto [ label = "SopralluogoRifiutato" style = dotted];
+    VerificaSopralluogoPCEDopoRifiuto -> PianificazioneSopralluogoPCE      [ xlabel = "SopralluogoAssegnato" style = dotted];
+    
+    AssegnazioneSopralluogoPCE         -> VerificaSopralluogoPCEDopoRifiuto [ dir= none style = invisible];
+    VerificaSopralluogoPCEDopoRifiuto  -> ApprovazioneSopralluogoPCE        [ dir= none style = invisible];
+
+    
+    EsecuzioneSopralluogoPCE          -> EsecuzioneSopralluogoPCE          [ label = "AppuntamentoModificato"];
+    EsecuzioneSopralluogoPCE          -> PianificazioneSopralluogoPCE      [ label = "AppuntamentoAnnullato"];
+    EsecuzioneSopralluogoPCE          -> ApprovazioneSopralluogoPCE        [ label = "RichiestaNuovoSopralluogo" style = dotted];
+    EsecuzioneSopralluogoPCE	       ->	AvvioPerizia 	    		 [ label = "SopralluogoCompletato"];
+    
+    ApprovazioneSopralluogoPCE        ->  NuovoSopralluogoPCENonApprovato   [ label = "NonApprovato"];
+    ApprovazioneSopralluogoPCE        -> PianificazioneSopralluogoPCE      [ label = "Approvato" style = dotted];
+
+    EsecuzioneSopralluogoPCE          -> PianificazioneSopralluogoPCE      [ label = "ChiusuraAttivita"];
+    EsecuzioneSopralluogoPCE	       -> EsecuzioneSopralluogoPCE  	     [ label = "DatiObbligatoriMancanti"];
+    EsecuzioneSopralluogoPCE	       -> PianificazioneSopralluogoPCE  	 [ label = "ChiusuraSoprallVariato"];
+    EsecuzioneSopralluogoPCE          -> AssegnazioneSopralluogoPCE        [ label = "AnnullamentoSopralluogo" ];
+
+}
+	
+ 
+
+	PortaleAssicurato	   -> EsecuzioneSopralluogoPCE  [ label = "RichiestaPaRicevuta" style = dotted] ;
+	PortaleAssicurato	   -> EsecuzioneSopralluogoPCE  [ label = "ConfermaPaRicevuta"  style = dotted] ;
+	
+	
+
+}

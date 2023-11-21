@@ -1,7 +1,7 @@
 digraph finite_state_machine {
     rankdir=TB;
     size="8,5"
-    label="Assessment"
+    label="Sopralluogo"
     node [shape = box style = rounded];
     
     subgraph Opening {
@@ -15,15 +15,8 @@ digraph finite_state_machine {
 
 
 subgraph cluster_Accertamenti {
+label="Accertamenti"
 
-    subgraph cluster_selfcare {
-        node [shape=box,style=rounded ];
-        label = "SELFCARE";
-            AvvioAccertSelfCare
-            GestioneSelfCare
-            node [style = filled ]
-            AvvioChiusura
-    }
 	
 
 
@@ -52,7 +45,7 @@ subgraph cluster_Accertamenti {
             }
 
             node [shape = rect style= filled]	
-            Pa_Sopralluogo
+            PortaleAssicurato
     }
 
 
@@ -69,14 +62,10 @@ subgraph cluster_Accertamenti {
 	
        
 
-        Apertura -> AvvioVisio
-         
-        Apertura -> AvvioManualeVisio
-        
     
         Apertura -> AvvioSopralluogo  
          
-        Apertura -> AvvioAccertSelfCare
+
 
 
 
@@ -85,7 +74,7 @@ comment = "ACCERTAMENTI"
    
  
  { node [rank = max ]
-    AvvioSopralluogo               -> AssegnazioneSopralluogo        [ label = "SopralluogoAvvioto"];
+    AvvioSopralluogo               -> AssegnazioneSopralluogo        [ label = "SopralluogoAvviato"];
     AssegnazioneSopralluogo        -> PianificazioneSopralluogo      [ label = "SopralluogoAssegnato" style = dotted];
     PianificazioneSopralluogo      -> EsecuzioneSopralluogo          [ label = "SopralluogoPianificato"];
     PianificazioneSopralluogo      -> VerificaSopralluogoDopoRifiuto [ label = "SopralluogoRifiutato" style = dotted];
@@ -98,7 +87,7 @@ comment = "ACCERTAMENTI"
     EsecuzioneSopralluogo          -> EsecuzioneSopralluogo          [ label = "AppuntamentoModificato"];
     EsecuzioneSopralluogo          -> PianificazioneSopralluogo      [ label = "AppuntamentoAnnullato"];
     EsecuzioneSopralluogo          -> ApprovazioneSopralluogo        [ label = "RichiestaNuovoSopralluogo" style = dotted];
-    EsecuzioneSopralluogo	       ->	AvvioPerizia 	    		[ label = "SopralluogoCompletato"];
+    EsecuzioneSopralluogo	       ->	AvvioPerizia 	    		 [ label = "SopralluogoCompletato"];
     
     ApprovazioneSopralluogo        ->  NuovoSopralluogoNonApprovato   [ label = "NonApprovato"];
     ApprovazioneSopralluogo        -> PianificazioneSopralluogo      [ label = "Approvato" style = dotted];
@@ -112,15 +101,9 @@ comment = "ACCERTAMENTI"
 	
  
 
-	Pa_Sopralluogo	   -> EsecuzioneSopralluogo  [ label = "RichiestaPaRicevuta" style = dotted] ;
-	Pa_Sopralluogo	   -> EsecuzioneSopralluogo  [ label = "ConfermaPaRicevuta"  style = dotted] ;
+	PortaleAssicurato	   -> EsecuzioneSopralluogo  [ label = "RichiestaPaRicevuta" style = dotted] ;
+	PortaleAssicurato	   -> EsecuzioneSopralluogo  [ label = "ConfermaPaRicevuta"  style = dotted] ;
 	
 
-
-	AvvioAccertSelfCare                 -> GestioneSelfCare [ label = "AccertSelfCareAvviati" ] 	
-
-	GestioneSelfCare                    -> AvvioPerizia     [ xlabel = "AvvioPeriziaPostSelfCare"  ]
-	GestioneSelfCare                    -> AvvioChiusura    [ label = "AvvioChiusuraPostSelfCare"  ]
-	
 
 }

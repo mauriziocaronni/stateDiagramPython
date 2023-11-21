@@ -1,0 +1,71 @@
+digraph finite_state_machine {
+    rankdir=TB;
+    size="8,5"
+    label="Accertamenti-Visio"
+    node [shape = box style = rounded];
+    
+    subgraph Opening {
+            node [style =  filled shape = box]
+            label = "Opening";
+            color=green
+            rank= min
+            Apertura    
+    }
+
+
+
+subgraph cluster_Accertamenti {
+    label="Accertamenti"
+
+	
+
+    subgraph cluster_visio {
+            node [shape=box,style=rounded ];
+            label = "VISIO";
+            AvvioVisio
+            AvvioManualeVisio [rank = min]
+            EsecuzioneVisio
+            RiassegnazioneVisio
+            node [shape = rect style= filled]	
+            PortaleAssicurato
+
+    }
+
+
+
+}
+
+    subgraph perizia  { 
+        node [shape=box style=rounded  ]
+        label = "PERIZIA"
+        rank = max
+        node [style = filled ]
+        AvvioPerizia  
+    }
+	
+       
+
+       Apertura -> AvvioVisio
+         
+        Apertura -> AvvioManualeVisio
+     AvvioVisio	                 ->	EsecuzioneVisio	    		[ label = "VisioPianificata"];
+    EsecuzioneVisio	             ->	RiassegnazioneVisio			[ label = "VisioRifiutata"];
+    EsecuzioneVisio	             ->	EsecuzioneVisio	    		[ label = "AppuntamentoModificato"];
+    EsecuzioneVisio	             ->	EsecuzioneVisio  			[ label = "AppuntamentoAnnullato"];
+    EsecuzioneVisio	             ->	AvvioManualeVisio			[ label = "VisioCompletataNuovaVisio"];
+    EsecuzioneVisio	             ->	AvvioPerizia 	    		[ label = "VisioCompletata"];
+    EsecuzioneVisio	             ->	EsecuzioneVisio  			[ label = "DatiObbligatoriMancanti"];
+    AvvioManualeVisio	         ->	EsecuzioneVisio	    		[ label = "VisioPianificata"];
+    RiassegnazioneVisio	         ->	AvvioManualeVisio			[ label = "VisioAssegnata"];
+ 
+	PortaleAssicurato		       -> EsecuzioneVisio  [ label = "RichiestaPaRicevuta" style = dotted] ;
+	PortaleAssicurato		       -> EsecuzioneVisio  [ label = "ConfermaPaRicevuta"  style = dotted] ;
+
+  
+ 
+ { node [rank = max ]
+
+
+ }
+
+}

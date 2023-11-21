@@ -1,0 +1,68 @@
+digraph finite_state_machine {
+    rankdir=TB;
+    size="8,5"
+    label="Accertamenti-Desk"
+    node [shape = box style = rounded];
+    
+    subgraph Opening {
+            node [style =  filled shape = box]
+            label = "Opening";
+            color=green
+            rank= min
+            Apertura    
+    }
+
+
+
+subgraph cluster_Accertamenti {
+  label="Accertamenti"
+
+	
+
+    subgraph cluster_visio {
+            node [shape=box,style=rounded ];
+            label = "DESK";
+            AvvioDesk
+            AvvioManualeDesk [rank = min]
+            EsecuzioneDesk
+            RiassegnazioneDesk
+            node [shape = rect style= filled]	
+            PortaleAssicurato
+
+    }
+
+
+
+}
+
+    subgraph perizia  { 
+        node [shape=box style=rounded  ]
+        label = "PERIZIA"
+        rank = max
+        node [style = filled ]
+        AvvioPeriziaPostDesk  
+    }
+	
+       
+
+       Apertura -> AvvioDesk
+         
+        Apertura -> AvvioManualeDesk
+     AvvioDesk	                 ->	EsecuzioneDesk	    		[ label = "DeskPianificata"];
+    EsecuzioneDesk	             ->	RiassegnazioneDesk			[ label = "DeskRifiutata"];
+    EsecuzioneDesk	             ->	EsecuzioneDesk	    		[ label = "AppuntamentoModificato"];
+    EsecuzioneDesk	             ->	EsecuzioneDesk  			[ label = "AppuntamentoAnnullato"];
+    EsecuzioneDesk	             ->	AvvioManualeDesk			[ label = "DeskCompletataNuovaDesk"];
+    EsecuzioneDesk	             ->	AvvioPeriziaPostDesk   		[ label = "DeskCompletata"];
+    EsecuzioneDesk	             ->	EsecuzioneDesk  			[ label = "DatiObbligatoriMancanti"];
+    AvvioManualeDesk	         ->	EsecuzioneDesk	    		[ label = "DeskPianificata"];
+    RiassegnazioneDesk	         ->	AvvioManualeDesk			[ label = "DeskAssegnata"];
+ 
+	PortaleAssicurato		       -> EsecuzioneDesk  [ label = "RichiestaPaRicevuta" style = dotted] ;
+	PortaleAssicurato		       -> EsecuzioneDesk  [ label = "ConfermaPaRicevuta"  style = dotted] ;
+
+  
+ 
+
+
+}
