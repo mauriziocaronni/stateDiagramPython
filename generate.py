@@ -87,16 +87,16 @@ def main ():
 
     print("start", datetime.now())
     
-    #generate_all("opening" , "opening")
+#    #generate_all("opening" , "opening")
 #   generate_all("assessment", "selfCare")
 #   generate_all("assessment", "visio")
 #   generate_all("assessment", "desk")
 #   generate_all("assessment", "sopralluogo")
-    generate_all("assessment", "sopralluogoPCE")
+#    generate_all("assessment", "sopralluogoPCE")
 
     
-    #generate_all("expertise", "expertise")
-    #generate_all("closing", "closing")
+#    generate_all("expertise", "expertise")
+    generate_all("closing", "closing")
     #generate_all("repair", "repair")
 
     #generate_all("global" , "global")

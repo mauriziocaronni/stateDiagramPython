@@ -3,7 +3,7 @@ digraph finite_state_machine {
 	rank =same
     size="8,5"
     fontsize = "24"
-    label="Schema globale stati"
+    label="Chiusura e riapertura"
     node [shape=box,style=rounded ];
  
 	subgraph start {
@@ -13,51 +13,84 @@ digraph finite_state_machine {
 			RiaperturaAutomatica
 			ACCERTAMENTI
 			RIPARAZIONE
+
 	}
-	
-	subgraph end {
-			node [shape = "box" style = "filled" ];
-			label = "end";
+
+	subgraph cluster_perizia_1 {
+			rank = top
+			style = filled
+			node [shape = "box" style = filled ];
+			label = "(fine) PERIZIA";
+			ComunicazioneEsito
+			InvioEmailEsito
+			InvioAtto
+	}
+
+	subgraph cluster_perizia_2 {
 			rank = sink
-			ChiusuraManuale
-			ChiusuraAutomatica
+			style = filled
+			node [shape = "box" style = filled ];
+			label = "(nuova) PERIZIA";
+			EsecuzionePerizia			
+		    ConciliazionePerizia
+			PeriziaContestazione
 	}
+
+	
 		
 	subgraph cluster_chiusura {
+		rank = max
 		node [shape=box,style=rounded ];
-		label = "CHIUSURA e RIAPERTURA";
-		AvvioChiusura
+		label = "CHIUSURA";
+		AttesaRicezioneAtto
 		VerificaChiusura
+		ChiusuraAutomatica
+		ChiusuraManuale
+	}
+
+	subgraph cluster_riapertura {
+		node [shape=box,style=rounded ];
+		label = "RIAPERTURA";
 		GestioneRiapertura
 		GestioneContestazione
 		FinalizzaContestazione
 	}
 
 
-        
  
 
-    AvvioChiusura              -> VerificaChiusura        [ label = "ChiusuraAvviata"]
-    VerificaChiusura           -> ChiusuraManuale         [ label = "ChiusuraVerificata"]
-    VerificaChiusura           -> ChiusuraAutomatica      [ label = "ChiusuraVerificata"]
-    VerificaChiusura           -> VerificaChiusura        [ label = "DatiObbligatoriMancanti"]
+    InvioEmailEsito           ->   AttesaRicezioneAtto           [ label = "EmailEsitoInviata"] ;
+    InvioAtto                 ->   AttesaRicezioneAtto           [ label = "AttoInviato"] ;
+	ComunicazioneEsito		->   VerificaChiusura           [ label = "AccordoRaggiunto-o-NonRichiesto"] ;
+
+
+    AttesaRicezioneAtto          -> ConciliazionePerizia      [ label = "ConciliazioneAvviata"] ;
+    AttesaRicezioneAtto          -> VerificaChiusura          [ label = "AttoFirmato"] ;
+	AttesaRicezioneAtto          -> VerificaChiusura          [ label = "ForzaturaChiusura"] ;
+	
+
+
+    VerificaChiusura           -> ChiusuraManuale         	[ label = "ChiusuraVerificata"]
+    VerificaChiusura           -> ChiusuraAutomatica      	[ label = "ChiusuraVerificata"]
+    VerificaChiusura           -> VerificaChiusura        	[ label = "DatiObbligatoriMancanti"]
 	RiaperturaAutomatica         -> GestioneRiapertura      [ label = "RiaperturaAutomatica" ]
-	CreazioneManualeIncarico   ->  GestioneRiapertura    [ label = "RiaperturaManaule" ]
+	CreazioneManualeIncarico   ->  GestioneRiapertura    	[ label = "RiaperturaManaule" ]
 
-    GestioneRiapertura    ->  SceltaManualeServizio [ label = "NonRiapertura"]
-    GestioneRiapertura    ->  GestioneContestazione [ label = "GestioneContestazione"]
+    GestioneRiapertura    ->  SceltaManualeServizio 		[ label = "NonRiapertura"]
+    GestioneRiapertura    ->  GestioneContestazione 		[ label = "GestioneContestazione"]
 
-    GestioneContestazione       -> FinalizzaContestazione [ label = "ContestazioneDaFinalizzare"]
-    FinalizzaContestazione      -> AvvioChiusura          [ label = "ChiusuraAvviata"]
+    GestioneContestazione       -> FinalizzaContestazione 	[ label = "ContestazioneDaFinalizzare"]
+    FinalizzaContestazione      -> VerificaChiusura         [ label = "ChiusuraAvviata"]
 
 
 	node [shape=box,style=rounded  style = filled];
 	color = grey
- 	ACCERTAMENTI                    -> AvvioChiusura    
-    PERIZIA                         -> AvvioChiusura             
-	RIPARAZIONE                     -> AvvioChiusura     
-    VerificaChiusura           -> PERIZIA				  [ label = "PeriziaIncompleta"]
-	GestioneRiapertura          ->  PERIZIA   [ label = "PeriziaIntegrazione" ]
-	GestioneContestazione       -> PERIZIA [ label = "PeriziaContestazione" ]
+	
+ 	ACCERTAMENTI                    -> VerificaChiusura    [ label = "Chiusura Post SelfCare"]     
+	RIPARAZIONE                     -> VerificaChiusura     [ label = "ChiusuraAvviata"]
+
+    VerificaChiusura           ->  EsecuzionePerizia	 [ label = "PeriziaIncompleta"]
+	GestioneRiapertura          -> EsecuzionePerizia   [ label = "PeriziaIntegrazione" ]
+	GestioneContestazione       -> PeriziaContestazione   [ label = "PeriziaContestazione" ]
 
 }
