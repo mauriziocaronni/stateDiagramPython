@@ -96,8 +96,8 @@ def main ():
 
     
 #    generate_all("expertise", "expertise")
-    generate_all("closing", "closing")
-    #generate_all("repair", "repair")
+#    generate_all("closing", "closing")
+    generate_all("repair", "repair")
 
     #generate_all("global" , "global")
 
