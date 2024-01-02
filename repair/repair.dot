@@ -1,7 +1,6 @@
 digraph finite_state_machine {
     rankdir=TB;
     size="8,5"
-    label="Repair"
     node [shape = box style=rounded]; 
 
     subgraph Opening {
@@ -12,36 +11,38 @@ digraph finite_state_machine {
     }
 
 
-subgraph cluster_riparazione {
-    node [shape=box,style=rounded ];
-    label = "RIPARAZIONE";
-
-    subgraph cluster_gestore {
+    subgraph cluster_riparazione {
         node [shape=box,style=rounded ];
-        label = "GESTORE-RIPARAZIONE";
-        AvvioRiparazione
-        ConfigurazioneRiparazione
-        DefinizioneTimeline 
-        AssegnazioneMonitoraggio
-    }
+        label = "RIPARAZIONE";
 
-    subgraph cluster_perito {
+        AvvioRiparazione
+
+        subgraph cluster_gestore {
+            node [shape=box,style=rounded ];
+            label = "GESTORE-RIPARAZIONE";
+        
+            ConfigurazioneRiparazione
+            DefinizioneTimeline 
+        }
+
+        subgraph cluster_perito {
             node [shape=box,style=rounded ];
             label = "PERITO-RIPARAZIONE";
             MonitoraggioAttivita
             EsecVisioApprovazBudget
-            VerificaChiusuraRiparazione
+            VerificaDocumentiBudget
+            VerificaRiparazioneCompletata
 
-    }
+        }
 
-    subgraph cluster_cat {
-        node [shape=box,style=rounded ] ;
-        label = "RIPARATORE";
-        PianificazioneAppuntamentoR
-        EsecuzioneSopralluogoR
-        EsecuzioneAttivita 
-        FineLavori
-    }
+        subgraph cluster_cat {
+            node [shape=box,style=rounded ] ;
+         label = "RIPARATORE";
+            PianificazioneAppuntamentoR
+            EsecuzioneSopralluogoR 
+            ChiusuraIntervento
+            FineLavori
+        }
     
 }
 
@@ -54,34 +55,39 @@ subgraph cluster_riparazione {
     AvvioRiparazione           -> ConfigurazioneRiparazione    [ label = "RiparazioneAvviata" ]  ;
     ConfigurazioneRiparazione  -> DefinizioneTimeline          [ label = "RiparazioneConfigurata" ]  ;
 
-    DefinizioneTimeline        -> PianificazioneAppuntamentoR  [ style = "dotted" label = "AttivitaAssegnata"] ;
-    DefinizioneTimeline        -> MonitoraggioAttivita         [ style = "dotted" label = "MonitoraggioAssegnato" ]  ;
+    DefinizioneTimeline        -> PianificazioneAppuntamentoR  [  label = "AttivitaAssegnata"] ;
+    DefinizioneTimeline        -> MonitoraggioAttivita         [  label = "MonitoraggioAssegnato" ]  ;
 
     
     PianificazioneAppuntamentoR -> EsecuzioneSopralluogoR       [ label = "AppuntamentoPianificato" ];
-    PianificazioneAppuntamentoR -> EsecVisioApprovazBudget      [  style = "dotted"  label = "AppuntamentoPianificato" ];
+    PianificazioneAppuntamentoR -> EsecVisioApprovazBudget      [ label = "AppuntamentoPianificato" ];
 
-    EsecVisioApprovazBudget     -> EsecuzioneSopralluogoR       [ style = "dotted"  label = "BudgetApprovato" ];
     
-    EsecuzioneSopralluogoR      -> FineLavori           [ label = "SopralluogoEseguito" ];
-    FineLavori                  -> VerificaChiusuraRiparazione   [ style = "dotted" label = "LavoriTerminati" ];
 
-    MonitoraggioAttivita        -> VerificaChiusuraRiparazione   [ style = "dotted"  label = "MonitoraggioTerminato" ]  ;
+    EsecuzioneSopralluogoR      -> ChiusuraIntervento       [ label = "SopralluogoEseguito" ];
+    ChiusuraIntervento          -> PianificazioneAppuntamentoR       [ label = "NuovoSopralluogo" ];
+    
+    EsecVisioApprovazBudget     -> ChiusuraIntervento  [ style = "dotted"  label = "Abilita" ];
 
-  
-    MonitoraggioAttivita    -> EsecVisioApprovazBudget     [ style = "invisible"   ];
-    EsecVisioApprovazBudget -> VerificaChiusuraRiparazione  [ style = "invisible"   ];
+    ChiusuraIntervento          -> FineLavori           [ label = "AttivitaChiusa" ];  
+    FineLavori                  -> PianificazioneAppuntamentoR       [ label = "NuovoSopralluogo" ];
+    FineLavori                  -> VerificaDocumentiBudget   [  label = "LavoriTerminati" ];
 
+    VerificaDocumentiBudget     -> MonitoraggioAttivita       [ label = "Chiude" style = "dotted"]  ;
+    VerificaDocumentiBudget        -> VerificaRiparazioneCompletata   [   label = "TuttiLavoriTerminati" ]  ;
+
+  comment = "solo per visualizzazione" 
+    MonitoraggioAttivita    -> EsecVisioApprovazBudget     [ style = "invisible" arrowhead = "none" ]  ;
+    EsecVisioApprovazBudget -> VerificaDocumentiBudget  [ style = "invisible"    arrowhead = "none" ]  ;
+
+
+    VerificaRiparazioneCompletata  -> VerificaRiparazioneCompletata          [ label = "DatiNonCompleti" ] ;
+    
 	comment = "sottoprocesso Chiusura Riparazione"
-	node [shape=box,style=rounded  style = filled];
+	node [shape=box,style=rounded  style = filled rank=min];
 	color = grey
-	
-    VerificaRiparazioneCompletata  -> ConfigurazioneRiparazione              [ label = "RiparazioneNonChiusa" ] ;
     VerificaRiparazioneCompletata  -> PERIZIA                                [ label = "PeriziaPostRiparazione" ];
-    VerificaRiparazioneCompletata  -> CHIUSURA                               [ label = "ChiusuraPostRiparazione" ];
-    VerificaRiparazioneCompletata  -> VerificaRiparazioneCompletata          [ label = "DatiNonCompletati" ] ;
-    
-
+    VerificaRiparazioneCompletata  -> CHIUSURA  [ label = "ChiusuraPostRiparazione" ];	
 	
 	
 }
