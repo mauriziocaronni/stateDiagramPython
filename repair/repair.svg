@@ -5,248 +5,248 @@
  -->
 <!-- sottoprocesso Chiusura Riparazione -->
 <!-- Title: finite_state_machine Pages: 1 -->
-<svg width="334pt" height="360pt"
- viewBox="0.00 0.00 334.19 360.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<svg width="310pt" height="360pt"
+ viewBox="0.00 0.00 310.16 360.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 <g id="graph0" class="graph" transform="scale(0.44 0.44) rotate(0) translate(4 805)">
 <title>finite_state_machine</title>
-<polygon fill="white" stroke="transparent" points="-4,4 -4,-805 747,-805 747,4 -4,4"/>
-<g id="clust1" class="cluster">
+<polygon fill="white" stroke="transparent" points="-4,4 -4,-805 693,-805 693,4 -4,4"/>
+<g id="clust2" class="cluster">
 <title>cluster_riparazione</title>
 <polygon fill="none" stroke="black" points="8,-77 8,-724 681,-724 681,-77 8,-77"/>
 <text text-anchor="middle" x="344.5" y="-708.8" font-family="Times New Roman,serif" font-size="14.00">RIPARAZIONE</text>
 </g>
-<g id="clust3" class="cluster">
+<g id="clust5" class="cluster">
 <title>cluster_perito</title>
-<polygon fill="none" stroke="black" points="16,-85 16,-421 336,-421 336,-85 16,-85"/>
-<text text-anchor="middle" x="176" y="-405.8" font-family="Times New Roman,serif" font-size="14.00">PERITO&#45;RIPARAZIONE</text>
-</g>
-<g id="clust2" class="cluster">
-<title>cluster_gestore</title>
-<polygon fill="none" stroke="black" points="234,-454 234,-616 416,-616 416,-454 234,-454"/>
-<text text-anchor="middle" x="325" y="-600.8" font-family="Times New Roman,serif" font-size="14.00">GESTORE&#45;RIPARAZIONE</text>
+<polygon fill="none" stroke="black" points="353,-85 353,-421 673,-421 673,-85 353,-85"/>
+<text text-anchor="middle" x="513" y="-405.8" font-family="Times New Roman,serif" font-size="14.00">PERITO&#45;RIPARAZIONE</text>
 </g>
 <g id="clust4" class="cluster">
 <title>cluster_cat</title>
-<polygon fill="none" stroke="black" points="344,-85 344,-421 673,-421 673,-85 344,-85"/>
-<text text-anchor="middle" x="508.5" y="-405.8" font-family="Times New Roman,serif" font-size="14.00">RIPARATORE</text>
+<polygon fill="none" stroke="black" points="16,-85 16,-421 345,-421 345,-85 16,-85"/>
+<text text-anchor="middle" x="180.5" y="-405.8" font-family="Times New Roman,serif" font-size="14.00">RIPARATORE</text>
+</g>
+<g id="clust3" class="cluster">
+<title>cluster_gestore</title>
+<polygon fill="none" stroke="black" points="267,-454 267,-616 449,-616 449,-454 267,-454"/>
+<text text-anchor="middle" x="358" y="-600.8" font-family="Times New Roman,serif" font-size="14.00">GESTORE&#45;RIPARAZIONE</text>
+</g>
+<!-- VenditaRiparazione -->
+<g id="node1" class="node">
+<title>VenditaRiparazione</title>
+<polygon fill="lightgrey" stroke="black" points="419.5,-801 296.5,-801 296.5,-765 419.5,-765 419.5,-801"/>
+<text text-anchor="middle" x="358" y="-779.3" font-family="Times New Roman,serif" font-size="14.00">VenditaRiparazione</text>
+</g>
+<!-- AvvioRiparazione -->
+<g id="node12" class="node">
+<title>AvvioRiparazione</title>
+<path fill="none" stroke="black" d="M403.5,-693C403.5,-693 312.5,-693 312.5,-693 306.5,-693 300.5,-687 300.5,-681 300.5,-681 300.5,-669 300.5,-669 300.5,-663 306.5,-657 312.5,-657 312.5,-657 403.5,-657 403.5,-657 409.5,-657 415.5,-663 415.5,-669 415.5,-669 415.5,-681 415.5,-681 415.5,-687 409.5,-693 403.5,-693"/>
+<text text-anchor="middle" x="358" y="-671.3" font-family="Times New Roman,serif" font-size="14.00">AvvioRiparazione</text>
+</g>
+<!-- VenditaRiparazione&#45;&gt;AvvioRiparazione -->
+<g id="edge1" class="edge">
+<title>VenditaRiparazione&#45;&gt;AvvioRiparazione</title>
+<path fill="none" stroke="black" d="M358,-764.97C358,-748.38 358,-722.88 358,-703.43"/>
+<polygon fill="black" stroke="black" points="361.5,-703.34 358,-693.34 354.5,-703.34 361.5,-703.34"/>
+<text text-anchor="middle" x="413" y="-735.8" font-family="Times New Roman,serif" font-size="14.00">RiparazioneVenduta</text>
 </g>
 <!-- ConfigurazioneRiparazione -->
-<g id="node1" class="node">
+<g id="node2" class="node">
 <title>ConfigurazioneRiparazione</title>
-<path fill="none" stroke="black" d="M396,-585C396,-585 254,-585 254,-585 248,-585 242,-579 242,-573 242,-573 242,-561 242,-561 242,-555 248,-549 254,-549 254,-549 396,-549 396,-549 402,-549 408,-555 408,-561 408,-561 408,-573 408,-573 408,-579 402,-585 396,-585"/>
-<text text-anchor="middle" x="325" y="-563.3" font-family="Times New Roman,serif" font-size="14.00">ConfigurazioneRiparazione</text>
+<path fill="none" stroke="black" d="M429,-585C429,-585 287,-585 287,-585 281,-585 275,-579 275,-573 275,-573 275,-561 275,-561 275,-555 281,-549 287,-549 287,-549 429,-549 429,-549 435,-549 441,-555 441,-561 441,-561 441,-573 441,-573 441,-579 435,-585 429,-585"/>
+<text text-anchor="middle" x="358" y="-563.3" font-family="Times New Roman,serif" font-size="14.00">ConfigurazioneRiparazione</text>
 </g>
 <!-- DefinizioneTimeline -->
-<g id="node2" class="node">
+<g id="node3" class="node">
 <title>DefinizioneTimeline</title>
-<path fill="none" stroke="black" d="M360,-498C360,-498 254,-498 254,-498 248,-498 242,-492 242,-486 242,-486 242,-474 242,-474 242,-468 248,-462 254,-462 254,-462 360,-462 360,-462 366,-462 372,-468 372,-474 372,-474 372,-486 372,-486 372,-492 366,-498 360,-498"/>
-<text text-anchor="middle" x="307" y="-476.3" font-family="Times New Roman,serif" font-size="14.00">DefinizioneTimeline</text>
+<path fill="none" stroke="black" d="M393,-498C393,-498 287,-498 287,-498 281,-498 275,-492 275,-486 275,-486 275,-474 275,-474 275,-468 281,-462 287,-462 287,-462 393,-462 393,-462 399,-462 405,-468 405,-474 405,-474 405,-486 405,-486 405,-492 399,-498 393,-498"/>
+<text text-anchor="middle" x="340" y="-476.3" font-family="Times New Roman,serif" font-size="14.00">DefinizioneTimeline</text>
 </g>
 <!-- ConfigurazioneRiparazione&#45;&gt;DefinizioneTimeline -->
 <g id="edge3" class="edge">
 <title>ConfigurazioneRiparazione&#45;&gt;DefinizioneTimeline</title>
-<path fill="none" stroke="black" d="M321.36,-548.8C318.89,-537.16 315.59,-521.55 312.77,-508.24"/>
-<polygon fill="black" stroke="black" points="316.13,-507.23 310.64,-498.18 309.28,-508.68 316.13,-507.23"/>
-<text text-anchor="middle" x="382" y="-519.8" font-family="Times New Roman,serif" font-size="14.00">RiparazioneConfigurata</text>
-</g>
-<!-- MonitoraggioAttivita -->
-<g id="node3" class="node">
-<title>MonitoraggioAttivita</title>
-<path fill="none" stroke="black" d="M266.5,-390C266.5,-390 157.5,-390 157.5,-390 151.5,-390 145.5,-384 145.5,-378 145.5,-378 145.5,-366 145.5,-366 145.5,-360 151.5,-354 157.5,-354 157.5,-354 266.5,-354 266.5,-354 272.5,-354 278.5,-360 278.5,-366 278.5,-366 278.5,-378 278.5,-378 278.5,-384 272.5,-390 266.5,-390"/>
-<text text-anchor="middle" x="212" y="-368.3" font-family="Times New Roman,serif" font-size="14.00">MonitoraggioAttivita</text>
-</g>
-<!-- DefinizioneTimeline&#45;&gt;MonitoraggioAttivita -->
-<g id="edge4" class="edge">
-<title>DefinizioneTimeline&#45;&gt;MonitoraggioAttivita</title>
-<path fill="none" stroke="black" d="M288.68,-461.92C282.9,-456.33 276.56,-450.02 271,-444 257.39,-429.29 243,-412.01 231.84,-398.18"/>
-<polygon fill="black" stroke="black" points="234.32,-395.68 225.34,-390.07 228.86,-400.06 234.32,-395.68"/>
-<text text-anchor="middle" x="337" y="-432.8" font-family="Times New Roman,serif" font-size="14.00">MonitoraggioAssegnato</text>
+<path fill="none" stroke="black" d="M354.36,-548.8C351.89,-537.16 348.59,-521.55 345.77,-508.24"/>
+<polygon fill="black" stroke="black" points="349.13,-507.23 343.64,-498.18 342.28,-508.68 349.13,-507.23"/>
+<text text-anchor="middle" x="415" y="-519.8" font-family="Times New Roman,serif" font-size="14.00">RiparazioneConfigurata</text>
 </g>
 <!-- PianificazioneAppuntamentoR -->
-<g id="node7" class="node">
+<g id="node4" class="node">
 <title>PianificazioneAppuntamentoR</title>
-<path fill="none" stroke="black" d="M524,-390C524,-390 364,-390 364,-390 358,-390 352,-384 352,-378 352,-378 352,-366 352,-366 352,-360 358,-354 364,-354 364,-354 524,-354 524,-354 530,-354 536,-360 536,-366 536,-366 536,-378 536,-378 536,-384 530,-390 524,-390"/>
-<text text-anchor="middle" x="444" y="-368.3" font-family="Times New Roman,serif" font-size="14.00">PianificazioneAppuntamentoR</text>
+<path fill="none" stroke="black" d="M325,-390C325,-390 165,-390 165,-390 159,-390 153,-384 153,-378 153,-378 153,-366 153,-366 153,-360 159,-354 165,-354 165,-354 325,-354 325,-354 331,-354 337,-360 337,-366 337,-366 337,-378 337,-378 337,-384 331,-390 325,-390"/>
+<text text-anchor="middle" x="245" y="-368.3" font-family="Times New Roman,serif" font-size="14.00">PianificazioneAppuntamentoR</text>
 </g>
 <!-- DefinizioneTimeline&#45;&gt;PianificazioneAppuntamentoR -->
 <g id="edge5" class="edge">
 <title>DefinizioneTimeline&#45;&gt;PianificazioneAppuntamentoR</title>
-<path fill="none" stroke="black" d="M372.33,-462.22C383.31,-457.5 394.03,-451.53 403,-444 417.04,-432.21 427.33,-414.32 434.09,-399.44"/>
-<polygon fill="black" stroke="black" points="437.33,-400.77 438.03,-390.2 430.89,-398.03 437.33,-400.77"/>
-<text text-anchor="middle" x="464.5" y="-432.8" font-family="Times New Roman,serif" font-size="14.00">AttivitaAssegnata</text>
+<path fill="none" stroke="black" d="M324.74,-461.97C309.25,-444.69 285.1,-417.74 267.43,-398.03"/>
+<polygon fill="black" stroke="black" points="269.82,-395.45 260.54,-390.34 264.61,-400.12 269.82,-395.45"/>
+<text text-anchor="middle" x="354.5" y="-432.8" font-family="Times New Roman,serif" font-size="14.00">AttivitaAssegnata</text>
+</g>
+<!-- MonitoraggioAttivita -->
+<g id="node8" class="node">
+<title>MonitoraggioAttivita</title>
+<path fill="none" stroke="black" d="M560.5,-390C560.5,-390 451.5,-390 451.5,-390 445.5,-390 439.5,-384 439.5,-378 439.5,-378 439.5,-366 439.5,-366 439.5,-360 445.5,-354 451.5,-354 451.5,-354 560.5,-354 560.5,-354 566.5,-354 572.5,-360 572.5,-366 572.5,-366 572.5,-378 572.5,-378 572.5,-384 566.5,-390 560.5,-390"/>
+<text text-anchor="middle" x="506" y="-368.3" font-family="Times New Roman,serif" font-size="14.00">MonitoraggioAttivita</text>
+</g>
+<!-- DefinizioneTimeline&#45;&gt;MonitoraggioAttivita -->
+<g id="edge4" class="edge">
+<title>DefinizioneTimeline&#45;&gt;MonitoraggioAttivita</title>
+<path fill="none" stroke="black" d="M374.95,-461.93C385.42,-456.49 396.83,-450.26 407,-444 430.85,-429.32 456.51,-410.83 475.73,-396.4"/>
+<polygon fill="black" stroke="black" points="477.95,-399.11 483.81,-390.29 473.73,-393.53 477.95,-399.11"/>
+<text text-anchor="middle" x="495" y="-432.8" font-family="Times New Roman,serif" font-size="14.00">MonitoraggioAssegnato</text>
+</g>
+<!-- EsecuzioneSopralluogoR -->
+<g id="node5" class="node">
+<title>EsecuzioneSopralluogoR</title>
+<path fill="none" stroke="black" d="M165.5,-303C165.5,-303 36.5,-303 36.5,-303 30.5,-303 24.5,-297 24.5,-291 24.5,-291 24.5,-279 24.5,-279 24.5,-273 30.5,-267 36.5,-267 36.5,-267 165.5,-267 165.5,-267 171.5,-267 177.5,-273 177.5,-279 177.5,-279 177.5,-291 177.5,-291 177.5,-297 171.5,-303 165.5,-303"/>
+<text text-anchor="middle" x="101" y="-281.3" font-family="Times New Roman,serif" font-size="14.00">EsecuzioneSopralluogoR</text>
+</g>
+<!-- PianificazioneAppuntamentoR&#45;&gt;EsecuzioneSopralluogoR -->
+<g id="edge15" class="edge">
+<title>PianificazioneAppuntamentoR&#45;&gt;EsecuzioneSopralluogoR</title>
+<path fill="none" stroke="black" d="M152.54,-363.24C116.08,-358.09 80.22,-349.67 69,-336 62.66,-328.27 65.72,-319.22 71.96,-310.96"/>
+<polygon fill="black" stroke="black" points="74.7,-313.15 78.72,-303.35 69.46,-308.5 74.7,-313.15"/>
+<text text-anchor="middle" x="139" y="-324.8" font-family="Times New Roman,serif" font-size="14.00">AppuntamentoPianificato</text>
 </g>
 <!-- EsecVisioApprovazBudget -->
-<g id="node4" class="node">
+<g id="node9" class="node">
 <title>EsecVisioApprovazBudget</title>
-<path fill="none" stroke="black" d="M309.5,-303C309.5,-303 170.5,-303 170.5,-303 164.5,-303 158.5,-297 158.5,-291 158.5,-291 158.5,-279 158.5,-279 158.5,-273 164.5,-267 170.5,-267 170.5,-267 309.5,-267 309.5,-267 315.5,-267 321.5,-273 321.5,-279 321.5,-279 321.5,-291 321.5,-291 321.5,-297 315.5,-303 309.5,-303"/>
-<text text-anchor="middle" x="240" y="-281.3" font-family="Times New Roman,serif" font-size="14.00">EsecVisioApprovazBudget</text>
+<path fill="none" stroke="black" d="M512.5,-303C512.5,-303 373.5,-303 373.5,-303 367.5,-303 361.5,-297 361.5,-291 361.5,-291 361.5,-279 361.5,-279 361.5,-273 367.5,-267 373.5,-267 373.5,-267 512.5,-267 512.5,-267 518.5,-267 524.5,-273 524.5,-279 524.5,-279 524.5,-291 524.5,-291 524.5,-297 518.5,-303 512.5,-303"/>
+<text text-anchor="middle" x="443" y="-281.3" font-family="Times New Roman,serif" font-size="14.00">EsecVisioApprovazBudget</text>
+</g>
+<!-- PianificazioneAppuntamentoR&#45;&gt;EsecVisioApprovazBudget -->
+<g id="edge14" class="edge">
+<title>PianificazioneAppuntamentoR&#45;&gt;EsecVisioApprovazBudget</title>
+<path fill="none" stroke="black" d="M298.9,-353.93C312.05,-348.9 325.83,-342.87 338,-336 347.37,-330.71 347.7,-326.41 357,-321 365.67,-315.95 375.21,-311.29 384.68,-307.12"/>
+<polygon fill="black" stroke="black" points="386.26,-310.25 394.1,-303.12 383.53,-303.81 386.26,-310.25"/>
+<text text-anchor="middle" x="427" y="-324.8" font-family="Times New Roman,serif" font-size="14.00">AppuntamentoPianificato</text>
+</g>
+<!-- ChiusuraIntervento -->
+<g id="node6" class="node">
+<title>ChiusuraIntervento</title>
+<path fill="none" stroke="black" d="M200.5,-216C200.5,-216 103.5,-216 103.5,-216 97.5,-216 91.5,-210 91.5,-204 91.5,-204 91.5,-192 91.5,-192 91.5,-186 97.5,-180 103.5,-180 103.5,-180 200.5,-180 200.5,-180 206.5,-180 212.5,-186 212.5,-192 212.5,-192 212.5,-204 212.5,-204 212.5,-210 206.5,-216 200.5,-216"/>
+<text text-anchor="middle" x="152" y="-194.3" font-family="Times New Roman,serif" font-size="14.00">ChiusuraIntervento</text>
+</g>
+<!-- EsecuzioneSopralluogoR&#45;&gt;ChiusuraIntervento -->
+<g id="edge16" class="edge">
+<title>EsecuzioneSopralluogoR&#45;&gt;ChiusuraIntervento</title>
+<path fill="none" stroke="black" d="M91.93,-266.82C87.9,-256.7 85.23,-243.96 91,-234 93.51,-229.67 96.77,-225.83 100.49,-222.44"/>
+<polygon fill="black" stroke="black" points="102.92,-224.98 108.66,-216.07 98.62,-219.46 102.92,-224.98"/>
+<text text-anchor="middle" x="148" y="-237.8" font-family="Times New Roman,serif" font-size="14.00">SopralluogoEseguito</text>
+</g>
+<!-- ChiusuraIntervento&#45;&gt;PianificazioneAppuntamentoR -->
+<g id="edge17" class="edge">
+<title>ChiusuraIntervento&#45;&gt;PianificazioneAppuntamentoR</title>
+<path fill="none" stroke="black" d="M185.56,-216C192.8,-220.97 199.83,-226.99 205,-234 211.61,-242.95 228.63,-306.78 238.21,-344.08"/>
+<polygon fill="black" stroke="black" points="234.83,-345 240.69,-353.83 241.61,-343.27 234.83,-345"/>
+<text text-anchor="middle" x="278.5" y="-281.3" font-family="Times New Roman,serif" font-size="14.00">NuovoSopralluogo</text>
+</g>
+<!-- FineLavori -->
+<g id="node7" class="node">
+<title>FineLavori</title>
+<path fill="none" stroke="black" d="M260.5,-129C260.5,-129 207.5,-129 207.5,-129 201.5,-129 195.5,-123 195.5,-117 195.5,-117 195.5,-105 195.5,-105 195.5,-99 201.5,-93 207.5,-93 207.5,-93 260.5,-93 260.5,-93 266.5,-93 272.5,-99 272.5,-105 272.5,-105 272.5,-117 272.5,-117 272.5,-123 266.5,-129 260.5,-129"/>
+<text text-anchor="middle" x="234" y="-107.3" font-family="Times New Roman,serif" font-size="14.00">FineLavori</text>
+</g>
+<!-- ChiusuraIntervento&#45;&gt;FineLavori -->
+<g id="edge18" class="edge">
+<title>ChiusuraIntervento&#45;&gt;FineLavori</title>
+<path fill="none" stroke="black" d="M146.57,-179.89C144.37,-169.54 143.64,-156.54 150,-147 158.26,-134.61 171.82,-126.6 185.67,-121.42"/>
+<polygon fill="black" stroke="black" points="186.83,-124.72 195.23,-118.27 184.64,-118.08 186.83,-124.72"/>
+<text text-anchor="middle" x="189.5" y="-150.8" font-family="Times New Roman,serif" font-size="14.00">AttivitaChiusa</text>
+</g>
+<!-- FineLavori&#45;&gt;PianificazioneAppuntamentoR -->
+<g id="edge20" class="edge">
+<title>FineLavori&#45;&gt;PianificazioneAppuntamentoR</title>
+<path fill="none" stroke="black" d="M233.07,-129.16C231.67,-161.93 230.65,-231.66 246,-249 271.6,-277.91 306.69,-237 331,-267 353.95,-295.32 317.23,-327.64 284.9,-348.63"/>
+<polygon fill="black" stroke="black" points="282.99,-345.69 276.38,-353.97 286.72,-351.62 282.99,-345.69"/>
+<text text-anchor="middle" x="297.5" y="-237.8" font-family="Times New Roman,serif" font-size="14.00">NuovoSopralluogo</text>
+</g>
+<!-- VerificaDocumentiBudget -->
+<g id="node10" class="node">
+<title>VerificaDocumentiBudget</title>
+<path fill="none" stroke="black" d="M514.5,-216C514.5,-216 379.5,-216 379.5,-216 373.5,-216 367.5,-210 367.5,-204 367.5,-204 367.5,-192 367.5,-192 367.5,-186 373.5,-180 379.5,-180 379.5,-180 514.5,-180 514.5,-180 520.5,-180 526.5,-186 526.5,-192 526.5,-192 526.5,-204 526.5,-204 526.5,-210 520.5,-216 514.5,-216"/>
+<text text-anchor="middle" x="447" y="-194.3" font-family="Times New Roman,serif" font-size="14.00">VerificaDocumentiBudget</text>
+</g>
+<!-- FineLavori&#45;&gt;VerificaDocumentiBudget -->
+<g id="edge19" class="edge">
+<title>FineLavori&#45;&gt;VerificaDocumentiBudget</title>
+<path fill="none" stroke="black" d="M272.65,-128.09C296.6,-138 328.02,-150.89 356,-162 367.79,-166.68 380.48,-171.63 392.53,-176.27"/>
+<polygon fill="black" stroke="black" points="391.44,-179.6 402.03,-179.93 393.95,-173.07 391.44,-179.6"/>
+<text text-anchor="middle" x="401" y="-150.8" font-family="Times New Roman,serif" font-size="14.00">LavoriTerminati</text>
 </g>
 <!-- MonitoraggioAttivita&#45;&gt;EsecVisioApprovazBudget -->
 <g id="edge6" class="edge">
 <title>MonitoraggioAttivita&#45;&gt;EsecVisioApprovazBudget</title>
 </g>
-<!-- VerificaDocumentiBudget -->
-<g id="node5" class="node">
-<title>VerificaDocumentiBudget</title>
-<path fill="none" stroke="black" d="M246.5,-216C246.5,-216 111.5,-216 111.5,-216 105.5,-216 99.5,-210 99.5,-204 99.5,-204 99.5,-192 99.5,-192 99.5,-186 105.5,-180 111.5,-180 111.5,-180 246.5,-180 246.5,-180 252.5,-180 258.5,-186 258.5,-192 258.5,-192 258.5,-204 258.5,-204 258.5,-210 252.5,-216 246.5,-216"/>
-<text text-anchor="middle" x="179" y="-194.3" font-family="Times New Roman,serif" font-size="14.00">VerificaDocumentiBudget</text>
+<!-- EsecVisioApprovazBudget&#45;&gt;ChiusuraIntervento -->
+<g id="edge8" class="edge">
+<title>EsecVisioApprovazBudget&#45;&gt;ChiusuraIntervento</title>
+<path fill="none" stroke="black" stroke-dasharray="1,5" d="M413.56,-266.89C393.66,-256.01 366.46,-242.42 341,-234 302.77,-221.36 258.6,-212.86 222.57,-207.4"/>
+<polygon fill="black" stroke="black" points="223.04,-203.93 212.64,-205.94 222.02,-210.86 223.04,-203.93"/>
+<text text-anchor="middle" x="394" y="-237.8" font-family="Times New Roman,serif" font-size="14.00">Abilita</text>
 </g>
 <!-- EsecVisioApprovazBudget&#45;&gt;VerificaDocumentiBudget -->
 <g id="edge7" class="edge">
 <title>EsecVisioApprovazBudget&#45;&gt;VerificaDocumentiBudget</title>
 </g>
-<!-- ChiusuraIntervento -->
-<g id="node9" class="node">
-<title>ChiusuraIntervento</title>
-<path fill="none" stroke="black" d="M466.5,-216C466.5,-216 369.5,-216 369.5,-216 363.5,-216 357.5,-210 357.5,-204 357.5,-204 357.5,-192 357.5,-192 357.5,-186 363.5,-180 369.5,-180 369.5,-180 466.5,-180 466.5,-180 472.5,-180 478.5,-186 478.5,-192 478.5,-192 478.5,-204 478.5,-204 478.5,-210 472.5,-216 466.5,-216"/>
-<text text-anchor="middle" x="418" y="-194.3" font-family="Times New Roman,serif" font-size="14.00">ChiusuraIntervento</text>
-</g>
-<!-- EsecVisioApprovazBudget&#45;&gt;ChiusuraIntervento -->
-<g id="edge8" class="edge">
-<title>EsecVisioApprovazBudget&#45;&gt;ChiusuraIntervento</title>
-<path fill="none" stroke="black" stroke-dasharray="1,5" d="M276.02,-266.8C303.98,-253.45 342.9,-234.86 372.93,-220.52"/>
-<polygon fill="black" stroke="black" points="374.82,-223.5 382.34,-216.03 371.8,-217.18 374.82,-223.5"/>
-<text text-anchor="middle" x="358" y="-237.8" font-family="Times New Roman,serif" font-size="14.00">Abilita</text>
-</g>
 <!-- VerificaDocumentiBudget&#45;&gt;MonitoraggioAttivita -->
 <g id="edge9" class="edge">
 <title>VerificaDocumentiBudget&#45;&gt;MonitoraggioAttivita</title>
-<path fill="none" stroke="black" stroke-dasharray="1,5" d="M154.06,-216.04C127.91,-236.15 92.82,-270.91 110,-303 120.75,-323.09 140.34,-338.26 159.51,-349.13"/>
-<polygon fill="black" stroke="black" points="158.07,-352.33 168.54,-353.97 161.38,-346.16 158.07,-352.33"/>
-<text text-anchor="middle" x="130" y="-281.3" font-family="Times New Roman,serif" font-size="14.00">Chiude</text>
+<path fill="none" stroke="black" stroke-dasharray="1,5" d="M481.99,-216.19C501.15,-227.68 523.16,-244.77 534,-267 546.21,-292.04 534.73,-323.15 523,-344.79"/>
+<polygon fill="black" stroke="black" points="519.81,-343.31 517.85,-353.72 525.87,-346.81 519.81,-343.31"/>
+<text text-anchor="middle" x="559" y="-281.3" font-family="Times New Roman,serif" font-size="14.00">Chiude</text>
 </g>
 <!-- VerificaRiparazioneCompletata -->
-<g id="node6" class="node">
+<g id="node11" class="node">
 <title>VerificaRiparazioneCompletata</title>
-<path fill="none" stroke="black" d="M200,-129C200,-129 36,-129 36,-129 30,-129 24,-123 24,-117 24,-117 24,-105 24,-105 24,-99 30,-93 36,-93 36,-93 200,-93 200,-93 206,-93 212,-99 212,-105 212,-105 212,-117 212,-117 212,-123 206,-129 200,-129"/>
-<text text-anchor="middle" x="118" y="-107.3" font-family="Times New Roman,serif" font-size="14.00">VerificaRiparazioneCompletata</text>
+<path fill="none" stroke="black" d="M537,-129C537,-129 373,-129 373,-129 367,-129 361,-123 361,-117 361,-117 361,-105 361,-105 361,-99 367,-93 373,-93 373,-93 537,-93 537,-93 543,-93 549,-99 549,-105 549,-105 549,-117 549,-117 549,-123 543,-129 537,-129"/>
+<text text-anchor="middle" x="455" y="-107.3" font-family="Times New Roman,serif" font-size="14.00">VerificaRiparazioneCompletata</text>
 </g>
 <!-- VerificaDocumentiBudget&#45;&gt;VerificaRiparazioneCompletata -->
 <g id="edge10" class="edge">
 <title>VerificaDocumentiBudget&#45;&gt;VerificaRiparazioneCompletata</title>
-<path fill="none" stroke="black" d="M166.66,-179.8C157.97,-167.7 146.21,-151.3 136.42,-137.67"/>
-<polygon fill="black" stroke="black" points="139,-135.26 130.33,-129.18 133.31,-139.34 139,-135.26"/>
-<text text-anchor="middle" x="210" y="-150.8" font-family="Times New Roman,serif" font-size="14.00">TuttiLavoriTerminati</text>
+<path fill="none" stroke="black" d="M448.62,-179.8C449.71,-168.16 451.18,-152.55 452.44,-139.24"/>
+<polygon fill="black" stroke="black" points="455.93,-139.46 453.38,-129.18 448.96,-138.8 455.93,-139.46"/>
+<text text-anchor="middle" x="509" y="-150.8" font-family="Times New Roman,serif" font-size="14.00">TuttiLavoriTerminati</text>
 </g>
 <!-- VerificaRiparazioneCompletata&#45;&gt;VerificaRiparazioneCompletata -->
 <g id="edge11" class="edge">
 <title>VerificaRiparazioneCompletata&#45;&gt;VerificaRiparazioneCompletata</title>
-<path fill="none" stroke="black" d="M212.37,-117.67C223.07,-116.42 230,-114.2 230,-111 230,-108.95 227.16,-107.3 222.3,-106.05"/>
-<polygon fill="black" stroke="black" points="222.82,-102.59 212.37,-104.33 221.63,-109.49 222.82,-102.59"/>
-<text text-anchor="middle" x="279" y="-107.3" font-family="Times New Roman,serif" font-size="14.00">DatiNonCompleti</text>
+<path fill="none" stroke="black" d="M549.37,-117.67C560.07,-116.42 567,-114.2 567,-111 567,-108.95 564.16,-107.3 559.3,-106.05"/>
+<polygon fill="black" stroke="black" points="559.82,-102.59 549.37,-104.33 558.63,-109.49 559.82,-102.59"/>
+<text text-anchor="middle" x="616" y="-107.3" font-family="Times New Roman,serif" font-size="14.00">DatiNonCompleti</text>
 </g>
 <!-- PERIZIA -->
 <g id="node13" class="node">
 <title>PERIZIA</title>
-<polygon fill="lightgrey" stroke="black" points="77,-36 9,-36 9,0 77,0 77,-36"/>
-<text text-anchor="middle" x="43" y="-14.3" font-family="Times New Roman,serif" font-size="14.00">PERIZIA</text>
+<polygon fill="lightgrey" stroke="black" points="414,-36 346,-36 346,0 414,0 414,-36"/>
+<text text-anchor="middle" x="380" y="-14.3" font-family="Times New Roman,serif" font-size="14.00">PERIZIA</text>
 </g>
 <!-- VerificaRiparazioneCompletata&#45;&gt;PERIZIA -->
 <g id="edge12" class="edge">
 <title>VerificaRiparazioneCompletata&#45;&gt;PERIZIA</title>
-<path fill="none" stroke="black" d="M69.76,-92.78C59.57,-86.84 50.07,-79.06 44,-69 39.99,-62.35 38.66,-54.25 38.63,-46.53"/>
-<polygon fill="black" stroke="black" points="42.13,-46.59 39.25,-36.39 35.14,-46.15 42.13,-46.59"/>
-<text text-anchor="middle" x="107.5" y="-57.8" font-family="Times New Roman,serif" font-size="14.00">PeriziaPostRiparazione</text>
+<path fill="none" stroke="black" d="M406.76,-92.78C396.57,-86.84 387.07,-79.06 381,-69 376.99,-62.35 375.66,-54.25 375.63,-46.53"/>
+<polygon fill="black" stroke="black" points="379.13,-46.59 376.25,-36.39 372.14,-46.15 379.13,-46.59"/>
+<text text-anchor="middle" x="444.5" y="-57.8" font-family="Times New Roman,serif" font-size="14.00">PeriziaPostRiparazione</text>
 </g>
 <!-- CHIUSURA -->
 <g id="node14" class="node">
 <title>CHIUSURA</title>
-<polygon fill="lightgrey" stroke="black" points="236,-36 150,-36 150,0 236,0 236,-36"/>
-<text text-anchor="middle" x="193" y="-14.3" font-family="Times New Roman,serif" font-size="14.00">CHIUSURA</text>
+<polygon fill="lightgrey" stroke="black" points="573,-36 487,-36 487,0 573,0 573,-36"/>
+<text text-anchor="middle" x="530" y="-14.3" font-family="Times New Roman,serif" font-size="14.00">CHIUSURA</text>
 </g>
 <!-- VerificaRiparazioneCompletata&#45;&gt;CHIUSURA -->
 <g id="edge13" class="edge">
 <title>VerificaRiparazioneCompletata&#45;&gt;CHIUSURA</title>
-<path fill="none" stroke="black" d="M145.35,-92.89C154.37,-86.26 163.91,-78.07 171,-69 176.4,-62.09 180.77,-53.66 184.14,-45.7"/>
-<polygon fill="black" stroke="black" points="187.41,-46.94 187.78,-36.35 180.89,-44.41 187.41,-46.94"/>
-<text text-anchor="middle" x="248" y="-57.8" font-family="Times New Roman,serif" font-size="14.00">ChiusuraPostRiparazione</text>
-</g>
-<!-- PianificazioneAppuntamentoR&#45;&gt;EsecVisioApprovazBudget -->
-<g id="edge14" class="edge">
-<title>PianificazioneAppuntamentoR&#45;&gt;EsecVisioApprovazBudget</title>
-<path fill="none" stroke="black" d="M351.86,-355.1C304.41,-346.73 256,-337.83 254,-336 247.56,-330.12 243.99,-321.55 242.04,-313.16"/>
-<polygon fill="black" stroke="black" points="245.48,-312.5 240.38,-303.21 238.57,-313.65 245.48,-312.5"/>
-<text text-anchor="middle" x="324" y="-324.8" font-family="Times New Roman,serif" font-size="14.00">AppuntamentoPianificato</text>
-</g>
-<!-- EsecuzioneSopralluogoR -->
-<g id="node8" class="node">
-<title>EsecuzioneSopralluogoR</title>
-<path fill="none" stroke="black" d="M493.5,-303C493.5,-303 364.5,-303 364.5,-303 358.5,-303 352.5,-297 352.5,-291 352.5,-291 352.5,-279 352.5,-279 352.5,-273 358.5,-267 364.5,-267 364.5,-267 493.5,-267 493.5,-267 499.5,-267 505.5,-273 505.5,-279 505.5,-279 505.5,-291 505.5,-291 505.5,-297 499.5,-303 493.5,-303"/>
-<text text-anchor="middle" x="429" y="-281.3" font-family="Times New Roman,serif" font-size="14.00">EsecuzioneSopralluogoR</text>
-</g>
-<!-- PianificazioneAppuntamentoR&#45;&gt;EsecuzioneSopralluogoR -->
-<g id="edge15" class="edge">
-<title>PianificazioneAppuntamentoR&#45;&gt;EsecuzioneSopralluogoR</title>
-<path fill="none" stroke="black" d="M414.56,-353.71C408.68,-348.79 403.31,-342.86 400,-336 396.03,-327.77 398.55,-319.07 403.45,-311.27"/>
-<polygon fill="black" stroke="black" points="406.29,-313.33 409.51,-303.23 400.7,-309.11 406.29,-313.33"/>
-<text text-anchor="middle" x="470" y="-324.8" font-family="Times New Roman,serif" font-size="14.00">AppuntamentoPianificato</text>
-</g>
-<!-- EsecuzioneSopralluogoR&#45;&gt;ChiusuraIntervento -->
-<g id="edge16" class="edge">
-<title>EsecuzioneSopralluogoR&#45;&gt;ChiusuraIntervento</title>
-<path fill="none" stroke="black" d="M423.12,-266.75C421.47,-261.15 419.88,-254.87 419,-249 417.91,-241.73 417.43,-233.8 417.28,-226.44"/>
-<polygon fill="black" stroke="black" points="420.78,-226.21 417.25,-216.22 413.78,-226.22 420.78,-226.21"/>
-<text text-anchor="middle" x="476" y="-237.8" font-family="Times New Roman,serif" font-size="14.00">SopralluogoEseguito</text>
-</g>
-<!-- ChiusuraIntervento&#45;&gt;PianificazioneAppuntamentoR -->
-<g id="edge17" class="edge">
-<title>ChiusuraIntervento&#45;&gt;PianificazioneAppuntamentoR</title>
-<path fill="none" stroke="black" d="M478.59,-203.83C498.89,-208.58 519.72,-217.5 533,-234 552.22,-257.87 543.73,-330.67 540,-336 536.76,-340.63 532.83,-344.65 528.45,-348.15"/>
-<polygon fill="black" stroke="black" points="526.37,-345.33 520.11,-353.87 530.33,-351.1 526.37,-345.33"/>
-<text text-anchor="middle" x="596.5" y="-281.3" font-family="Times New Roman,serif" font-size="14.00">NuovoSopralluogo</text>
-</g>
-<!-- FineLavori -->
-<g id="node10" class="node">
-<title>FineLavori</title>
-<path fill="none" stroke="black" d="M444.5,-129C444.5,-129 391.5,-129 391.5,-129 385.5,-129 379.5,-123 379.5,-117 379.5,-117 379.5,-105 379.5,-105 379.5,-99 385.5,-93 391.5,-93 391.5,-93 444.5,-93 444.5,-93 450.5,-93 456.5,-99 456.5,-105 456.5,-105 456.5,-117 456.5,-117 456.5,-123 450.5,-129 444.5,-129"/>
-<text text-anchor="middle" x="418" y="-107.3" font-family="Times New Roman,serif" font-size="14.00">FineLavori</text>
-</g>
-<!-- ChiusuraIntervento&#45;&gt;FineLavori -->
-<g id="edge18" class="edge">
-<title>ChiusuraIntervento&#45;&gt;FineLavori</title>
-<path fill="none" stroke="black" d="M418,-179.8C418,-168.16 418,-152.55 418,-139.24"/>
-<polygon fill="black" stroke="black" points="421.5,-139.18 418,-129.18 414.5,-139.18 421.5,-139.18"/>
-<text text-anchor="middle" x="457.5" y="-150.8" font-family="Times New Roman,serif" font-size="14.00">AttivitaChiusa</text>
-</g>
-<!-- FineLavori&#45;&gt;VerificaDocumentiBudget -->
-<g id="edge19" class="edge">
-<title>FineLavori&#45;&gt;VerificaDocumentiBudget</title>
-<path fill="none" stroke="black" d="M379.45,-125.71C340.8,-139.45 280.84,-160.78 236.56,-176.53"/>
-<polygon fill="black" stroke="black" points="235.33,-173.25 227.08,-179.9 237.67,-179.85 235.33,-173.25"/>
-<text text-anchor="middle" x="357" y="-150.8" font-family="Times New Roman,serif" font-size="14.00">LavoriTerminati</text>
-</g>
-<!-- FineLavori&#45;&gt;PianificazioneAppuntamentoR -->
-<g id="edge20" class="edge">
-<title>FineLavori&#45;&gt;PianificazioneAppuntamentoR</title>
-<path fill="none" stroke="black" d="M456.61,-123.66C512.56,-142.97 613.66,-187.57 652,-267 676.91,-318.62 610.23,-344.97 545.88,-358.2"/>
-<polygon fill="black" stroke="black" points="545.14,-354.78 536,-360.14 546.49,-361.65 545.14,-354.78"/>
-<text text-anchor="middle" x="691.5" y="-237.8" font-family="Times New Roman,serif" font-size="14.00">NuovoSopralluogo</text>
-</g>
-<!-- AvvioRiparazione -->
-<g id="node11" class="node">
-<title>AvvioRiparazione</title>
-<path fill="none" stroke="black" d="M370.5,-693C370.5,-693 279.5,-693 279.5,-693 273.5,-693 267.5,-687 267.5,-681 267.5,-681 267.5,-669 267.5,-669 267.5,-663 273.5,-657 279.5,-657 279.5,-657 370.5,-657 370.5,-657 376.5,-657 382.5,-663 382.5,-669 382.5,-669 382.5,-681 382.5,-681 382.5,-687 376.5,-693 370.5,-693"/>
-<text text-anchor="middle" x="325" y="-671.3" font-family="Times New Roman,serif" font-size="14.00">AvvioRiparazione</text>
+<path fill="none" stroke="black" d="M482.35,-92.89C491.37,-86.26 500.91,-78.07 508,-69 513.4,-62.09 517.77,-53.66 521.14,-45.7"/>
+<polygon fill="black" stroke="black" points="524.41,-46.94 524.78,-36.35 517.89,-44.41 524.41,-46.94"/>
+<text text-anchor="middle" x="585" y="-57.8" font-family="Times New Roman,serif" font-size="14.00">ChiusuraPostRiparazione</text>
 </g>
 <!-- AvvioRiparazione&#45;&gt;ConfigurazioneRiparazione -->
 <g id="edge2" class="edge">
 <title>AvvioRiparazione&#45;&gt;ConfigurazioneRiparazione</title>
-<path fill="none" stroke="black" d="M325,-656.97C325,-640.38 325,-614.88 325,-595.43"/>
-<polygon fill="black" stroke="black" points="328.5,-595.34 325,-585.34 321.5,-595.34 328.5,-595.34"/>
-<text text-anchor="middle" x="379" y="-627.8" font-family="Times New Roman,serif" font-size="14.00">RiparazioneAvviata</text>
-</g>
-<!-- VenditaRiparazione -->
-<g id="node12" class="node">
-<title>VenditaRiparazione</title>
-<polygon fill="lightgrey" stroke="black" points="386.5,-801 263.5,-801 263.5,-765 386.5,-765 386.5,-801"/>
-<text text-anchor="middle" x="325" y="-779.3" font-family="Times New Roman,serif" font-size="14.00">VenditaRiparazione</text>
-</g>
-<!-- VenditaRiparazione&#45;&gt;AvvioRiparazione -->
-<g id="edge1" class="edge">
-<title>VenditaRiparazione&#45;&gt;AvvioRiparazione</title>
-<path fill="none" stroke="black" d="M325,-764.97C325,-748.38 325,-722.88 325,-703.43"/>
-<polygon fill="black" stroke="black" points="328.5,-703.34 325,-693.34 321.5,-703.34 328.5,-703.34"/>
-<text text-anchor="middle" x="380" y="-735.8" font-family="Times New Roman,serif" font-size="14.00">RiparazioneVenduta</text>
+<path fill="none" stroke="black" d="M358,-656.97C358,-640.38 358,-614.88 358,-595.43"/>
+<polygon fill="black" stroke="black" points="361.5,-595.34 358,-585.34 354.5,-595.34 361.5,-595.34"/>
+<text text-anchor="middle" x="412" y="-627.8" font-family="Times New Roman,serif" font-size="14.00">RiparazioneAvviata</text>
 </g>
 </g>
 </svg>

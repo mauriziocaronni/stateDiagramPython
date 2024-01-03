@@ -22,203 +22,53 @@ subgraph end {
         ChiusuraAutomatica
 }
 
-
-subgraph cluster_apertura {
-    node [shape=box,style=rounded ];
-        label = "APERTURA";
-		CreazioneAutomaticaIncarico
-		CompletamentoManualeIncarico
-		VenditaRiparazione
-		EsecuzioneTriage
-		SceltaManualeServizio
-		VenditaRiparazionePA1
-		SceltaAutomaticaServizio
-		InvioLinkSelfCare
-}
-
-subgraph cluster_accertamenti {
-    node [shape=box,style=rounded ];
-    label = "ACCERTAMENTI";
-
-    subgraph cluster_selfcare {
-    node [shape=box,style=rounded ];
-    label = "SELFCARE";
-		AvvioAccertSelfCare
-		GestioneSelfCare
-    }
-	
-    subgraph cluster_visio {
+   subgraph cluster_riparazione {
         node [shape=box,style=rounded ];
-        label = "VISIO";
-        AvvioVisio
-		AvvioManualeVisio
-		EsecuzioneVisio
-		RiassegnazioneVisio
-		RichiestaModificaApptoPaVisio	
-		ConfermaModificaApptoPaVisio	
-	}
+        label = "RIPARAZIONE";
 
-    subgraph cluster_desk {
-    node [shape=box,style=rounded ];
-    label = "DESK";
-		AvvioDesk
-		AvvioManualeDesk
-		EsecuzioneDesk
-		RiassegnazioneDesk
-		RichiestaModificaApptoPaDesk
-        ConfermaModificaApptoPaDesk
-	} 	  
-
-    subgraph cluster_sopralluogo {
-        node [shape=box,style=rounded ];
-        label = "SOPRALLUOGO";
-	    AvvioSopralluogo
-	    AssegnazioneSopralluogo
-	    PianificazioneSopralluogo
-	    EsecuzioneSopralluogo
-        VerificaSopralluogoDopoRifiuto
-        ApprovazioneSopralluogo
-		RichiestaModificaApptoPaSopralluogo			
-		ConfermaModificaApptoPaSopralluogo
-		NuovoSopralluogoNonApprovato		
-    }
-
-    subgraph cluster_sopralluogoPce {
-        node [shape=box,style=rounded ];
-        label = "SOPRALLUOGOPCE";
-		AvvioSopralluogoPCE
-		AssegnazioneSopralluogoPCE
-        PianificazioneSopralluogoPCE
-        EsecuzioneSopralluogoPCE
-        VerificaSopralluogoPCEDopoRifiuto
-        ApprovazioneSopralluogoPCE
-		RichiestaModificaApptoPaSopralluogoPCE		
-		ConfermaModificaApptoPaSopralluogoPCE
-		NuovoSopralluogoNonApprovatoPCE		
-    }
-
-}
-
-subgraph cluster_perizia {
-    node [shape=box,style=rounded ];
-    label = "PERIZIA";        
-
-	subgraph cluster_peritoReferente {
-		node [shape=box,style=rounded ];
-		label = "perito referente";             
-		AvvioPerizia
-		AvvioPeriziaPostDesk 
-		AvvioPeriziaContestazione
-		AvvioPeriziaIncompleta
-		AvvioPeriziaIntegrazione
-		EsecuzionePerizia  
-		PeriziaInRevisione
-		ComunicazioneEsito
-		InvioEmailEsito       
-		InvioAtto             
-		AttesaRicezioneAtto   
-	
-	}
-
-	subgraph cluster_collaborazione {
-		node [shape=box,style=rounded ];
-		label = "perito ingaggiato";
-		CollaborazionePerizia    
-		CollaborazioneRifiutata  
-		CollaborazioneCancellata 
-		CollaborazioneCompletata 
-	
-	
-	}
-
-
-	subgraph cluster_revisione {
-		node [shape=box,style=rounded ];
-		RevisionePerizia    
-		RevisioneRifiutata  
-		RevisioneCompletata   label = "perito revisore";
-	
-	}
-	
-	
-	subgraph cluster_conciliation {
-		node [shape=box,style=rounded ];
-		label = "perito conciliatore";
-		AvvioPeriziaConciliazione
-		ConciliazionePerizia
-		
-	}
-	
-	subgraph cluster_authority {
-		node [shape=box,style=rounded ];
-		label = "perito supervisore";
-		VerificaAuthority
-	}
-
-
-}
-
-
-subgraph cluster_riparazione {
-    node [shape=box,style=rounded ];
-    label = "RIPARAZIONE";
-
-    subgraph cluster_gestore {
-        node [shape=box,style=rounded ];
-        label = "GESTORE";
         AvvioRiparazione
-        ConfigurazioneRiparazione
-        DefinizioneTimeline 
-        AssegnazioneMonitoraggio
-        VerificaChiusuraRiparazione
-    }
 
-    subgraph cluster_perito {
+        subgraph cluster_gestore {
             node [shape=box,style=rounded ];
-            label = "PERITO";
-            MonitoraggioAttivita
-            ApprovazioneBudget
-            ApprovazioneAttivita
-    }
+            label = "GESTORE-RIPARAZIONE";
+        
+            ConfigurazioneRiparazione
+            DefinizioneTimeline 
+        }
 
-    subgraph cluster_cat {
-        node [shape=box,style=rounded ] ;
-        label = "CAT";
-        PianificazioneAppuntamentoR
-        EsecuzioneSopralluogoR
-        BudgetInApprovazione
-        EsecuzioneAttivita 
-        AttivitaInApprovazione
-        AttivitaApprovata
-    }
+        subgraph cluster_perito {
+            node [shape=box,style=rounded ];
+            label = "PERITO-RIPARAZIONE";
+            MonitoraggioAttivita
+            EsecVisioApprovazBudget
+            VerificaDocumentiBudget
+            VerificaRiparazioneCompletata
+
+        }
+
+        subgraph cluster_cat {
+            node [shape=box,style=rounded ] ;
+         label = "RIPARATORE";
+            PianificazioneAppuntamentoR
+            EsecuzioneSopralluogoR 
+            ChiusuraIntervento
+            FineLavori
+        }
     
 }
 
-subgraph cluster_chiusura {
-    node [shape=box,style=rounded ];
-    label = "CHIUSURA e RIAPERTURA";
-    AvvioChiusura
-    VerificaChiusura
-    GestioneRiapertura
-    GestioneContestazione
-    FinalizzaContestazione
-}
-
-
-comment = "apertura"
+    comment = "Apertura"
 
     InizializzazioneIncarico     -> CreazioneAutomaticaIncarico  [label = "Inizializzazione"];
     CreazioneAutomaticaIncarico  -> CompletamentoManualeIncarico [label = "DatiNonCompleti"];
     CreazioneAutomaticaIncarico  -> VenditaRiparazione           [label = "VenditaRiparazione"];
     CreazioneAutomaticaIncarico  -> EsecuzioneTriage             [label = "RiparazioneNonPrevista"];
-    RiaperturaAutomatica         -> GestioneRiapertura      [ label = "RiaperturaAutomatica" ]
     VenditaRiparazione           -> AvvioRiparazione             [label = "RiparazioneVenduta"];
-    VenditaRiparazione           -> SceltaManualeServizio        [label = "RiparazioneNonVenduta"];
+    VenditaRiparazione           -> EsecuzioneTriage        [label = "RiparazioneNonVenduta"];
     VenditaRiparazione           -> VenditaRiparazione           [label = "CampiObbligMancanti"];
     VenditaRiparazionePA1        -> SceltaAutomaticaServizio     [label = "NonInteressatoRiparazione"] ;
     VenditaRiparazionePA1        -> VenditaRiparazione           [label = "InteressatoRiparazione"] ;
     VenditaRiparazionePA1        -> SceltaAutomaticaServizio     [label = "TimerScaduto"] ;
-    CompletamentoManualeIncarico -> CompletamentoManualeIncarico [label = "DatiNonCompleti"];
     CompletamentoManualeIncarico -> VenditaRiparazione           [label = "VenditaRiparazione"];
     CompletamentoManualeIncarico -> EsecuzioneTriage             [label = "RiparazioneNonPrevista"];
     CreazioneManualeIncarico     -> CompletamentoManualeIncarico [label = "Inizializzazione"];
@@ -245,190 +95,277 @@ comment = "apertura"
     SceltaManualeServizio        -> AvvioManualeDesk             [label = "Desk"];   
     SceltaManualeServizio        -> AvvioSopralluogo             [label = "Sopralluogo"];   
     SceltaManualeServizio        -> InvioLinkSelfCare            [label = "InvioLinkSelfCare"];
-    SceltaManualeServizio        -> VenditaRiparazione           [label = "VenditaRiparazione"];
+    SceltaManualeServizio        -> AvvioRiparazione             [label = "AvvioRiparazione"];
     SceltaManualeServizio        -> SceltaManualeServizio        [label = "CampiObbligMancanti"];
 
-comment = "ACCERTAMENTI"
+    comment = "Accertamenti"
 
-    AvvioVisio	                 ->	EsecuzioneVisio	    		[ label = "VisioPianificata"];
-    EsecuzioneVisio	             ->	RiassegnazioneVisio			[ label = "VisioRifiutata"];
-    EsecuzioneVisio	             ->	EsecuzioneVisio	    		[ label = "AppuntamentoModificato"];
-    EsecuzioneVisio	             ->	EsecuzioneVisio  			[ label = "AppuntamentoAnnullato"];
-    EsecuzioneVisio	             ->	AvvioManualeVisio			[ label = "VisioCompletataNuovaVisio"];
-    EsecuzioneVisio	             ->	AvvioPerizia	    		[ label = "VisioCompletata"];
-    EsecuzioneVisio	             ->	EsecuzioneVisio  			[ label = "DatiObbligatoriMancanti"];
-    AvvioManualeVisio	         ->	EsecuzioneVisio	    		[ label = "VisioPianificata"];
-    RiassegnazioneVisio	         ->	AvvioManualeVisio			[ label = "VisioAssegnata"];
- 
-    AvvioDesk	              ->	EsecuzioneDesk	            [ label = "DeskPianificata"];
-    EsecuzioneDesk	          ->	RiassegnazioneDesk	        [ label = "DeskRifiutata"];
-    EsecuzioneDesk	          ->	EsecuzioneDesk	            [ label = "AppuntamentoModificato"];
-    EsecuzioneDesk	          ->	EsecuzioneDesk  	        [ label = "AppuntamentoAnnullato"];
-    EsecuzioneDesk	          ->	AvvioManualeDesk	        [ label = "DeskCompletataNuovaDesk"];
-    EsecuzioneDesk	          ->	AvvioPeriziaPostDesk	    [ label = "DeskCompletata"];
-    EsecuzioneDesk	          ->	EsecuzioneDesk  	        [ label = "DatiObbligatoriMancanti"];
-    AvvioManualeDesk	      ->	EsecuzioneDesk	            [ label = "DeskPianificata"];
-    RiassegnazioneDesk	      ->	AvvioManualeDesk	        [ label = "DeskAssegnata"];
- 
-    AvvioSopralluogo               -> AssegnazioneSopralluogo        [ label = "SopralluogoAvviato"];
-    AssegnazioneSopralluogo        -> PianificazioneSopralluogo      [ label = "SopralluogoAssegnato"];
+   AvvioSopralluogo               -> AssegnazioneSopralluogo        [ label = "SopralluogoAvvioto"];
+    AssegnazioneSopralluogo        -> PianificazioneSopralluogo      [ label = "SopralluogoAssegnato" style = dotted];
     PianificazioneSopralluogo      -> EsecuzioneSopralluogo          [ label = "SopralluogoPianificato"];
-    PianificazioneSopralluogo      -> VerificaSopralluogoDopoRifiuto [ label = "SopralluogoRifiutato"];
-    VerificaSopralluogoDopoRifiuto -> PianificazioneSopralluogo      [ label = "SopralluogoAssegnato"];
+    PianificazioneSopralluogo      -> VerificaSopralluogoDopoRifiuto [ label = "SopralluogoRifiutato" style = dotted];
+    VerificaSopralluogoDopoRifiuto -> PianificazioneSopralluogo      [ xlabel = "SopralluogoAssegnato" style = dotted];
+    
+    AssegnazioneSopralluogo         -> VerificaSopralluogoDopoRifiuto [ dir= none style = invisible];
+    VerificaSopralluogoDopoRifiuto  -> ApprovazioneSopralluogo        [ dir= none style = invisible];
+
+    
     EsecuzioneSopralluogo          -> EsecuzioneSopralluogo          [ label = "AppuntamentoModificato"];
     EsecuzioneSopralluogo          -> PianificazioneSopralluogo      [ label = "AppuntamentoAnnullato"];
-    EsecuzioneSopralluogo          -> ApprovazioneSopralluogo        [ label = "SopralluogoCompletatoNuovo"];
+    EsecuzioneSopralluogo          -> ApprovazioneSopralluogo        [ label = "RichiestaNuovoSopralluogo" style = dotted];
+    EsecuzioneSopralluogo	       ->	AvvioPerizia 	    		[ label = "SopralluogoCompletato"];
     
-	ApprovazioneSopralluogo        -> NuovoSopralluogoNonApprovato   [ label = "NonApprovato"];
-    ApprovazioneSopralluogo        -> AvvioSopralluogo               [ label = "Approvato"];
+    ApprovazioneSopralluogo        ->  NuovoSopralluogoNonApprovato   [ label = "NonApprovato"];
+    ApprovazioneSopralluogo        -> PianificazioneSopralluogo      [ label = "Approvato" style = dotted];
+
     EsecuzioneSopralluogo          -> PianificazioneSopralluogo      [ label = "ChiusuraAttivita"];
     EsecuzioneSopralluogo	       -> EsecuzioneSopralluogo  	     [ label = "DatiObbligatoriMancanti"];
     EsecuzioneSopralluogo	       -> PianificazioneSopralluogo  	 [ label = "ChiusuraSoprallVariato"];
     EsecuzioneSopralluogo          -> AssegnazioneSopralluogo        [ label = "AnnullamentoSopralluogo" ];
-	
-	
-    AvvioSopralluogoPCE               -> AssegnazioneSopralluogoPCE        [ label = "SopralluogoPCEAvviato"];
-    AssegnazioneSopralluogoPCE        -> PianificazioneSopralluogoPCE      [ label = "SopralluogoPCEAssegnato"];
-    PianificazioneSopralluogoPCE      -> EsecuzioneSopralluogoPCE          [ label = "SopralluogoPCEPianificato"];
-    PianificazioneSopralluogoPCE      -> VerificaSopralluogoPCEDopoRifiuto [ label = "SopralluogoPCERifiutato"];
-    VerificaSopralluogoPCEDopoRifiuto -> PianificazioneSopralluogoPCE      [ label = "SopralluogoPCEAssegnato"];
-    EsecuzioneSopralluogoPCE          -> EsecuzioneSopralluogoPCE          [ label = "AppuntamentoModificato"];
-    EsecuzioneSopralluogoPCE          -> PianificazioneSopralluogoPCE      [ label = "AppuntamentoAnnullato"];
-    EsecuzioneSopralluogoPCE          -> ApprovazioneSopralluogoPCE        [ label = "SopralluogoPCECompletatoNuovo"];
-    ApprovazioneSopralluogoPCE        -> AvvioSopralluogoPCE               [ label = "Approvato"];
-    EsecuzioneSopralluogoPCE          -> PianificazioneSopralluogoPCE      [ label = "ChiusuraAttivita"];       
-    EsecuzioneSopralluogoPCE	       -> EsecuzioneSopralluogoPCE  	     [ label = "DatiObbligatoriMancanti"];   
 
-    EsecuzioneSopralluogoPCE             -> AssegnazioneSopralluogoPCE        [ label = "AnnullamentoSopralluogo" ];
+	Pa_Sopralluogo	   -> EsecuzioneSopralluogo  [ label = "RichiestaPaRicevuta" style = dotted] ;
+	Pa_Sopralluogo	   -> EsecuzioneSopralluogo  [ label = "ConfermaPaRicevuta"  style = dotted] ;
+	
+	AvvioAccertSelfCare                 -> GestioneSelfCare [ label = "AccertSelfCareAvviati" ] 	
 
-    EsecuzioneSopralluogo                   -> AvvioPerizia        [ label = "SoprallugoCompletato"];
-    NuovoSopralluogoNonApprovato            -> AvvioPerizia        [ label = "NonApprovato"];
-    EsecuzioneSopralluogoPCE                -> AvvioPerizia        [ label = "SoprallugoCompletato"];
-    NuovoSopralluogoNonApprovatoPCE         -> AvvioPerizia        [ label = "NonApprovato"];
-    EsecuzioneSopralluogoPCE	       -> PianificazioneSopralluogoPCE  	 [ label = "ChisuraSoprallVariato"];
+	GestioneSelfCare                    -> AvvioPerizia     [ xlabel = "AvvioPeriziaPostSelfCare"  ]
+	GestioneSelfCare                    -> AvvioChiusura    [ label = "AvvioChiusuraPostSelfCare"  ]
 
-	RichiestaModificaApptoPaVisio		   -> EsecuzioneVisio  [ label = "RichiestaPaRicevuta"] ;
-	ConfermaModificaApptoPaVisio		   -> EsecuzioneVisio  [ label = "ConfermaPaRicevuta"] ;
-	
-	RichiestaModificaApptoPaDesk		   -> EsecuzioneVisio  [ label = "RichiestaPaRicevuta"] ;
-	ConfermaModificaApptoPaDesk		       -> EsecuzioneVisio  [ label = "ConfermaPaRicevuta"] ;	
+    comment = "perizia"
 
-	RichiestaModificaApptoPaSopralluogo		   -> EsecuzioneVisio  [ label = "RichiestaPaRicevuta"] ;
-	ConfermaModificaApptoPaSopralluogo		   -> EsecuzioneVisio  [ label = "ConfermaPaRicevuta"] ;
-	
-	RichiestaModificaApptoPaSopralluogoPCE		   -> EsecuzioneVisio  [ label = "RichiestaPaRicevuta"] ;
-	ConfermaModificaApptoPaSopralluogoPCE		   -> EsecuzioneVisio  [ label = "ConfermaPaRicevuta"] ;
-	
-	AvvioAccertSelfCare                 -> GestioneSelfCare [ label = "AccertSelfCareAvviati" ]                           
-	GestioneSelfCare                    -> AvvioPerizia     [ label = "AvvioPeriziaPostSelfCare"]
-	GestioneSelfCare                    -> AvvioChiusura    [ label = "AvvioChiusuraPostSelfCare"]
-	
-	
-	
-comment = "PERIZIA"
-   
-    AvvioPerizia               -> EsecuzionePerizia           [ label = "PeriziaAvviata"]   ;
-    EsecuzionePerizia          -> EsecuzionePerizia           [ label = "CollabAvviata" ]    ;
-     
-    EsecuzionePerizia          -> PeriziaInRevisione          [ label = "RevisioneAvviata" ]    ;
+subgraph cluster_peritoReferente {
+    node [shape=box,style=rounded ];
+    label = "PERITO REFERENTE";             
+    AvvioPerizia
+    AvvioPeriziaPostDesk
+    EsecuzionePerizia  
+    PeriziaInRevisione
+    ComunicazioneEsito
+    InvioEmailEsito       
+    InvioAtto             
+    AuthorityNonApprovata
+}
 
-    EsecuzionePerizia          -> CollaborazionePerizia       [ label = "CollabAvviata" style ="dotted"]    ;
-    CollaborazionePerizia      -> CollaborazioneRifiutata     [ label = "CollabRifiutata"  ] ;
-    CollaborazionePerizia      -> CollaborazioneCancellata    [ label = "CollabCancellata" ] ;
-    CollaborazionePerizia      -> CollaborazioneCompletata    [ label = "CollabCompletata" ] ;
+subgraph cluster_collaborazione {
+    node [shape=box,style=rounded ];
+    label = "PERITO INGAGGIATO";
+    CollaborazionePerizia    
+    CollaborazioneRifiutata  
+    CollaborazioneCancellata 
+    CollaborazioneCompletata 
  
-    CollaborazioneRifiutata     -> EsecuzionePerizia  [ style = "dotted"]  
-    CollaborazioneCancellata    -> EsecuzionePerizia  [ style = "dotted"]
-    CollaborazioneCompletata    -> EsecuzionePerizia  [ style = "dotted"]
-
-    EsecuzionePerizia          -> RevisionePerizia            [ label = "RevisioneAvviata" style ="dotted"]    ;
-    RevisionePerizia           -> RevisioneRifiutata          [ label = "RevisioneRifiutata"  ] ;
-    RevisionePerizia           -> RevisioneCompletata         [ label = "RevisioneCompletata" ] ;
  
-    RevisioneRifiutata         -> PeriziaInRevisione  [ style = "dotted" ] ;
-    RevisioneCompletata        -> PeriziaInRevisione  [ style = "dotted" ] ;
+}
 
-    PeriziaInRevisione         -> EsecuzionePerizia    [label = "RevisioniCompletate"]
-    PeriziaInRevisione         -> PeriziaInRevisione   [label = "RevisioniNonCompletate"]
-    
 
-    EsecuzionePerizia          -> EsecuzionePerizia           [ label = "CollaborazioneNonCompletata"]  ;
-    EsecuzionePerizia          -> VerificaAuthority           [ label = "AuthorityNecessaria"]  ;
-    EsecuzionePerizia          -> ComunicazioneEsito          [ label = "AuthorityNonNecessaria"]  ;
+subgraph cluster_revisione {
+    node [shape=box,style=rounded ];
+    RevisionePerizia    
+    RevisioneRifiutata  
+    RevisioneCompletata   label = "PERITO REVISORE";
 
-    VerificaAuthority          -> ComunicazioneEsito          [ label = "PeriziaApprovata"];
-    VerificaAuthority          -> EsecuzionePerizia           [ label = "PeriziaNonApprovata"] ;
+}
 
-    ComunicazioneEsito          -> ConciliazionePerizia        [ label = "AccordoNonRaggiunto"] ;
-    ComunicazioneEsito          -> AvvioChiusura               [ label = "AccordoRaggiunto-o-NonRichiesto"] ;
-    ComunicazioneEsito          -> InvioEmailEsito             [ label = "EsitoScrittoEmail"] ;
-    ComunicazioneEsito          -> InvioAtto                   [ label = "EsitoScrittoAtto"] ;
-    InvioEmailEsito             -> AttesaRicezioneAtto         [ label = "EmailEsitoInviata"] ;
-    InvioAtto                   -> AttesaRicezioneAtto         [ label = "AttoInviato"] ;
-    AttesaRicezioneAtto          -> ConciliazionePerizia       [ label = "ConciliazioneAvviata"] ;
-    AttesaRicezioneAtto          -> AvvioChiusura              [ label = "ForzaturaChiusura"] ;
+subgraph cluster_authority {
+    node [shape=box,style=rounded ];
+    label = "PERITO SUPERVISORE";
+    VerificaAuthority
+}
 
-    ConciliazionePerizia       -> AvvioChiusura                   [ label = "ChiusuraConAccordo"] ;
-    ConciliazionePerizia       -> ConciliazionePerizia           [ label = "DatiObbligatoriMancanti"] ;
-    ConciliazionePerizia       -> AvvioPeriziaConciliazione      [ label = "PeriziaConcilazione"]   ;
-    AvvioPeriziaConciliazione  -> EsecuzionePerizia              [ label = "PeriziaConcilazioneAvviata"]   ;
-    
 
-    ComunicazioneEsito          -> ComunicazioneEsito              [ label = "DatiObbligatoriMancanti"] ;
+subgraph cluster_conciliation {
+    node [shape=box,style=rounded ];
+    label = "PERITO CONCILIATORE";
+    ConciliazionePerizia
+    EsecuzionePeriziaConciliazione
+}
 
-    AvvioPeriziaPostDesk        -> EsecuzionePerizia   [ label = "PeriziaAvviata"]   ;
-    VerificaChiusura            -> EsecuzionePerizia   [ label = "PeriziaIncompletaAvviata"]   ;
+subgraph cluster_chisura {
+    node [shape=box,style=rounded ];
+    label = "CHIUSURA";
+    style = "filled"
+    VerificaChiusura
+    AttesaRicezioneAtto   
+
+}
+
+
+        start                      -> AvvioPerizia
+        start                      -> AvvioPeriziaPostDesk
+        AvvioPerizia               -> EsecuzionePerizia           [ label = "PeriziaAvviata"]   ;
+        AvvioPeriziaPostDesk       -> EsecuzionePerizia           [ label = "PeriziaAvviata"]   ;
  
- comment = "RIPARAZIONE"
+        EsecuzionePerizia          -> PeriziaInRevisione          [ label = "RevisioneAvviata" ]    ;
+
+        EsecuzionePerizia          -> CollaborazionePerizia       [ label = "CollabAvviata" style ="dotted"]    ;
+        CollaborazionePerizia      -> CollaborazioneRifiutata     [ label = "CollabRifiutata"  ] ;
+        CollaborazionePerizia      -> CollaborazioneCancellata    [ label = "CollabCancellata" ] ;
+        CollaborazionePerizia      -> CollaborazioneCompletata    [ label = "CollabCompletata" ] ;
+ 
+        CollaborazioneRifiutata     -> EsecuzionePerizia  [ style = "dotted"]  
+        CollaborazioneCancellata    -> EsecuzionePerizia  [ style = "dotted"]
+        CollaborazioneCompletata    -> EsecuzionePerizia  [ style = "dotted"]
+
+        EsecuzionePerizia          -> RevisionePerizia            [ label = "RevisioneAvviata" style ="dotted"]    ;
+        RevisionePerizia           -> RevisioneRifiutata          [ label = "RevisioneRifiutata"  ] ;
+        RevisionePerizia           -> RevisioneCompletata         [ label = "RevisioneCompletata" ] ;
+ 
+        RevisioneRifiutata         -> PeriziaInRevisione  [ style = "dotted" ] ;
+        RevisioneCompletata        -> PeriziaInRevisione  [ style = "dotted" ] ;
+
+        PeriziaInRevisione         -> EsecuzionePerizia    [label = "RevisioniCompletate"]
+        PeriziaInRevisione         -> PeriziaInRevisione   [label = "RevisioniNonCompletate"]
+        
+
+comment = "        EsecuzionePerizia          -> EsecuzionePerizia           "
+        EsecuzionePerizia          -> VerificaAuthority           [ label = "AuthorityNecessaria"]  ;
+        EsecuzionePerizia          -> ComunicazioneEsito          [ label = "AuthorityNonNecessaria"]  ;
+
+        VerificaAuthority          -> ComunicazioneEsito          [ label = "PeriziaApprovata"];
+        VerificaAuthority          -> AuthorityNonApprovata       [ xlabel = "PeriziaNonApprovata"] ;
+
+        AuthorityNonApprovata      -> EsecuzionePerizia           [ label = "PeriziaNonApprovata"]  ;
+
+        ComunicazioneEsito          -> ConciliazionePerizia       [ label = "AccordoNonRaggiunto"] ;
+        ComunicazioneEsito          -> VerificaChiusura               [ label = "AccordoRaggiunto-o-NonRichiesto"] ;
+        ComunicazioneEsito          -> InvioEmailEsito             [ label = "EsitoScrittoEmail"] ;
+        ComunicazioneEsito          -> InvioAtto                   [ label = "EsitoScrittoAtto"] ;
+        
+        InvioEmailEsito             -> AttesaRicezioneAtto         [ label = "EmailEsitoInviata"] ;
+        InvioAtto                   -> AttesaRicezioneAtto         [ label = "AttoInviato"] ;
+ 
+        ConciliazionePerizia       -> VerificaChiusura                   [ label = "ChiusuraConAccordo"] ;
+        ConciliazionePerizia       -> VerificaChiusura                   [ label = "ChiusuraSenzaAccordo"] ;
+        ConciliazionePerizia       ->  EsecuzionePeriziaConciliazione              [ label = "PeriziaConcilazioneAvviata"]   ;
+        
+
+
+comment = "perizia incompleta (vedi chiusura)"
+
+       VerificaChiusura                    -> EsecuzionePerizia   [ label = "PeriziaIncompletaAvviata"]   ;
+
+
+
+    comment = "chiusura"
+
+	subgraph cluster_perizia_1 {
+			rank = top
+			style = filled
+			node [shape = "box" style = filled ];
+			label = "(fine) PERIZIA";
+			ComunicazioneEsito
+			InvioEmailEsito
+			InvioAtto
+	}
+
+	subgraph cluster_perizia_2 {
+			rank = sink
+			style = filled
+			node [shape = "box" style = filled ];
+			label = "(nuova) PERIZIA";
+			EsecuzionePerizia			
+		    ConciliazionePerizia
+			PeriziaContestazione
+	}
+
+	
+		
+	subgraph cluster_chiusura {
+		rank = max
+		node [shape=box,style=rounded ];
+		label = "CHIUSURA";
+		AttesaRicezioneAtto
+		VerificaChiusura
+		ChiusuraAutomatica
+		ChiusuraManuale
+	}
+
+	subgraph cluster_riapertura {
+		node [shape=box,style=rounded ];
+		label = "RIAPERTURA";
+		GestioneRiapertura
+		GestioneContestazione
+		FinalizzaContestazione
+	}
+
+
+ 
+
+    InvioEmailEsito           ->   AttesaRicezioneAtto           [ label = "EmailEsitoInviata"] ;
+    InvioAtto                 ->   AttesaRicezioneAtto           [ label = "AttoInviato"] ;
+	ComunicazioneEsito		->   VerificaChiusura           [ label = "AccordoRaggiunto-o-NonRichiesto"] ;
+
+
+    AttesaRicezioneAtto          -> ConciliazionePerizia      [ label = "ConciliazioneAvviata"] ;
+    AttesaRicezioneAtto          -> VerificaChiusura          [ label = "AttoFirmato"] ;
+	AttesaRicezioneAtto          -> VerificaChiusura          [ label = "ForzaturaChiusura"] ;
+	
+
+
+    VerificaChiusura           -> ChiusuraManuale         	[ label = "ChiusuraVerificata"]
+    VerificaChiusura           -> ChiusuraAutomatica      	[ label = "ChiusuraVerificata"]
+    VerificaChiusura           -> VerificaChiusura        	[ label = "DatiObbligatoriMancanti"]
+	RiaperturaAutomatica         -> GestioneRiapertura      [ label = "RiaperturaAutomatica" ]
+	CreazioneManualeIncarico   ->  GestioneRiapertura    	[ label = "RiaperturaManaule" ]
+
+    GestioneRiapertura    ->  SceltaManualeServizio 		[ label = "NonRiapertura"]
+    GestioneRiapertura    ->  GestioneContestazione 		[ label = "GestioneContestazione"]
+
+    GestioneContestazione       -> FinalizzaContestazione 	[ label = "ContestazioneDaFinalizzare"]
+    FinalizzaContestazione      -> VerificaChiusura         [ label = "ChiusuraAvviata"]
+
+
+	node [shape=box,style=rounded  style = filled];
+	color = grey
+	
+ 	ACCERTAMENTI                    -> VerificaChiusura    [ label = "Chiusura Post SelfCare"]     
+	RIPARAZIONE                     -> VerificaChiusura     [ label = "ChiusuraAvviata"]
+
+    VerificaChiusura           ->  EsecuzionePerizia	 [ label = "PeriziaIncompleta"]
+	GestioneRiapertura          -> EsecuzionePerizia   [ label = "PeriziaIntegrazione" ]
+	GestioneContestazione       -> PeriziaContestazione   [ label = "PeriziaContestazione" ]
+
+
+	comment = "RIPARAZIONE"
+	 
+    VenditaRiparazione         -> AvvioRiparazione            [ label = "RiparazioneVenduta" ]  ;
 
     AvvioRiparazione           -> ConfigurazioneRiparazione    [ label = "RiparazioneAvviata" ]  ;
     ConfigurazioneRiparazione  -> DefinizioneTimeline          [ label = "RiparazioneConfigurata" ]  ;
-    DefinizioneTimeline        -> AssegnazioneMonitoraggio     [ label = "TimelineDefinita" ]  ;
-    AssegnazioneMonitoraggio   -> VerificaChiusuraRiparazione  [ label = "MonitoraggioTerminato" ]  ;
 
-    DefinizioneTimeline        -> PianificazioneAppuntamentoR  [ style = "dotted" ];
-    AssegnazioneMonitoraggio   -> MonitoraggioAttivita         [ style = "dotted" ];
+    DefinizioneTimeline        -> PianificazioneAppuntamentoR  [  label = "AttivitaAssegnata"] ;
+    DefinizioneTimeline        -> MonitoraggioAttivita         [  label = "MonitoraggioAssegnato" ]  ;
 
-     
+    
     PianificazioneAppuntamentoR -> EsecuzioneSopralluogoR       [ label = "AppuntamentoPianificato" ];
-    EsecuzioneSopralluogoR      -> ApprovazioneBudget           [ style = "dotted" ];
-    EsecuzioneSopralluogoR      -> BudgetInApprovazione         [ label = "SoprallugoCompletato"]
-    BudgetInApprovazione        -> EsecuzioneAttivita           [ label = "BudgetApprovato" ] 
-    EsecuzioneAttivita          -> AttivitaInApprovazione       [ label = "AttivitaCompletata" ]
-    AttivitaInApprovazione      -> AttivitaApprovata            [ label = "AttivitaApprovata" ]
-    AttivitaApprovata           -> PianificazioneAppuntamentoR  [ label = "NuovoSopralluogo" ];
-    AttivitaApprovata           -> MonitoraggioAttivita         [ style = "dotted" ]  ;
+    PianificazioneAppuntamentoR -> EsecVisioApprovazBudget      [ label = "AppuntamentoPianificato" ];
 
-    ApprovazioneBudget          -> BudgetInApprovazione         [ style = "dotted" ]  ;
-    ApprovazioneAttivita        -> AttivitaInApprovazione       [ style = "dotted" ]  ;
-    MonitoraggioAttivita        ->  VerificaChiusuraRiparazione [ style = "dotted" ]  ;
-	EsecuzioneAttivita          -> ApprovazioneAttivita          [ style = "dotted" ]  ; 
+    
+
+    EsecuzioneSopralluogoR      -> ChiusuraIntervento       [ label = "SopralluogoEseguito" ];
+    ChiusuraIntervento          -> PianificazioneAppuntamentoR       [ label = "NuovoSopralluogo" ];
+    
+    EsecVisioApprovazBudget     -> ChiusuraIntervento  [ style = "dotted"  label = "Abilita" ];
+
+    ChiusuraIntervento          -> FineLavori           [ label = "AttivitaChiusa" ];  
+    FineLavori                  -> PianificazioneAppuntamentoR       [ label = "NuovoSopralluogo" ];
+    FineLavori                  -> VerificaDocumentiBudget   [  label = "LavoriTerminati" ];
+
+    VerificaDocumentiBudget     -> MonitoraggioAttivita       [ label = "Chiude" style = "dotted"]  ;
+    VerificaDocumentiBudget        -> VerificaRiparazioneCompletata   [   label = "TuttiLavoriTerminati" ]  ;
+
+  comment = "solo per visualizzazione" 
+    MonitoraggioAttivita    -> EsecVisioApprovazBudget     [ style = "invisible" arrowhead = "none" ]  ;
+    EsecVisioApprovazBudget -> VerificaDocumentiBudget  [ style = "invisible"    arrowhead = "none" ]  ;
+
+
+    VerificaRiparazioneCompletata  -> VerificaRiparazioneCompletata          [ label = "DatiNonCompleti" ] ;
+    
+	comment = "sottoprocesso Chiusura Riparazione"
+	node [shape=box,style=rounded  style = filled rank=min];
+	color = grey
+    VerificaRiparazioneCompletata  -> PERIZIA                                [ label = "PeriziaPostRiparazione" ];
+    VerificaRiparazioneCompletata  -> CHIUSURA  [ label = "ChiusuraPostRiparazione" ];	
 	
-    VerificaChiusuraRiparazione  -> ConfigurazioneRiparazione    [ label = "RiparazioneNonChiusa" ] ;
-    VerificaChiusuraRiparazione  -> AvviaPeriziaPostRiparazione  [ label = "PeriziaPostRiparazione" ];
-    AvviaPeriziaPostRiparazione  -> EsecuzionePerizia            [ label = "PeriziaPostRiparazioneAvviata" ];
-    VerificaChiusuraRiparazione  -> AvvioChiusuraPostRiparazione [ label = "ChiusuraPostRiparazione" ];
-    AvvioChiusuraPostRiparazione -> VerificaChiusura             [ lable = "ChiusuraAvviata"]
 
-comment = "CHIUSURA"
-
-    AvvioChiusura              -> VerificaChiusura        [ label = "ChiusuraAvviata"]
-    VerificaChiusura           -> ChiusuraManuale         [ label = "ChiusuraVerificata"]
-    VerificaChiusura           -> ChiusuraAutomatica      [ label = "ChiusuraVerificata"]
-    VerificaChiusura           -> VerificaChiusura        [ label = "DatiObbligatoriMancanti"]
-    VerificaChiusura           -> AvvioPeriziaIncompleta  [ label = "PeriziaIncompleta"]
-    AvvioPeriziaIncompleta     -> EsecuzionePerizia       [ label = "PeriziaIncompletaAvviata"]
-   
-    CreazioneManualeIncarico   ->  GestioneRiapertura    [ label = "RiaperturaManaule" ]
-    GestioneRiapertura          ->  AvvioPeriziaIntegrazione   [ label = "PeriziaIntegrazione" ]
-    AvvioPeriziaIntegrazione   ->  EsecuzionePerizia          [ label = "PeriziaIntegrazioneAvviata"]
-
-    GestioneRiapertura    ->  SceltaManualeServizio [ label = "NonRiapertura"]
-    GestioneRiapertura    ->  GestioneContestazione [ label = "GestioneContestazione"]
-
-    GestioneContestazione       -> AvvioPeriziaContestazione [ label = "PeriziaContestazione" ]
-    AvvioPeriziaContestazione   -> EsecuzionePerizia         [ label = "PeriziaContestazioneAvviata"]
-
-    GestioneContestazione       -> FinalizzaContestazione [ label = "ContestazioneDaFinalizzare"]
-    FinalizzaContestazione      -> AvvioChiusura          [ label = "ChiusuraAvviata"]
 }
